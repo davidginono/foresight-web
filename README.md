@@ -13,6 +13,12 @@ npm test
 
 The preview is served at http://localhost:4173. The production client is in `dist/client`. Configure the host to serve `index.html` for application routes. The bundled Worker also supports the Sites build format.
 
+## Vercel deployment
+
+Import the repository with its root directory set to the repository root. `vercel.json` selects Vite, runs `npm run build`, publishes `dist/client`, and provides the app-shell fallback for direct page visits and refreshes. Existing static files and generated page metadata are served before the fallback. Do not publish `dist` or `public` as the output directory: neither contains the built homepage at its root.
+
+No environment variables are required to display the site. Set `VITE_FORM_ENDPOINT` only after configuring the form-delivery service, and `VITE_ANALYTICS_ENDPOINT` only for an approved event collector. Without these values, forms explain that messages are not sent and analytics remain disabled. Redeploy after changing either value; `VITE_` values are public browser configuration.
+
 ## Structure
 
 - `src/App.jsx` and `src/routeStyles.js`: cancelable lazy routes and atomic content/stylesheet commits, with retry on failed asset loading.
