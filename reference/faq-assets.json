@@ -1,0 +1,21 @@
+{
+  "assets": [
+    {
+      "contentType": "",
+      "id": "5bf4bcf9e271ef87",
+      "kind": "stylesheet",
+      "name": "widget-nested-accordion.min.css",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/027fdfff-1545-474d-9825-24ad422c209f/5bf4bcf9e271ef87.css",
+      "url": "https://foresight.co.tz/wp-content/plugins/elementor/assets/css/widget-nested-accordion.min.css?ver=3.34.1"
+    }
+  ],
+  "directoryPath": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/027fdfff-1545-474d-9825-24ad422c209f",
+  "failures": [],
+  "manifestPath": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/027fdfff-1545-474d-9825-24ad422c209f/manifest.json",
+  "summary": {
+    "downloadedCount": 1,
+    "elapsedMs": 122.68499999999769,
+    "failedCount": 0,
+    "requestedCount": 1
+  }
+}

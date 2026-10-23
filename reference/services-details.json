@@ -1,0 +1,44 @@
+{
+  "forms": [
+    "<form class=\"elementor-form\" method=\"post\" name=\"foresight form\">\n\t\t\t<input type=\"hidden\" name=\"post_id\">\n\t\t\t<input type=\"hidden\" name=\"form_id\">\n\t\t\t<input type=\"hidden\" name=\"referer_title\">\n\n\t\t\t\t\t\t\t<input type=\"hidden\" name=\"queried_id\">\n\t\t\t\n\t\t\t<div class=\"elementor-form-fields-wrapper elementor-labels-above\">\n\t\t\t\t\t\t\t\t<div class=\"elementor-field-type-text elementor-field-group elementor-column elementor-field-group-name elementor-col-100 elementor-field-required\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t<input size=\"1\" type=\"text\" name=\"form_fields[name]\" id=\"form-field-name\" class=\"elementor-field elementor-size-md  elementor-field-textual\" placeholder=\"Full name\" required=\"required\">\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<div class=\"elementor-field-type-email elementor-field-group elementor-column elementor-field-group-email elementor-col-100 elementor-field-required\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t<input size=\"1\" type=\"email\" name=\"form_fields[email]\" id=\"form-field-email\" class=\"elementor-field elementor-size-md  elementor-field-textual\" placeholder=\"Your working email\" required=\"required\">\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<div class=\"elementor-field-type-tel elementor-field-group elementor-column elementor-field-group-field_f95db5e elementor-col-100 elementor-field-required\">\n\t\t\t\t\t\t\t<input size=\"1\" type=\"tel\" name=\"form_fields[field_f95db5e]\" id=\"form-field-field_f95db5e\" class=\"elementor-field elementor-size-md  elementor-field-textual\" placeholder=\"Your phone number\" required=\"required\" pattern=\"[0-9()#&amp;+*-=.]+\" title=\"Only numbers and phone characters (#, -, *, etc) are accepted.\">\n\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<div class=\"elementor-field-group elementor-column elementor-field-type-submit elementor-col-100 e-form__buttons\">\n\t\t\t\t\t<button class=\"elementor-button elementor-size-md\" type=\"submit\">\n\t\t\t\t\t\t<span class=\"elementor-button-content-wrapper\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"elementor-button-text\">SUBMIT</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</span>\n\t\t\t\t\t</button>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</form>"
+  ],
+  "headings": [
+    "Services",
+    "Explore Our Core Services",
+    "At Computer Resources (T) Ltd, we specialize in delivering innovative software solutions designed to meet the evolving needs of diverse industries. Our key solutions include SACCOS & Microfinance, UNION and AMCOS Management, Payroll, Vehicle Tracking, School Management, and Inventory Management Systems. We also provide professional Software Consultancy and Servicing to help organizations improve efficiency, streamline operations, and achieve sustainable growth.",
+    "Discover how our technology solutions and expertise can help drive your organization’s success.",
+    "SACCOS & Microfinance System",
+    "UNION Management System",
+    "AMCOS Management System",
+    "Payroll System",
+    "Car Tracking System",
+    "School Management System",
+    "Inventory and Accounting Software",
+    "Software Consultancy & Servicing",
+    "We will contact",
+    "GET A CALL BACK",
+    "Quick Links",
+    "Main System",
+    "Download Our App"
+  ],
+  "links": [
+    "https://foresight.co.tz/request-demo/",
+    "https://foresight.co.tz/",
+    "https://foresight.co.tz/services/",
+    "https://foresight.co.tz/saccos-microfinance-system/",
+    "https://foresight.co.tz/union-management-system/",
+    "https://foresight.co.tz/amcos-management-system/",
+    "https://foresight.co.tz/payroll-system/",
+    "https://foresight.co.tz/car-tracking-system/",
+    "https://foresight.co.tz/inventory-and-accounting-software/",
+    "https://foresight.co.tz/school-management-system/",
+    "https://foresight.co.tz/software-consultancy-and-service/",
+    "https://foresight.co.tz/about-us/",
+    "https://foresight.co.tz/testimonials/",
+    "https://foresight.co.tz/training/",
+    "https://foresight.co.tz/gallery/",
+    "https://foresight.co.tz/updates/",
+    "https://foresight.co.tz/contact-us/",
+    "https://foresight.co.tz/faq/"
+  ]
+}

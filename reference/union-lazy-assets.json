@@ -1,0 +1,21 @@
+{
+  "assets": [
+    {
+      "contentType": "image/png",
+      "id": "88d07e5e21345c31",
+      "kind": "image",
+      "name": "pixelcut-export.png",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/e91f02ee-65c0-4c51-a3f1-a267c95b7c21/88d07e5e21345c31.png",
+      "url": "https://foresight.co.tz/wp-content/uploads/2024/10/pixelcut-export.png"
+    }
+  ],
+  "directoryPath": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/e91f02ee-65c0-4c51-a3f1-a267c95b7c21",
+  "failures": [],
+  "manifestPath": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/e91f02ee-65c0-4c51-a3f1-a267c95b7c21/manifest.json",
+  "summary": {
+    "downloadedCount": 1,
+    "elapsedMs": 2731.3626999999397,
+    "failedCount": 0,
+    "requestedCount": 1
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "assets": [
+    {
+      "contentType": "image/png",
+      "id": "f7aa15ffe3c4857d",
+      "kind": "image",
+      "name": "ce8442416c051271026219d7aafb2c3e-1.png",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/54e1ed56-21eb-4c6a-8e2e-8d98768f34f1/f7aa15ffe3c4857d.png",
+      "url": "https://foresight.co.tz/wp-content/uploads/2024/10/ce8442416c051271026219d7aafb2c3e-1.png"
+    },
+    {
+      "contentType": "image/png",
+      "id": "c2744de122fc8d47",
+      "kind": "image",
+      "name": "pngwing.com-3.png",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/54e1ed56-21eb-4c6a-8e2e-8d98768f34f1/c2744de122fc8d47.png",
+      "url": "https://foresight.co.tz/wp-content/uploads/2024/10/pngwing.com-3.png"
+    },
+    {
+      "contentType": "image/png",
+      "id": "ccb13ac6449622bd",
+      "kind": "image",
+      "name": "pngwing.com-2.png",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/54e1ed56-21eb-4c6a-8e2e-8d98768f34f1/ccb13ac6449622bd.png",
+      "url": "https://foresight.co.tz/wp-content/uploads/2024/10/pngwing.com-2.png"
+    }
+  ],
+  "directoryPath": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/54e1ed56-21eb-4c6a-8e2e-8d98768f34f1",
+  "failures": [],
+  "manifestPath": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/54e1ed56-21eb-4c6a-8e2e-8d98768f34f1/manifest.json",
+  "summary": {
+    "downloadedCount": 3,
+    "elapsedMs": 303.8646000000008,
+    "failedCount": 0,
+    "requestedCount": 3
+  }
+}

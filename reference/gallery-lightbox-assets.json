@@ -1,0 +1,61 @@
+{
+  "assets": [
+    {
+      "contentType": "image/jpeg",
+      "id": "9dbd540e210c7e14",
+      "kind": "image",
+      "name": "5.jpg",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/ca52fa8e-8bfe-4e70-a338-d3cd47aa0658/9dbd540e210c7e14.jpg",
+      "url": "https://foresight.co.tz/wp-content/uploads/2024/09/5.jpg"
+    },
+    {
+      "contentType": "image/jpeg",
+      "id": "40b721fc5ae19ee0",
+      "kind": "image",
+      "name": "5-2.jpg",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/ca52fa8e-8bfe-4e70-a338-d3cd47aa0658/40b721fc5ae19ee0.jpg",
+      "url": "https://foresight.co.tz/wp-content/uploads/2024/09/5-2.jpg"
+    },
+    {
+      "contentType": "image/jpeg",
+      "id": "1ef1c7428d0f4d97",
+      "kind": "image",
+      "name": "6.jpg",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/ca52fa8e-8bfe-4e70-a338-d3cd47aa0658/1ef1c7428d0f4d97.jpg",
+      "url": "https://foresight.co.tz/wp-content/uploads/2024/09/6.jpg"
+    },
+    {
+      "contentType": "image/jpeg",
+      "id": "6ef7e686087f29da",
+      "kind": "image",
+      "name": "one-1.jpg",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/ca52fa8e-8bfe-4e70-a338-d3cd47aa0658/6ef7e686087f29da.jpg",
+      "url": "https://foresight.co.tz/wp-content/uploads/2024/09/one-1.jpg"
+    },
+    {
+      "contentType": "image/jpeg",
+      "id": "0e1b3587e286d5af",
+      "kind": "image",
+      "name": "7.jpg",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/ca52fa8e-8bfe-4e70-a338-d3cd47aa0658/0e1b3587e286d5af.jpg",
+      "url": "https://foresight.co.tz/wp-content/uploads/2024/09/7.jpg"
+    },
+    {
+      "contentType": "image/jpeg",
+      "id": "c1aeb20019092adf",
+      "kind": "image",
+      "name": "8.jpg",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/ca52fa8e-8bfe-4e70-a338-d3cd47aa0658/c1aeb20019092adf.jpg",
+      "url": "https://foresight.co.tz/wp-content/uploads/2024/09/8.jpg"
+    }
+  ],
+  "directoryPath": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/ca52fa8e-8bfe-4e70-a338-d3cd47aa0658",
+  "failures": [],
+  "manifestPath": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/ca52fa8e-8bfe-4e70-a338-d3cd47aa0658/manifest.json",
+  "summary": {
+    "downloadedCount": 6,
+    "elapsedMs": 5141.976900000009,
+    "failedCount": 0,
+    "requestedCount": 6
+  }
+}

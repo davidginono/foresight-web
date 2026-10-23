@@ -1,0 +1,53 @@
+{
+  "assets": [
+    {
+      "contentType": "",
+      "id": "86d862958bfaeef4",
+      "kind": "stylesheet",
+      "name": "e-animation-shrink.min.css",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/7af3ec14-0c78-4c59-b315-ffb51893d706/86d862958bfaeef4.css",
+      "url": "https://foresight.co.tz/wp-content/plugins/elementor/assets/lib/animations/styles/e-animation-shrink.min.css?ver=3.34.1"
+    },
+    {
+      "contentType": "image/jpeg",
+      "id": "0fad823b0ac355fb",
+      "kind": "image",
+      "name": "african-people-harvesting-vegetables.jpg",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/7af3ec14-0c78-4c59-b315-ffb51893d706/0fad823b0ac355fb.jpg",
+      "url": "https://foresight.co.tz/wp-content/uploads/2024/10/african-people-harvesting-vegetables.jpg"
+    },
+    {
+      "contentType": "image/jpeg",
+      "id": "fe379b812efc336e",
+      "kind": "image",
+      "name": "pixelcut-export.jpeg",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/7af3ec14-0c78-4c59-b315-ffb51893d706/fe379b812efc336e.jpeg",
+      "url": "https://foresight.co.tz/wp-content/uploads/2024/10/pixelcut-export.jpeg"
+    },
+    {
+      "contentType": "image/png",
+      "id": "9b7c7ea366560dac",
+      "kind": "image",
+      "name": "Artboard-1.png",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/7af3ec14-0c78-4c59-b315-ffb51893d706/9b7c7ea366560dac.png",
+      "url": "https://foresight.co.tz/wp-content/uploads/2024/09/Artboard-1.png"
+    },
+    {
+      "contentType": "image/jpeg",
+      "id": "04079d6f736d00e3",
+      "kind": "image",
+      "name": "Vmake-1728037126-1.jpg",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/7af3ec14-0c78-4c59-b315-ffb51893d706/04079d6f736d00e3.jpg",
+      "url": "https://foresight.co.tz/wp-content/uploads/2024/10/Vmake-1728037126-1.jpg"
+    }
+  ],
+  "directoryPath": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/7af3ec14-0c78-4c59-b315-ffb51893d706",
+  "failures": [],
+  "manifestPath": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/7af3ec14-0c78-4c59-b315-ffb51893d706/manifest.json",
+  "summary": {
+    "downloadedCount": 5,
+    "elapsedMs": 3903.6944999999832,
+    "failedCount": 0,
+    "requestedCount": 5
+  }
+}

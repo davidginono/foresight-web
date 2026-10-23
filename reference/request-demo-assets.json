@@ -1,0 +1,37 @@
+{
+  "assets": [
+    {
+      "contentType": "",
+      "id": "00dbe2499d17b5fa",
+      "kind": "stylesheet",
+      "name": "widget-form.min.css",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/23a1fa1c-873c-4ca5-8e04-1a3f65c4cd81/00dbe2499d17b5fa.css",
+      "url": "https://foresight.co.tz/wp-content/plugins/elementor-pro/assets/css/widget-form.min.css?ver=3.28.2"
+    },
+    {
+      "contentType": "",
+      "id": "237317ec37d12e4f",
+      "kind": "stylesheet",
+      "name": "flatpickr.min.css",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/23a1fa1c-873c-4ca5-8e04-1a3f65c4cd81/237317ec37d12e4f.css",
+      "url": "https://foresight.co.tz/wp-content/plugins/elementor/assets/lib/flatpickr/flatpickr.min.css?ver=4.6.13"
+    },
+    {
+      "contentType": "font/woff2",
+      "id": "ad7d71d78611339d",
+      "kind": "font",
+      "name": "eicons.woff2",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/23a1fa1c-873c-4ca5-8e04-1a3f65c4cd81/ad7d71d78611339d.woff2",
+      "url": "https://foresight.co.tz/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.woff2?5.45.0"
+    }
+  ],
+  "directoryPath": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/23a1fa1c-873c-4ca5-8e04-1a3f65c4cd81",
+  "failures": [],
+  "manifestPath": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/23a1fa1c-873c-4ca5-8e04-1a3f65c4cd81/manifest.json",
+  "summary": {
+    "downloadedCount": 3,
+    "elapsedMs": 237.8706999999995,
+    "failedCount": 0,
+    "requestedCount": 3
+  }
+}

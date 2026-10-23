@@ -1,0 +1,29 @@
+{
+  "assets": [
+    {
+      "contentType": "image/jpeg",
+      "id": "eaa13d765911cda3",
+      "kind": "image",
+      "name": "2-2.jpg",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/47d8eca4-6012-476d-85f0-3ad699958f6a/eaa13d765911cda3.jpg",
+      "url": "https://foresight.co.tz/wp-content/uploads/2024/09/2-2.jpg"
+    },
+    {
+      "contentType": "image/jpeg",
+      "id": "5fc41c7f31d5df7c",
+      "kind": "image",
+      "name": "3.jpg",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/47d8eca4-6012-476d-85f0-3ad699958f6a/5fc41c7f31d5df7c.jpg",
+      "url": "https://foresight.co.tz/wp-content/uploads/2024/09/3.jpg"
+    }
+  ],
+  "directoryPath": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/47d8eca4-6012-476d-85f0-3ad699958f6a",
+  "failures": [],
+  "manifestPath": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/47d8eca4-6012-476d-85f0-3ad699958f6a/manifest.json",
+  "summary": {
+    "downloadedCount": 2,
+    "elapsedMs": 4249.573800000013,
+    "failedCount": 0,
+    "requestedCount": 2
+  }
+}

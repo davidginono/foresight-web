@@ -1,0 +1,20 @@
+{
+  "results": [
+    {
+      "path": "/gallery/",
+      "broken": [],
+      "mobileOverflow": false
+    },
+    {
+      "path": "/general-version-release/",
+      "broken": [],
+      "mobileOverflow": false
+    },
+    {
+      "path": "/request-demo/",
+      "broken": [],
+      "mobileOverflow": false
+    }
+  ],
+  "errors": []
+}

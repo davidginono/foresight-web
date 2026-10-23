@@ -1,0 +1,21 @@
+{
+  "assets": [
+    {
+      "contentType": "",
+      "id": "6375060e87b19339",
+      "kind": "stylesheet",
+      "name": "widget-google_maps.min.css",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/b48e9b4c-0f6d-4381-b1d8-c5d9acb23154/6375060e87b19339.css",
+      "url": "https://foresight.co.tz/wp-content/plugins/elementor/assets/css/widget-google_maps.min.css?ver=3.34.1"
+    }
+  ],
+  "directoryPath": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/b48e9b4c-0f6d-4381-b1d8-c5d9acb23154",
+  "failures": [],
+  "manifestPath": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/b48e9b4c-0f6d-4381-b1d8-c5d9acb23154/manifest.json",
+  "summary": {
+    "downloadedCount": 1,
+    "elapsedMs": 165.70309999998426,
+    "failedCount": 0,
+    "requestedCount": 1
+  }
+}

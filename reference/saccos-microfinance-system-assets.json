@@ -1,0 +1,37 @@
+{
+  "assets": [
+    {
+      "contentType": "image/png",
+      "id": "ae02d330c3c7d7dd",
+      "kind": "image",
+      "name": "stacks-coins-arranged-bar-graph.png",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/e7f049ea-b826-41bc-bf01-7ba620a9bf1b/ae02d330c3c7d7dd.png",
+      "url": "https://foresight.co.tz/wp-content/uploads/2024/10/stacks-coins-arranged-bar-graph.png"
+    },
+    {
+      "contentType": "image/png",
+      "id": "b55f0535b886c9cb",
+      "kind": "image",
+      "name": "Lovepik_com-380309312-purple-money-bag-gold-coins-save-money-business-illustration-the-man-saving.png",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/e7f049ea-b826-41bc-bf01-7ba620a9bf1b/b55f0535b886c9cb.png",
+      "url": "https://foresight.co.tz/wp-content/uploads/2024/10/Lovepik_com-380309312-purple-money-bag-gold-coins-save-money-business-illustration-the-man-saving.png"
+    },
+    {
+      "contentType": "image/png",
+      "id": "0d94d02c40227189",
+      "kind": "image",
+      "name": "shutterstock_1733879702.png",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/e7f049ea-b826-41bc-bf01-7ba620a9bf1b/0d94d02c40227189.png",
+      "url": "https://foresight.co.tz/wp-content/uploads/2024/10/shutterstock_1733879702.png"
+    }
+  ],
+  "directoryPath": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/e7f049ea-b826-41bc-bf01-7ba620a9bf1b",
+  "failures": [],
+  "manifestPath": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/e7f049ea-b826-41bc-bf01-7ba620a9bf1b/manifest.json",
+  "summary": {
+    "downloadedCount": 3,
+    "elapsedMs": 944.560300000012,
+    "failedCount": 0,
+    "requestedCount": 3
+  }
+}

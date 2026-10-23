@@ -1,0 +1,137 @@
+{
+  "assets": [
+    {
+      "url": "https://foresight.co.tz/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-brands-400.eot#iefix",
+      "path": "C:\\Users\\USER\\Desktop\\Foresight\\reference\\downloads\\0.eot",
+      "kind": "font",
+      "name": "fa-brands-400.eot"
+    },
+    {
+      "url": "https://foresight.co.tz/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-brands-400.svg#fontawesome",
+      "path": "C:\\Users\\USER\\Desktop\\Foresight\\reference\\downloads\\1.svg",
+      "kind": "image",
+      "name": "fa-brands-400.svg"
+    },
+    {
+      "url": "https://foresight.co.tz/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-brands-400.ttf",
+      "path": "C:\\Users\\USER\\Desktop\\Foresight\\reference\\downloads\\2.ttf",
+      "kind": "font",
+      "name": "fa-brands-400.ttf"
+    },
+    {
+      "url": "https://foresight.co.tz/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-brands-400.woff",
+      "path": "C:\\Users\\USER\\Desktop\\Foresight\\reference\\downloads\\3.woff",
+      "kind": "font",
+      "name": "fa-brands-400.woff"
+    },
+    {
+      "url": "https://foresight.co.tz/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-regular-400.eot#iefix",
+      "path": "C:\\Users\\USER\\Desktop\\Foresight\\reference\\downloads\\4.eot",
+      "kind": "font",
+      "name": "fa-regular-400.eot"
+    },
+    {
+      "url": "https://foresight.co.tz/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-regular-400.svg#fontawesome",
+      "path": "C:\\Users\\USER\\Desktop\\Foresight\\reference\\downloads\\5.svg",
+      "kind": "image",
+      "name": "fa-regular-400.svg"
+    },
+    {
+      "url": "https://foresight.co.tz/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-regular-400.ttf",
+      "path": "C:\\Users\\USER\\Desktop\\Foresight\\reference\\downloads\\6.ttf",
+      "kind": "font",
+      "name": "fa-regular-400.ttf"
+    },
+    {
+      "url": "https://foresight.co.tz/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-regular-400.woff",
+      "path": "C:\\Users\\USER\\Desktop\\Foresight\\reference\\downloads\\7.woff",
+      "kind": "font",
+      "name": "fa-regular-400.woff"
+    },
+    {
+      "url": "https://foresight.co.tz/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-solid-900.eot#iefix",
+      "path": "C:\\Users\\USER\\Desktop\\Foresight\\reference\\downloads\\8.eot",
+      "kind": "font",
+      "name": "fa-solid-900.eot"
+    },
+    {
+      "url": "https://foresight.co.tz/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-solid-900.svg#fontawesome",
+      "path": "C:\\Users\\USER\\Desktop\\Foresight\\reference\\downloads\\9.svg",
+      "kind": "image",
+      "name": "fa-solid-900.svg"
+    },
+    {
+      "url": "https://foresight.co.tz/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-solid-900.ttf",
+      "path": "C:\\Users\\USER\\Desktop\\Foresight\\reference\\downloads\\10.ttf",
+      "kind": "font",
+      "name": "fa-solid-900.ttf"
+    },
+    {
+      "url": "https://foresight.co.tz/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-solid-900.woff",
+      "path": "C:\\Users\\USER\\Desktop\\Foresight\\reference\\downloads\\11.woff",
+      "kind": "font",
+      "name": "fa-solid-900.woff"
+    },
+    {
+      "url": "https://foresight.co.tz/wp-content/plugins/elementskit-lite/widgets/init/assets/img/arrow.png",
+      "path": "C:\\Users\\USER\\Desktop\\Foresight\\reference\\downloads\\12.png",
+      "kind": "image",
+      "name": "arrow.png"
+    },
+    {
+      "url": "https://foresight.co.tz/wp-content/plugins/elementskit-lite/widgets/init/assets/img/cross-out.svg",
+      "path": "C:\\Users\\USER\\Desktop\\Foresight\\reference\\downloads\\13.svg",
+      "kind": "image",
+      "name": "cross-out.svg"
+    },
+    {
+      "url": "https://foresight.co.tz/wp-content/plugins/elementskit-lite/widgets/init/assets/img/sort_asc.png",
+      "path": "C:\\Users\\USER\\Desktop\\Foresight\\reference\\downloads\\14.png",
+      "kind": "image",
+      "name": "sort_asc.png"
+    },
+    {
+      "url": "https://foresight.co.tz/wp-content/plugins/elementskit-lite/widgets/init/assets/img/sort_asc_disabled.png",
+      "path": "C:\\Users\\USER\\Desktop\\Foresight\\reference\\downloads\\15.png",
+      "kind": "image",
+      "name": "sort_asc_disabled.png"
+    },
+    {
+      "url": "https://foresight.co.tz/wp-content/plugins/elementskit-lite/widgets/init/assets/img/sort_desc.png",
+      "path": "C:\\Users\\USER\\Desktop\\Foresight\\reference\\downloads\\16.png",
+      "kind": "image",
+      "name": "sort_desc.png"
+    },
+    {
+      "url": "https://foresight.co.tz/wp-content/plugins/jeg-elementor-kit/assets/img/letter-x.svg",
+      "path": "C:\\Users\\USER\\Desktop\\Foresight\\reference\\downloads\\17.svg",
+      "kind": "image",
+      "name": "letter-x.svg"
+    },
+    {
+      "url": "https://foresight.co.tz/wp-content/plugins/the-post-grid/assets/images/loading.gif",
+      "path": "C:\\Users\\USER\\Desktop\\Foresight\\reference\\downloads\\18.gif",
+      "kind": "image",
+      "name": "loading.gif"
+    },
+    {
+      "url": "https://foresight.co.tz/wp-content/uploads/2024/10/pngwing.com_.png",
+      "path": "C:\\Users\\USER\\Desktop\\Foresight\\reference\\downloads\\19.png",
+      "kind": "image",
+      "name": "pngwing.com_.png"
+    },
+    {
+      "url": "https://foresight.co.tz/wp-content/uploads/2024/10/\u2014Pngtree\u2014modern-flat-design-concept-of_5332896.png",
+      "path": "C:\\Users\\USER\\Desktop\\Foresight\\reference\\downloads\\20.png",
+      "kind": "image",
+      "name": "\u2014Pngtree\u2014modern-flat-design-concept-of_5332896.png"
+    },
+    {
+      "url": "https://foresight.co.tz/wp-content/uploads/2024/10/\u2014Pngtree\u2014software-development-isometric-web-concept_13227517.png",
+      "path": "C:\\Users\\USER\\Desktop\\Foresight\\reference\\downloads\\21.png",
+      "kind": "image",
+      "name": "\u2014Pngtree\u2014software-development-isometric-web-concept_13227517.png"
+    }
+  ],
+  "failures": []
+}

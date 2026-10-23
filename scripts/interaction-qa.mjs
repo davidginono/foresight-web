@@ -1,0 +1,84 @@
+import { createRequire } from 'node:module';
+import fs from 'node:fs/promises';
+import assert from 'node:assert/strict';
+const require=createRequire(import.meta.url);
+const {chromium}=require(require.resolve('playwright',{paths:['C:/Users/USER/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules']}));
+const browser=await chromium.launch({channel:'chrome',headless:true});
+const page=await browser.newPage({viewport:{width:390,height:844}});
+page.setDefaultTimeout(90000);
+const results=[];
+const errors=[];
+page.on('pageerror',error=>errors.push(error.message));
+page.on('console',message=>{if(message.type()==='error')errors.push(message.text());});
+try {
+ for(const route of ['services','gallery']){
+  await page.goto(`http://localhost:4173/${route}/`,{waitUntil:'domcontentloaded',timeout:90000});
+  await page.locator('h1').first().waitFor();
+  const overflow=await page.locator('body').evaluate(body=>[...body.querySelectorAll('*')].filter(el=>{const r=el.getBoundingClientRect();const s=getComputedStyle(el);return r.right>innerWidth+1 && r.width && s.display!=='none' && s.visibility!=='hidden';}).map(el=>({tag:el.tagName,cls:el.className?.baseVal??el.className,width:el.getBoundingClientRect().width,right:el.getBoundingClientRect().right})).slice(0,30));
+  results.push({route,overflow});
+  console.log(JSON.stringify(results.at(-1)));
+  await fs.writeFile('qa/interaction-results.json',JSON.stringify({results,errors},null,2));
+ }
+ await page.goto('http://localhost:4173/',{waitUntil:'domcontentloaded',timeout:90000});
+ await page.getByRole('button',{name:'Open navigation'}).waitFor();
+ await page.getByRole('button',{name:'Open navigation'}).click();
+ assert.ok(await page.getByRole('button',{name:'Close navigation',exact:true}).isVisible());
+ await page.getByRole('dialog').getByText('Services',{exact:true}).click();
+ assert.ok(await page.getByRole('link',{name:'SACCOS & Microfinance System',exact:true}).filter({visible:true}).first().isVisible());
+ await page.screenshot({path:'qa/mobile-menu-expanded.png'});
+ await page.getByRole('button',{name:'Close navigation',exact:true}).click();
+ await page.getByRole('link',{name:'Request Demo',exact:true}).filter({visible:true}).first().click();
+ await page.getByRole('heading',{name:'Request a Demo of Our Systems',exact:true}).first().waitFor();
+ await page.getByRole('button',{name:'Request a demo',exact:true}).click();
+ assert.ok(await page.locator('input:invalid').count()>0);
+ await page.locator('#form-field-name').fill('Preview Test');
+ await page.locator('#form-field-email').fill('preview@example.com');
+ await page.locator('#form-field-field_f95db5e').fill('+255700000000');
+ await page.locator('#form-field-field_b7c3c27').selectOption('UNION Management System');
+ const required=await page.locator('input[required]').evaluateAll(inputs=>inputs.map(i=>({id:i.id,type:i.type,value:i.value,placeholder:i.placeholder})));
+ for(const field of required){
+  const input=page.locator('#'+field.id);
+  if(field.type==='checkbox')await input.check();
+  else if(field.type==='number')await input.fill('100');
+  else if(field.type==='date')await input.fill('2026-10-25');
+  else if(!field.value)await input.fill('Preview Test');
+ }
+ await page.getByRole('checkbox').check();
+ await page.getByRole('button',{name:'Request a demo',exact:true}).click();
+ console.log('Remaining invalid fields:',await page.locator('input:invalid').evaluateAll(es=>es.map(e=>({id:e.id,type:e.type,message:e.validationMessage}))));
+ await page.locator('.local-form-feedback').waitFor();
+ assert.match(await page.locator('.local-form-feedback').textContent(),/does not send messages/);
+ await page.screenshot({path:'qa/demo-form-feedback.png',fullPage:true});
+ await page.goto('http://localhost:4173/faq/',{waitUntil:'domcontentloaded',timeout:90000});
+ await page.locator('summary').nth(1).click();
+ assert.equal(await page.locator('details[open]').count(),1);
+ assert.equal(await page.locator('details').nth(1).getAttribute('open'),'');
+ await page.screenshot({path:'qa/faq-expanded.png',fullPage:true});
+ await page.goto('http://localhost:4173/gallery/',{waitUntil:'domcontentloaded',timeout:90000});
+ await page.locator('.e-gallery-item').first().click();
+ await page.getByRole('dialog').waitFor();
+ await page.getByRole('button',{name:'Next slide',exact:true}).click();
+ assert.match(await page.locator('.foresight-lightbox-counter').textContent(),/2 \/ 8/);
+ await page.getByRole('button',{name:'Zoom',exact:true}).click();
+ assert.ok(await page.locator('.foresight-lightbox img.zoomed').count());
+ await page.getByRole('button',{name:'Zoom',exact:true}).click();
+ await page.getByRole('button',{name:'Share',exact:true}).click();
+ assert.ok(await page.getByRole('link',{name:'Download image'}).isVisible());
+ await page.keyboard.press('Escape');
+ assert.equal(await page.getByRole('dialog').count(),0);
+ await page.setViewportSize({width:1265,height:712});
+ await page.locator('.e-gallery-item').first().click();
+ await page.screenshot({path:'qa/gallery-lightbox.png'});
+ await page.keyboard.press('Escape');
+ await page.getByRole('link',{name:'SERVICES',exact:true}).first().hover();
+ await page.getByRole('link',{name:'UNION Management System',exact:true}).filter({visible:true}).first().click();
+ await page.getByRole('heading',{name:'UNION Management System',exact:true}).first().waitFor();
+ assert.equal(new URL(page.url()).pathname,'/union-management-system/');
+ await page.goBack();
+ await page.getByRole('heading',{name:'Our Work in Action: Project Gallery',exact:true}).waitFor();
+ await page.goto('http://localhost:4173/',{waitUntil:'domcontentloaded',timeout:90000});
+ await page.getByRole('heading',{name:'Computer Resources (T) Limited',exact:true}).waitFor();
+ await page.screenshot({path:'qa/home-preview.png'});
+ results.push({interactions:'mobile menu and submenu, SPA demo navigation, form validation and honest status, FAQ, gallery navigation, zoom, share, Escape: passed'});
+}catch(error){results.push({error:error.message});process.exitCode=1;}
+finally{await fs.writeFile('qa/interaction-results.json',JSON.stringify({results,errors},null,2));console.log(JSON.stringify({results,errors},null,2));await browser.close();}

@@ -1,0 +1,125 @@
+{
+  "results": [
+    {
+      "path": "/2024/09/12/",
+      "broken": [],
+      "mobileOverflow": false
+    },
+    {
+      "path": "/about-us/",
+      "broken": [],
+      "mobileOverflow": false
+    },
+    {
+      "path": "/amcos-management-system/",
+      "broken": [],
+      "mobileOverflow": true
+    },
+    {
+      "path": "/author/foresight/",
+      "broken": [],
+      "mobileOverflow": false
+    },
+    {
+      "path": "/car-tracking-system/",
+      "broken": [],
+      "mobileOverflow": true
+    },
+    {
+      "path": "/category/new-release/",
+      "broken": [],
+      "mobileOverflow": false
+    },
+    {
+      "path": "/category/training/",
+      "broken": [],
+      "mobileOverflow": false
+    },
+    {
+      "path": "/contact-us/",
+      "broken": [],
+      "mobileOverflow": false
+    },
+    {
+      "path": "/faq/",
+      "broken": [],
+      "mobileOverflow": false
+    },
+    {
+      "path": "/foresight-software-training-seminar/",
+      "broken": [],
+      "mobileOverflow": true
+    },
+    {
+      "path": "/gallery/",
+      "broken": [],
+      "mobileOverflow": false
+    },
+    {
+      "path": "/general-version-release/",
+      "broken": [],
+      "mobileOverflow": true
+    },
+    {
+      "path": "/",
+      "broken": [],
+      "mobileOverflow": false
+    },
+    {
+      "path": "/inventory-and-accounting-software/",
+      "broken": [],
+      "mobileOverflow": false
+    },
+    {
+      "path": "/payroll-system/",
+      "broken": [],
+      "mobileOverflow": false
+    },
+    {
+      "path": "/request-demo/",
+      "broken": [],
+      "mobileOverflow": false
+    },
+    {
+      "path": "/saccos-microfinance-system/",
+      "broken": [],
+      "mobileOverflow": false
+    },
+    {
+      "path": "/school-management-system/",
+      "broken": [],
+      "mobileOverflow": false
+    },
+    {
+      "path": "/services/",
+      "broken": [],
+      "mobileOverflow": false
+    },
+    {
+      "path": "/software-consultancy-and-service/",
+      "broken": [],
+      "mobileOverflow": false
+    },
+    {
+      "path": "/testimonials/",
+      "broken": [],
+      "mobileOverflow": false
+    },
+    {
+      "path": "/training/",
+      "broken": [],
+      "mobileOverflow": false
+    },
+    {
+      "path": "/union-management-system/",
+      "broken": [],
+      "mobileOverflow": false
+    },
+    {
+      "path": "/updates/",
+      "broken": [],
+      "mobileOverflow": false
+    }
+  ],
+  "errors": []
+}

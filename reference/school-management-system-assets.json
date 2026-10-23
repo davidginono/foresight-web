@@ -1,0 +1,45 @@
+{
+  "assets": [
+    {
+      "contentType": "image/png",
+      "id": "1a01a3d6b1e1ab9c",
+      "kind": "image",
+      "name": "main-image-1.png",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/7c55ce61-ec81-4c12-af9b-a98866994b0e/1a01a3d6b1e1ab9c.png",
+      "url": "https://foresight.co.tz/wp-content/uploads/2024/10/main-image-1.png"
+    },
+    {
+      "contentType": "image/png",
+      "id": "0a48f21666c92662",
+      "kind": "image",
+      "name": "pngegg-5.png",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/7c55ce61-ec81-4c12-af9b-a98866994b0e/0a48f21666c92662.png",
+      "url": "https://foresight.co.tz/wp-content/uploads/2024/10/pngegg-5.png"
+    },
+    {
+      "contentType": "image/png",
+      "id": "d72ae49fcdc82024",
+      "kind": "image",
+      "name": "pngegg-6.png",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/7c55ce61-ec81-4c12-af9b-a98866994b0e/d72ae49fcdc82024.png",
+      "url": "https://foresight.co.tz/wp-content/uploads/2024/10/pngegg-6.png"
+    },
+    {
+      "contentType": "image/png",
+      "id": "efaeb746e02d2bee",
+      "kind": "image",
+      "name": "school-management.png",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/7c55ce61-ec81-4c12-af9b-a98866994b0e/efaeb746e02d2bee.png",
+      "url": "https://foresight.co.tz/wp-content/uploads/2024/10/school-management.png"
+    }
+  ],
+  "directoryPath": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/7c55ce61-ec81-4c12-af9b-a98866994b0e",
+  "failures": [],
+  "manifestPath": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/7c55ce61-ec81-4c12-af9b-a98866994b0e/manifest.json",
+  "summary": {
+    "downloadedCount": 4,
+    "elapsedMs": 434.7654999999795,
+    "failedCount": 0,
+    "requestedCount": 4
+  }
+}

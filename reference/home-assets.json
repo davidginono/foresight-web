@@ -1,0 +1,709 @@
+{
+  "assets": [
+    {
+      "contentType": "",
+      "id": "673b00ada281b3a3",
+      "kind": "stylesheet",
+      "name": "main.css",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/694bb86b-f340-4a18-a62a-191f46b7c9f2/673b00ada281b3a3.css",
+      "url": "https://foresight.co.tz/wp-content/plugins/jeg-elementor-kit/assets/css/elements/main.css?ver=2.6.12"
+    },
+    {
+      "contentType": "",
+      "id": "45769604ca50ac19",
+      "kind": "stylesheet",
+      "name": "font-awesome.min.css",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/694bb86b-f340-4a18-a62a-191f46b7c9f2/45769604ca50ac19.css",
+      "url": "https://foresight.co.tz/wp-content/plugins/the-post-grid/assets/vendor/font-awesome/css/font-awesome.min.css?ver=7.7.19"
+    },
+    {
+      "contentType": "",
+      "id": "ed099f38d93baec2",
+      "kind": "stylesheet",
+      "name": "elementor-icons.min.css",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/694bb86b-f340-4a18-a62a-191f46b7c9f2/ed099f38d93baec2.css",
+      "url": "https://foresight.co.tz/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.45.0"
+    },
+    {
+      "contentType": "",
+      "id": "13d3cc86f29b2eba",
+      "kind": "stylesheet",
+      "name": "tpg-block.min.css",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/694bb86b-f340-4a18-a62a-191f46b7c9f2/13d3cc86f29b2eba.css",
+      "url": "https://foresight.co.tz/wp-content/plugins/the-post-grid/assets/css/tpg-block.min.css?ver=7.7.19"
+    },
+    {
+      "contentType": "",
+      "id": "05d42eddd3c48256",
+      "kind": "stylesheet",
+      "name": "frontend.min.css",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/694bb86b-f340-4a18-a62a-191f46b7c9f2/05d42eddd3c48256.css",
+      "url": "https://foresight.co.tz/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=3.34.1"
+    },
+    {
+      "contentType": "",
+      "id": "6a2696db6f023ff1",
+      "kind": "stylesheet",
+      "name": "all.min.css",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/694bb86b-f340-4a18-a62a-191f46b7c9f2/6a2696db6f023ff1.css",
+      "url": "https://foresight.co.tz/wp-content/plugins/elementor/assets/lib/font-awesome/css/all.min.css?ver=3.34.1"
+    },
+    {
+      "contentType": "",
+      "id": "4dcfdb8853c53a90",
+      "kind": "stylesheet",
+      "name": "v4-shims.min.css",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/694bb86b-f340-4a18-a62a-191f46b7c9f2/4dcfdb8853c53a90.css",
+      "url": "https://foresight.co.tz/wp-content/plugins/elementor/assets/lib/font-awesome/css/v4-shims.min.css?ver=3.34.1"
+    },
+    {
+      "contentType": "",
+      "id": "17d5e4ddd60819d6",
+      "kind": "stylesheet",
+      "name": "she-header-style.css",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/694bb86b-f340-4a18-a62a-191f46b7c9f2/17d5e4ddd60819d6.css",
+      "url": "https://foresight.co.tz/wp-content/plugins/sticky-header-effects-for-elementor/assets/css/she-header-style.css?ver=1.7.8"
+    },
+    {
+      "contentType": "",
+      "id": "89ce21eb873edf97",
+      "kind": "stylesheet",
+      "name": "widget-heading.min.css",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/694bb86b-f340-4a18-a62a-191f46b7c9f2/89ce21eb873edf97.css",
+      "url": "https://foresight.co.tz/wp-content/plugins/elementor/assets/css/widget-heading.min.css?ver=3.34.1"
+    },
+    {
+      "contentType": "",
+      "id": "60a4a89531fe086f",
+      "kind": "stylesheet",
+      "name": "swiper.min.css",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/694bb86b-f340-4a18-a62a-191f46b7c9f2/60a4a89531fe086f.css",
+      "url": "https://foresight.co.tz/wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min.css?ver=8.4.5"
+    },
+    {
+      "contentType": "",
+      "id": "797a156a4b1b2bb6",
+      "kind": "stylesheet",
+      "name": "e-swiper.min.css",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/694bb86b-f340-4a18-a62a-191f46b7c9f2/797a156a4b1b2bb6.css",
+      "url": "https://foresight.co.tz/wp-content/plugins/elementor/assets/css/conditionals/e-swiper.min.css?ver=3.34.1"
+    },
+    {
+      "contentType": "",
+      "id": "07696294fb2c447e",
+      "kind": "stylesheet",
+      "name": "widget-image-carousel.min.css",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/694bb86b-f340-4a18-a62a-191f46b7c9f2/07696294fb2c447e.css",
+      "url": "https://foresight.co.tz/wp-content/plugins/elementor/assets/css/widget-image-carousel.min.css?ver=3.34.1"
+    },
+    {
+      "contentType": "",
+      "id": "b12fa2b610111c56",
+      "kind": "stylesheet",
+      "name": "widget-divider.min.css",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/694bb86b-f340-4a18-a62a-191f46b7c9f2/b12fa2b610111c56.css",
+      "url": "https://foresight.co.tz/wp-content/plugins/elementor/assets/css/widget-divider.min.css?ver=3.34.1"
+    },
+    {
+      "contentType": "",
+      "id": "a3eadbbac374652d",
+      "kind": "stylesheet",
+      "name": "widget-icon-list.min.css",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/694bb86b-f340-4a18-a62a-191f46b7c9f2/a3eadbbac374652d.css",
+      "url": "https://foresight.co.tz/wp-content/plugins/elementor/assets/css/widget-icon-list.min.css?ver=3.34.1"
+    },
+    {
+      "contentType": "",
+      "id": "1c9de59087abd2a9",
+      "kind": "stylesheet",
+      "name": "widget-icon-box.min.css",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/694bb86b-f340-4a18-a62a-191f46b7c9f2/1c9de59087abd2a9.css",
+      "url": "https://foresight.co.tz/wp-content/plugins/elementor/assets/css/widget-icon-box.min.css?ver=3.34.1"
+    },
+    {
+      "contentType": "",
+      "id": "3998fdd3befba094",
+      "kind": "stylesheet",
+      "name": "widget-image-box.min.css",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/694bb86b-f340-4a18-a62a-191f46b7c9f2/3998fdd3befba094.css",
+      "url": "https://foresight.co.tz/wp-content/plugins/elementor/assets/css/widget-image-box.min.css?ver=3.34.1"
+    },
+    {
+      "contentType": "",
+      "id": "10115d4cdd016857",
+      "kind": "stylesheet",
+      "name": "widget-counter.min.css",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/694bb86b-f340-4a18-a62a-191f46b7c9f2/10115d4cdd016857.css",
+      "url": "https://foresight.co.tz/wp-content/plugins/elementor/assets/css/widget-counter.min.css?ver=3.34.1"
+    },
+    {
+      "contentType": "",
+      "id": "c4d03bd1dfa8e514",
+      "kind": "stylesheet",
+      "name": "widget-image.min.css",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/694bb86b-f340-4a18-a62a-191f46b7c9f2/c4d03bd1dfa8e514.css",
+      "url": "https://foresight.co.tz/wp-content/plugins/elementor/assets/css/widget-image.min.css?ver=3.34.1"
+    },
+    {
+      "contentType": "",
+      "id": "fc776532b4622d48",
+      "kind": "stylesheet",
+      "name": "fadeInUp.min.css",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/694bb86b-f340-4a18-a62a-191f46b7c9f2/fc776532b4622d48.css",
+      "url": "https://foresight.co.tz/wp-content/plugins/elementor/assets/lib/animations/styles/fadeInUp.min.css?ver=3.34.1"
+    },
+    {
+      "contentType": "",
+      "id": "76d1cc5accf8a84d",
+      "kind": "stylesheet",
+      "name": "fadeInRight.min.css",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/694bb86b-f340-4a18-a62a-191f46b7c9f2/76d1cc5accf8a84d.css",
+      "url": "https://foresight.co.tz/wp-content/plugins/elementor/assets/lib/animations/styles/fadeInRight.min.css?ver=3.34.1"
+    },
+    {
+      "contentType": "",
+      "id": "8126e9b77f2203eb",
+      "kind": "stylesheet",
+      "name": "global.min.css",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/694bb86b-f340-4a18-a62a-191f46b7c9f2/8126e9b77f2203eb.css",
+      "url": "https://foresight.co.tz/wp-content/themes/kadence/assets/css/global.min.css?ver=1.2.19"
+    },
+    {
+      "contentType": "",
+      "id": "96d827cc79cc5699",
+      "kind": "stylesheet",
+      "name": "header.min.css",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/694bb86b-f340-4a18-a62a-191f46b7c9f2/96d827cc79cc5699.css",
+      "url": "https://foresight.co.tz/wp-content/themes/kadence/assets/css/header.min.css?ver=1.2.19"
+    },
+    {
+      "contentType": "",
+      "id": "5c57897bf78e81d3",
+      "kind": "stylesheet",
+      "name": "content.min.css",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/694bb86b-f340-4a18-a62a-191f46b7c9f2/5c57897bf78e81d3.css",
+      "url": "https://foresight.co.tz/wp-content/themes/kadence/assets/css/content.min.css?ver=1.2.19"
+    },
+    {
+      "contentType": "",
+      "id": "e0e4a6cdc8644b9f",
+      "kind": "stylesheet",
+      "name": "footer.min.css",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/694bb86b-f340-4a18-a62a-191f46b7c9f2/e0e4a6cdc8644b9f.css",
+      "url": "https://foresight.co.tz/wp-content/themes/kadence/assets/css/footer.min.css?ver=1.2.19"
+    },
+    {
+      "contentType": "",
+      "id": "6ee54a530b02cc68",
+      "kind": "stylesheet",
+      "name": "e-animation-grow.min.css",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/694bb86b-f340-4a18-a62a-191f46b7c9f2/6ee54a530b02cc68.css",
+      "url": "https://foresight.co.tz/wp-content/plugins/elementor/assets/lib/animations/styles/e-animation-grow.min.css?ver=3.34.1"
+    },
+    {
+      "contentType": "",
+      "id": "73fee9a30e4fb5ce",
+      "kind": "stylesheet",
+      "name": "widget-styles.css",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/694bb86b-f340-4a18-a62a-191f46b7c9f2/73fee9a30e4fb5ce.css",
+      "url": "https://foresight.co.tz/wp-content/plugins/elementskit-lite/widgets/init/assets/css/widget-styles.css?ver=3.5.0"
+    },
+    {
+      "contentType": "",
+      "id": "5b04724cc8b8248e",
+      "kind": "stylesheet",
+      "name": "responsive.css",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/694bb86b-f340-4a18-a62a-191f46b7c9f2/5b04724cc8b8248e.css",
+      "url": "https://foresight.co.tz/wp-content/plugins/elementskit-lite/widgets/init/assets/css/responsive.css?ver=3.5.0"
+    },
+    {
+      "contentType": "",
+      "id": "a81fac1fcca64dce",
+      "kind": "stylesheet",
+      "name": "general.min.css",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/694bb86b-f340-4a18-a62a-191f46b7c9f2/a81fac1fcca64dce.css",
+      "url": "https://foresight.co.tz/wp-content/plugins/essential-addons-for-elementor-lite/assets/front-end/css/view/general.min.css?ver=6.1.11"
+    },
+    {
+      "contentType": "",
+      "id": "91daa6f50acd274a",
+      "kind": "stylesheet",
+      "name": "jost.css",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/694bb86b-f340-4a18-a62a-191f46b7c9f2/91daa6f50acd274a.css",
+      "url": "https://foresight.co.tz/wp-content/uploads/elementor/google-fonts/css/jost.css?ver=1743362776"
+    },
+    {
+      "contentType": "",
+      "id": "aded2768ef3f32c0",
+      "kind": "stylesheet",
+      "name": "montserrat.css",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/694bb86b-f340-4a18-a62a-191f46b7c9f2/aded2768ef3f32c0.css",
+      "url": "https://foresight.co.tz/wp-content/uploads/elementor/google-fonts/css/montserrat.css?ver=1743362778"
+    },
+    {
+      "contentType": "",
+      "id": "db031741c17fd93e",
+      "kind": "stylesheet",
+      "name": "roboto.css",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/694bb86b-f340-4a18-a62a-191f46b7c9f2/db031741c17fd93e.css",
+      "url": "https://foresight.co.tz/wp-content/uploads/elementor/google-fonts/css/roboto.css?ver=1743363011"
+    },
+    {
+      "contentType": "",
+      "id": "025d9e14e1426c50",
+      "kind": "stylesheet",
+      "name": "opensans.css",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/694bb86b-f340-4a18-a62a-191f46b7c9f2/025d9e14e1426c50.css",
+      "url": "https://foresight.co.tz/wp-content/uploads/elementor/google-fonts/css/opensans.css?ver=1743363014"
+    },
+    {
+      "contentType": "",
+      "id": "513a4ab0a1c4a9b5",
+      "kind": "stylesheet",
+      "name": "raleway.css",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/694bb86b-f340-4a18-a62a-191f46b7c9f2/513a4ab0a1c4a9b5.css",
+      "url": "https://foresight.co.tz/wp-content/uploads/elementor/google-fonts/css/raleway.css?ver=1743363016"
+    },
+    {
+      "contentType": "",
+      "id": "02516af65293fc4c",
+      "kind": "stylesheet",
+      "name": "playfairdisplay.css",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/694bb86b-f340-4a18-a62a-191f46b7c9f2/02516af65293fc4c.css",
+      "url": "https://foresight.co.tz/wp-content/uploads/elementor/google-fonts/css/playfairdisplay.css?ver=1743363017"
+    },
+    {
+      "contentType": "",
+      "id": "6ef82e6dcc1f8308",
+      "kind": "stylesheet",
+      "name": "jkiticon.css",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/694bb86b-f340-4a18-a62a-191f46b7c9f2/6ef82e6dcc1f8308.css",
+      "url": "https://foresight.co.tz/wp-content/plugins/jeg-elementor-kit/assets/fonts/jkiticon/jkiticon.css?ver=2.6.12"
+    },
+    {
+      "contentType": "",
+      "id": "877dd75a7e01310a",
+      "kind": "stylesheet",
+      "name": "ekiticons.css",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/694bb86b-f340-4a18-a62a-191f46b7c9f2/877dd75a7e01310a.css",
+      "url": "https://foresight.co.tz/wp-content/plugins/elementskit-lite/modules/elementskit-icon-pack/assets/css/ekiticons.css?ver=3.5.0"
+    },
+    {
+      "contentType": "",
+      "id": "41ad8b84eee931e7",
+      "kind": "stylesheet",
+      "name": "fontawesome.min.css",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/694bb86b-f340-4a18-a62a-191f46b7c9f2/41ad8b84eee931e7.css",
+      "url": "https://foresight.co.tz/wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min.css?ver=5.15.3"
+    },
+    {
+      "contentType": "",
+      "id": "77984a1f47831778",
+      "kind": "stylesheet",
+      "name": "brands.min.css",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/694bb86b-f340-4a18-a62a-191f46b7c9f2/77984a1f47831778.css",
+      "url": "https://foresight.co.tz/wp-content/plugins/elementor/assets/lib/font-awesome/css/brands.min.css?ver=5.15.3"
+    },
+    {
+      "contentType": "",
+      "id": "08773cc369007941",
+      "kind": "stylesheet",
+      "name": "solid.min.css",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/694bb86b-f340-4a18-a62a-191f46b7c9f2/08773cc369007941.css",
+      "url": "https://foresight.co.tz/wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.min.css?ver=5.15.3"
+    },
+    {
+      "contentType": "",
+      "id": "cef7a9c7dceb911b",
+      "kind": "stylesheet",
+      "name": "regular.min.css",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/694bb86b-f340-4a18-a62a-191f46b7c9f2/cef7a9c7dceb911b.css",
+      "url": "https://foresight.co.tz/wp-content/plugins/elementor/assets/lib/font-awesome/css/regular.min.css?ver=5.15.3"
+    },
+    {
+      "contentType": "image/png",
+      "id": "d9d61427b47350e1",
+      "kind": "image",
+      "name": "Computer-resources-logo.png",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/694bb86b-f340-4a18-a62a-191f46b7c9f2/d9d61427b47350e1.png",
+      "url": "https://foresight.co.tz/wp-content/uploads/2024/09/Computer-resources-logo.png"
+    },
+    {
+      "contentType": "image/png",
+      "id": "a39c2b8ae2363e72",
+      "kind": "image",
+      "name": "Computer-resources-logo-mobile.png",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/694bb86b-f340-4a18-a62a-191f46b7c9f2/a39c2b8ae2363e72.png",
+      "url": "https://foresight.co.tz/wp-content/uploads/2024/09/Computer-resources-logo-mobile.png"
+    },
+    {
+      "contentType": "image/png",
+      "id": "5a965feb065458fe",
+      "kind": "image",
+      "name": "Untitled-1.png",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/694bb86b-f340-4a18-a62a-191f46b7c9f2/5a965feb065458fe.png",
+      "url": "https://foresight.co.tz/wp-content/uploads/2024/09/Untitled-1.png"
+    },
+    {
+      "contentType": "image/jpeg",
+      "id": "aa17b4e19b042c9f",
+      "kind": "image",
+      "name": "pexels-fauxels-3183190.jpg",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/694bb86b-f340-4a18-a62a-191f46b7c9f2/aa17b4e19b042c9f.jpg",
+      "url": "https://foresight.co.tz/wp-content/uploads/2024/09/pexels-fauxels-3183190.jpg"
+    },
+    {
+      "contentType": "font/woff2",
+      "id": "953479a6ad892768",
+      "kind": "font",
+      "name": "fa-solid-900.woff2",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/694bb86b-f340-4a18-a62a-191f46b7c9f2/953479a6ad892768.woff2",
+      "url": "https://foresight.co.tz/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-solid-900.woff2"
+    },
+    {
+      "contentType": "font/woff2",
+      "id": "3792c840c586f2e9",
+      "kind": "font",
+      "name": "jost-92zatbhpnqw73otd4g.woff2",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/694bb86b-f340-4a18-a62a-191f46b7c9f2/3792c840c586f2e9.woff2",
+      "url": "https://foresight.co.tz/wp-content/uploads/elementor/google-fonts/fonts/jost-92zatbhpnqw73otd4g.woff2"
+    },
+    {
+      "contentType": "font/woff2",
+      "id": "2e2ffdd832ffb38e",
+      "kind": "font",
+      "name": "jkiticon.woff2",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/694bb86b-f340-4a18-a62a-191f46b7c9f2/2e2ffdd832ffb38e.woff2",
+      "url": "https://foresight.co.tz/wp-content/plugins/jeg-elementor-kit/assets/fonts/jkiticon/jkiticon.woff2?bv8d8l"
+    },
+    {
+      "contentType": "font/woff",
+      "id": "36f997d5ddcb6d5b",
+      "kind": "font",
+      "name": "elementskit.woff",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/694bb86b-f340-4a18-a62a-191f46b7c9f2/36f997d5ddcb6d5b.woff",
+      "url": "https://foresight.co.tz/wp-content/plugins/elementskit-lite/modules/elementskit-icon-pack/assets/fonts/elementskit.woff?y24e1e"
+    },
+    {
+      "contentType": "font/woff2",
+      "id": "81fac2904bf7e76d",
+      "kind": "font",
+      "name": "fa-brands-400.woff2",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/694bb86b-f340-4a18-a62a-191f46b7c9f2/81fac2904bf7e76d.woff2",
+      "url": "https://foresight.co.tz/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-brands-400.woff2"
+    },
+    {
+      "contentType": "image/png",
+      "id": "63acbfac1bf4b370",
+      "kind": "image",
+      "name": "pngwing.com-1.png",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/694bb86b-f340-4a18-a62a-191f46b7c9f2/63acbfac1bf4b370.png",
+      "url": "https://foresight.co.tz/wp-content/uploads/2024/09/pngwing.com-1.png"
+    },
+    {
+      "contentType": "image/png",
+      "id": "db5fc64d5b2b915e",
+      "kind": "image",
+      "name": "pngegg.png",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/694bb86b-f340-4a18-a62a-191f46b7c9f2/db5fc64d5b2b915e.png",
+      "url": "https://foresight.co.tz/wp-content/uploads/2024/09/pngegg.png"
+    },
+    {
+      "contentType": "font/woff2",
+      "id": "422a3581f7a5d516",
+      "kind": "font",
+      "name": "roboto-kfo7cnqeu92fr1me7ksn66agldtyluama3yuba.woff2",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/694bb86b-f340-4a18-a62a-191f46b7c9f2/422a3581f7a5d516.woff2",
+      "url": "https://foresight.co.tz/wp-content/uploads/elementor/google-fonts/fonts/roboto-kfo7cnqeu92fr1me7ksn66agldtyluama3yuba.woff2"
+    },
+    {
+      "contentType": "font/woff2",
+      "id": "c3568c69d677538e",
+      "kind": "font",
+      "name": "fa-regular-400.woff2",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/694bb86b-f340-4a18-a62a-191f46b7c9f2/c3568c69d677538e.woff2",
+      "url": "https://foresight.co.tz/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-regular-400.woff2"
+    },
+    {
+      "contentType": "image/png",
+      "id": "bc21de4b9eecc1b5",
+      "kind": "image",
+      "name": "5a902dbf7f96951c82922875.png",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/694bb86b-f340-4a18-a62a-191f46b7c9f2/bc21de4b9eecc1b5.png",
+      "url": "https://foresight.co.tz/wp-content/uploads/2024/09/5a902dbf7f96951c82922875.png"
+    },
+    {
+      "contentType": "",
+      "id": "5aa3304b0ae7227d",
+      "kind": "stylesheet",
+      "name": "jeg-dynamic-styles.css",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/694bb86b-f340-4a18-a62a-191f46b7c9f2/5aa3304b0ae7227d.css",
+      "url": "https://foresight.co.tz/wp-content/plugins/jeg-elementor-kit/lib/jeg-framework/assets/css/jeg-dynamic-styles.css?ver=1.3.0"
+    },
+    {
+      "contentType": "",
+      "id": "5a2ea9c70462a0e0",
+      "kind": "stylesheet",
+      "name": "widget-social-icons.min.css",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/694bb86b-f340-4a18-a62a-191f46b7c9f2/5a2ea9c70462a0e0.css",
+      "url": "https://foresight.co.tz/wp-content/plugins/elementor/assets/css/widget-social-icons.min.css?ver=3.34.1"
+    },
+    {
+      "contentType": "",
+      "id": "81e95b47c24024b9",
+      "kind": "stylesheet",
+      "name": "apple-webkit.min.css",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/694bb86b-f340-4a18-a62a-191f46b7c9f2/81e95b47c24024b9.css",
+      "url": "https://foresight.co.tz/wp-content/plugins/elementor/assets/css/conditionals/apple-webkit.min.css?ver=3.34.1"
+    },
+    {
+      "contentType": "font/woff2",
+      "id": "79c59bf28358b59b",
+      "kind": "font",
+      "name": "opensans-memvyags126mizpba-uvwbx2vvnxbbobj2ovts-muw.woff2",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/694bb86b-f340-4a18-a62a-191f46b7c9f2/79c59bf28358b59b.woff2",
+      "url": "https://foresight.co.tz/wp-content/uploads/elementor/google-fonts/fonts/opensans-memvyags126mizpba-uvwbx2vvnxbbobj2ovts-muw.woff2"
+    },
+    {
+      "contentType": "font/woff2",
+      "id": "cdaff76592a10cf1",
+      "kind": "font",
+      "name": "raleway-1ptug8zys_skggpnyc0itw.woff2",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/694bb86b-f340-4a18-a62a-191f46b7c9f2/cdaff76592a10cf1.woff2",
+      "url": "https://foresight.co.tz/wp-content/uploads/elementor/google-fonts/fonts/raleway-1ptug8zys_skggpnyc0itw.woff2"
+    },
+    {
+      "contentType": "image/png",
+      "id": "05f5f7e9958fb705",
+      "kind": "image",
+      "name": "tcra2.png",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/694bb86b-f340-4a18-a62a-191f46b7c9f2/05f5f7e9958fb705.png",
+      "url": "https://foresight.co.tz/wp-content/uploads/2024/09/tcra2.png"
+    },
+    {
+      "contentType": "image/png",
+      "id": "3919884f0956429c",
+      "kind": "image",
+      "name": "itv2.png",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/694bb86b-f340-4a18-a62a-191f46b7c9f2/3919884f0956429c.png",
+      "url": "https://foresight.co.tz/wp-content/uploads/2024/09/itv2.png"
+    },
+    {
+      "contentType": "image/jpeg",
+      "id": "0eaff3a6325ef3d7",
+      "kind": "image",
+      "name": "medium-shot-men-holding-brushes.jpg",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/694bb86b-f340-4a18-a62a-191f46b7c9f2/0eaff3a6325ef3d7.jpg",
+      "url": "https://foresight.co.tz/wp-content/uploads/2024/09/medium-shot-men-holding-brushes.jpg"
+    },
+    {
+      "contentType": "image/png",
+      "id": "4ac2fa961dddea4e",
+      "kind": "image",
+      "name": "Computer-Resources-T-Limited-Payroll.png",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/694bb86b-f340-4a18-a62a-191f46b7c9f2/4ac2fa961dddea4e.png",
+      "url": "https://foresight.co.tz/wp-content/uploads/2024/09/Computer-Resources-T-Limited-Payroll.png"
+    },
+    {
+      "contentType": "image/jpeg",
+      "id": "a2e7469c32a77d56",
+      "kind": "image",
+      "name": "Computer-Resources-T-Limited-6.jpg",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/694bb86b-f340-4a18-a62a-191f46b7c9f2/a2e7469c32a77d56.jpg",
+      "url": "https://foresight.co.tz/wp-content/uploads/2024/09/Computer-Resources-T-Limited-6.jpg"
+    },
+    {
+      "contentType": "image/jpeg",
+      "id": "9231e609bd00b3bd",
+      "kind": "image",
+      "name": "Computer-Resources-T-Limited-3.jpg",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/694bb86b-f340-4a18-a62a-191f46b7c9f2/9231e609bd00b3bd.jpg",
+      "url": "https://foresight.co.tz/wp-content/uploads/2024/09/Computer-Resources-T-Limited-3.jpg"
+    },
+    {
+      "contentType": "image/jpeg",
+      "id": "7bf8629dbc63cb06",
+      "kind": "image",
+      "name": "cropped-2-32x32.jpg",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/694bb86b-f340-4a18-a62a-191f46b7c9f2/7bf8629dbc63cb06.jpg",
+      "url": "https://foresight.co.tz/wp-content/uploads/2025/04/cropped-2-32x32.jpg"
+    },
+    {
+      "contentType": "image/jpeg",
+      "id": "154934df2b1f1300",
+      "kind": "image",
+      "name": "Computer-Resources-T-Limited-4.jpg",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/694bb86b-f340-4a18-a62a-191f46b7c9f2/154934df2b1f1300.jpg",
+      "url": "https://foresight.co.tz/wp-content/uploads/2024/09/Computer-Resources-T-Limited-4.jpg"
+    },
+    {
+      "contentType": "image/jpeg",
+      "id": "f025a50c56aa851b",
+      "kind": "image",
+      "name": "saccoss_members.jpg",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/694bb86b-f340-4a18-a62a-191f46b7c9f2/f025a50c56aa851b.jpg",
+      "url": "https://foresight.co.tz/wp-content/uploads/2024/09/saccoss_members.jpg"
+    },
+    {
+      "contentType": "image/jpeg",
+      "id": "95c86b3923f1363f",
+      "kind": "image",
+      "name": "group-happy-african-volunteers-hugs-park-africa-volunteering-charity-people-ecology-concept.jpg",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/694bb86b-f340-4a18-a62a-191f46b7c9f2/95c86b3923f1363f.jpg",
+      "url": "https://foresight.co.tz/wp-content/uploads/2024/09/group-happy-african-volunteers-hugs-park-africa-volunteering-charity-people-ecology-concept.jpg"
+    },
+    {
+      "contentType": "image/jpeg",
+      "id": "c29eebbcd32fb224",
+      "kind": "image",
+      "name": "field-5430070_1920.jpg",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/694bb86b-f340-4a18-a62a-191f46b7c9f2/c29eebbcd32fb224.jpg",
+      "url": "https://foresight.co.tz/wp-content/uploads/2024/09/field-5430070_1920.jpg"
+    },
+    {
+      "contentType": "image/png",
+      "id": "f7104fbd2a7b381c",
+      "kind": "image",
+      "name": "og.png",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/694bb86b-f340-4a18-a62a-191f46b7c9f2/f7104fbd2a7b381c.png",
+      "url": "https://foresight.co.tz/wp-content/uploads/2024/09/og.png"
+    },
+    {
+      "contentType": "image/png",
+      "id": "a415b77b05f9c164",
+      "kind": "image",
+      "name": "TFC-LOGAL-logo.png",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/694bb86b-f340-4a18-a62a-191f46b7c9f2/a415b77b05f9c164.png",
+      "url": "https://foresight.co.tz/wp-content/uploads/2024/09/TFC-LOGAL-logo.png"
+    },
+    {
+      "contentType": "image/png",
+      "id": "7126c6c41887c776",
+      "kind": "image",
+      "name": "pngegg-2.png",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/694bb86b-f340-4a18-a62a-191f46b7c9f2/7126c6c41887c776.png",
+      "url": "https://foresight.co.tz/wp-content/uploads/2024/09/pngegg-2.png"
+    },
+    {
+      "contentType": "image/png",
+      "id": "15f99e6f61c5a266",
+      "kind": "image",
+      "name": "pngegg-1.png",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/694bb86b-f340-4a18-a62a-191f46b7c9f2/15f99e6f61c5a266.png",
+      "url": "https://foresight.co.tz/wp-content/uploads/2024/09/pngegg-1.png"
+    },
+    {
+      "contentType": "image/png",
+      "id": "4e962c049b9e94e9",
+      "kind": "image",
+      "name": "Computer-resources-limited-app.png",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/694bb86b-f340-4a18-a62a-191f46b7c9f2/4e962c049b9e94e9.png",
+      "url": "https://foresight.co.tz/wp-content/uploads/2025/01/Computer-resources-limited-app.png"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "2d77cc648d3e3e1c",
+      "kind": "image",
+      "name": "svg-1",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/694bb86b-f340-4a18-a62a-191f46b7c9f2/2d77cc648d3e3e1c.svg",
+      "url": "inline-svg:2d77cc648d3e3e1c"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "758d71313c98f104",
+      "kind": "image",
+      "name": "svg-2",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/694bb86b-f340-4a18-a62a-191f46b7c9f2/758d71313c98f104.svg",
+      "url": "inline-svg:758d71313c98f104"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "d7a684743224d909",
+      "kind": "image",
+      "name": "svg-3",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/694bb86b-f340-4a18-a62a-191f46b7c9f2/d7a684743224d909.svg",
+      "url": "inline-svg:d7a684743224d909"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "5e06a27c7ec65615",
+      "kind": "image",
+      "name": "svg-4",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/694bb86b-f340-4a18-a62a-191f46b7c9f2/5e06a27c7ec65615.svg",
+      "url": "inline-svg:5e06a27c7ec65615"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "922e8b408fcf340a",
+      "kind": "image",
+      "name": "svg-5",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/694bb86b-f340-4a18-a62a-191f46b7c9f2/922e8b408fcf340a.svg",
+      "url": "inline-svg:922e8b408fcf340a"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "963e32c17014a7ec",
+      "kind": "image",
+      "name": "svg-6",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/694bb86b-f340-4a18-a62a-191f46b7c9f2/963e32c17014a7ec.svg",
+      "url": "inline-svg:963e32c17014a7ec"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "b0d9d933fcca4342",
+      "kind": "image",
+      "name": "svg-7",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/694bb86b-f340-4a18-a62a-191f46b7c9f2/b0d9d933fcca4342.svg",
+      "url": "inline-svg:b0d9d933fcca4342"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "64651a8165771803",
+      "kind": "image",
+      "name": "svg-8",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/694bb86b-f340-4a18-a62a-191f46b7c9f2/64651a8165771803.svg",
+      "url": "inline-svg:64651a8165771803"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "e3b6df52aa124490",
+      "kind": "image",
+      "name": "svg-9",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/694bb86b-f340-4a18-a62a-191f46b7c9f2/e3b6df52aa124490.svg",
+      "url": "inline-svg:e3b6df52aa124490"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "5aa0ab9c4e380adc",
+      "kind": "image",
+      "name": "svg-10",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/694bb86b-f340-4a18-a62a-191f46b7c9f2/5aa0ab9c4e380adc.svg",
+      "url": "inline-svg:5aa0ab9c4e380adc"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "617fe60f07363d28",
+      "kind": "image",
+      "name": "svg-11",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/694bb86b-f340-4a18-a62a-191f46b7c9f2/617fe60f07363d28.svg",
+      "url": "inline-svg:617fe60f07363d28"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "f643e86a607dffbe",
+      "kind": "image",
+      "name": "svg-12",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/694bb86b-f340-4a18-a62a-191f46b7c9f2/f643e86a607dffbe.svg",
+      "url": "inline-svg:f643e86a607dffbe"
+    }
+  ],
+  "directoryPath": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/694bb86b-f340-4a18-a62a-191f46b7c9f2",
+  "failures": [],
+  "manifestPath": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/694bb86b-f340-4a18-a62a-191f46b7c9f2/manifest.json",
+  "summary": {
+    "downloadedCount": 87,
+    "elapsedMs": 12585.181299999997,
+    "failedCount": 0,
+    "requestedCount": 87
+  }
+}

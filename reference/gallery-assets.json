@@ -1,0 +1,53 @@
+{
+  "assets": [
+    {
+      "contentType": "",
+      "id": "6dd5157ef2a21a3f",
+      "kind": "stylesheet",
+      "name": "widget-gallery.min.css",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/8b4f505c-e42b-4212-b54f-086646e99c46/6dd5157ef2a21a3f.css",
+      "url": "https://foresight.co.tz/wp-content/plugins/elementor-pro/assets/css/widget-gallery.min.css?ver=3.28.2"
+    },
+    {
+      "contentType": "",
+      "id": "d71f702115eed30a",
+      "kind": "stylesheet",
+      "name": "e-gallery.min.css",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/8b4f505c-e42b-4212-b54f-086646e99c46/d71f702115eed30a.css",
+      "url": "https://foresight.co.tz/wp-content/plugins/elementor/assets/lib/e-gallery/css/e-gallery.min.css?ver=1.2.0"
+    },
+    {
+      "contentType": "",
+      "id": "aa13d821ca97baaa",
+      "kind": "stylesheet",
+      "name": "transitions.min.css",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/8b4f505c-e42b-4212-b54f-086646e99c46/aa13d821ca97baaa.css",
+      "url": "https://foresight.co.tz/wp-content/plugins/elementor-pro/assets/css/conditionals/transitions.min.css?ver=3.28.2"
+    },
+    {
+      "contentType": "",
+      "id": "1d07fc7492644b5e",
+      "kind": "stylesheet",
+      "name": "dialog.min.css",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/8b4f505c-e42b-4212-b54f-086646e99c46/1d07fc7492644b5e.css",
+      "url": "https://foresight.co.tz/wp-content/plugins/elementor/assets/css/conditionals/dialog.min.css?ver=3.34.1"
+    },
+    {
+      "contentType": "",
+      "id": "4944a2d42a68e34f",
+      "kind": "stylesheet",
+      "name": "lightbox.min.css",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/8b4f505c-e42b-4212-b54f-086646e99c46/4944a2d42a68e34f.css",
+      "url": "https://foresight.co.tz/wp-content/plugins/elementor/assets/css/conditionals/lightbox.min.css?ver=3.34.1"
+    }
+  ],
+  "directoryPath": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/8b4f505c-e42b-4212-b54f-086646e99c46",
+  "failures": [],
+  "manifestPath": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/8b4f505c-e42b-4212-b54f-086646e99c46/manifest.json",
+  "summary": {
+    "downloadedCount": 5,
+    "elapsedMs": 185.1247999999905,
+    "failedCount": 0,
+    "requestedCount": 5
+  }
+}

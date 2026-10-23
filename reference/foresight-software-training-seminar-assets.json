@@ -1,0 +1,45 @@
+{
+  "assets": [
+    {
+      "contentType": "",
+      "id": "3b9607d87c05f2a7",
+      "kind": "stylesheet",
+      "name": "comments.min.css",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/4e08f537-06b2-494a-868c-9a59314ef0c7/3b9607d87c05f2a7.css",
+      "url": "https://foresight.co.tz/wp-content/themes/kadence/assets/css/comments.min.css?ver=1.2.19"
+    },
+    {
+      "contentType": "",
+      "id": "339b6d933917182b",
+      "kind": "stylesheet",
+      "name": "related-posts.min.css",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/4e08f537-06b2-494a-868c-9a59314ef0c7/339b6d933917182b.css",
+      "url": "https://foresight.co.tz/wp-content/themes/kadence/assets/css/related-posts.min.css?ver=1.2.19"
+    },
+    {
+      "contentType": "",
+      "id": "78916442667db4e8",
+      "kind": "stylesheet",
+      "name": "kadence-splide.min.css",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/4e08f537-06b2-494a-868c-9a59314ef0c7/78916442667db4e8.css",
+      "url": "https://foresight.co.tz/wp-content/themes/kadence/assets/css/kadence-splide.min.css?ver=1.2.19"
+    },
+    {
+      "contentType": "",
+      "id": "a853ef239977d2d1",
+      "kind": "stylesheet",
+      "name": "widget-post-navigation.min.css",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/4e08f537-06b2-494a-868c-9a59314ef0c7/a853ef239977d2d1.css",
+      "url": "https://foresight.co.tz/wp-content/plugins/elementor-pro/assets/css/widget-post-navigation.min.css?ver=3.28.2"
+    }
+  ],
+  "directoryPath": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/4e08f537-06b2-494a-868c-9a59314ef0c7",
+  "failures": [],
+  "manifestPath": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/4e08f537-06b2-494a-868c-9a59314ef0c7/manifest.json",
+  "summary": {
+    "downloadedCount": 4,
+    "elapsedMs": 159.32850000000326,
+    "failedCount": 0,
+    "requestedCount": 4
+  }
+}

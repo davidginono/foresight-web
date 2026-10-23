@@ -1,0 +1,53 @@
+{
+  "assets": [
+    {
+      "contentType": "",
+      "id": "edbbcccb39504b1b",
+      "kind": "stylesheet",
+      "name": "widget-spacer.min.css",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/254b3b2b-0ffd-429e-8689-d5e44e31f18e/edbbcccb39504b1b.css",
+      "url": "https://foresight.co.tz/wp-content/plugins/elementor/assets/css/widget-spacer.min.css?ver=3.34.1"
+    },
+    {
+      "contentType": "image/jpeg",
+      "id": "3caf22bfc9cf8cfc",
+      "kind": "image",
+      "name": "payroll.jpg",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/254b3b2b-0ffd-429e-8689-d5e44e31f18e/3caf22bfc9cf8cfc.jpg",
+      "url": "https://foresight.co.tz/wp-content/uploads/2024/09/payroll.jpg"
+    },
+    {
+      "contentType": "image/jpeg",
+      "id": "9dca3f90a4697efa",
+      "kind": "image",
+      "name": "cartrack.jpg",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/254b3b2b-0ffd-429e-8689-d5e44e31f18e/9dca3f90a4697efa.jpg",
+      "url": "https://foresight.co.tz/wp-content/uploads/2024/09/cartrack.jpg"
+    },
+    {
+      "contentType": "image/jpeg",
+      "id": "23507a6e0a5689de",
+      "kind": "image",
+      "name": "school.jpeg",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/254b3b2b-0ffd-429e-8689-d5e44e31f18e/23507a6e0a5689de.jpeg",
+      "url": "https://foresight.co.tz/wp-content/uploads/2024/09/school.jpeg"
+    },
+    {
+      "contentType": "image/jpeg",
+      "id": "62c31c48d023843a",
+      "kind": "image",
+      "name": "inventor.jpg",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/254b3b2b-0ffd-429e-8689-d5e44e31f18e/62c31c48d023843a.jpg",
+      "url": "https://foresight.co.tz/wp-content/uploads/2024/09/inventor.jpg"
+    }
+  ],
+  "directoryPath": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/254b3b2b-0ffd-429e-8689-d5e44e31f18e",
+  "failures": [],
+  "manifestPath": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/254b3b2b-0ffd-429e-8689-d5e44e31f18e/manifest.json",
+  "summary": {
+    "downloadedCount": 5,
+    "elapsedMs": 389.8179999999702,
+    "failedCount": 0,
+    "requestedCount": 5
+  }
+}

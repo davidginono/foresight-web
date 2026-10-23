@@ -1,0 +1,13 @@
+
+            :root {
+                --tpg-primary-color: #0d6efd;
+                --tpg-secondary-color: #0654c4;
+                --tpg-primary-light: #c4d0ff
+            }
+
+                        body .rt-tpg-container .rt-loading,
+            body #bottom-script-loader .rt-ball-clip-rotate {
+                color: #0367bf !important;
+            }
+
+                    

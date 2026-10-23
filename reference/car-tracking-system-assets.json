@@ -1,0 +1,45 @@
+{
+  "assets": [
+    {
+      "contentType": "image/png",
+      "id": "7f399f6f00e13ef5",
+      "kind": "image",
+      "name": "pngegg-8.png",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/e2eeb167-a6ba-4a1d-9407-d04ddcb1b2bc/7f399f6f00e13ef5.png",
+      "url": "https://foresight.co.tz/wp-content/uploads/2024/10/pngegg-8.png"
+    },
+    {
+      "contentType": "image/png",
+      "id": "a670cee3631df567",
+      "kind": "image",
+      "name": "favpng_gps-navigation-systems-gps-tracking-unit-car-tracking-system.png",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/e2eeb167-a6ba-4a1d-9407-d04ddcb1b2bc/a670cee3631df567.png",
+      "url": "https://foresight.co.tz/wp-content/uploads/2024/10/favpng_gps-navigation-systems-gps-tracking-unit-car-tracking-system.png"
+    },
+    {
+      "contentType": "image/png",
+      "id": "e16a879e1b0359cf",
+      "kind": "image",
+      "name": "favpng_gps-navigation-systems-vehicle-tracking-system-gps-tracking-unit-global-positioning-system.png",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/e2eeb167-a6ba-4a1d-9407-d04ddcb1b2bc/e16a879e1b0359cf.png",
+      "url": "https://foresight.co.tz/wp-content/uploads/2024/10/favpng_gps-navigation-systems-vehicle-tracking-system-gps-tracking-unit-global-positioning-system.png"
+    },
+    {
+      "contentType": "image/png",
+      "id": "89c4830e8a49a820",
+      "kind": "image",
+      "name": "car-vehicle-tracking-system-gps-tracking-unit-global-positioning-system-vision-9570d17b6ca7d599fd80d7a1ba12589b.png",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/e2eeb167-a6ba-4a1d-9407-d04ddcb1b2bc/89c4830e8a49a820.png",
+      "url": "https://foresight.co.tz/wp-content/uploads/2024/10/car-vehicle-tracking-system-gps-tracking-unit-global-positioning-system-vision-9570d17b6ca7d599fd80d7a1ba12589b.png"
+    }
+  ],
+  "directoryPath": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/e2eeb167-a6ba-4a1d-9407-d04ddcb1b2bc",
+  "failures": [],
+  "manifestPath": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/e2eeb167-a6ba-4a1d-9407-d04ddcb1b2bc/manifest.json",
+  "summary": {
+    "downloadedCount": 4,
+    "elapsedMs": 639.6657999999588,
+    "failedCount": 0,
+    "requestedCount": 4
+  }
+}

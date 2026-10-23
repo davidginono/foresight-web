@@ -1,0 +1,346 @@
+{
+  "assets": [
+    {
+      "url": "https://foresight.co.tz/wp-content/plugins/jeg-elementor-kit/assets/css/elements/main.css?ver=2.6.12",
+      "path": "C:\\Users\\USER\\Desktop\\Foresight\\reference\\downloads\\673b00ada281b3a3.css",
+      "name": "673b00ada281b3a3.css",
+      "kind": "stylesheet"
+    },
+    {
+      "url": "https://foresight.co.tz/wp-content/plugins/the-post-grid/assets/css/tpg-block.min.css?ver=7.7.19",
+      "path": "C:\\Users\\USER\\Desktop\\Foresight\\reference\\downloads\\13d3cc86f29b2eba.css",
+      "name": "13d3cc86f29b2eba.css",
+      "kind": "stylesheet"
+    },
+    {
+      "url": "https://foresight.co.tz/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=3.34.1",
+      "path": "C:\\Users\\USER\\Desktop\\Foresight\\reference\\downloads\\05d42eddd3c48256.css",
+      "name": "05d42eddd3c48256.css",
+      "kind": "stylesheet"
+    },
+    {
+      "url": "https://foresight.co.tz/wp-content/plugins/the-post-grid/assets/vendor/font-awesome/css/font-awesome.min.css?ver=7.7.19",
+      "path": "C:\\Users\\USER\\Desktop\\Foresight\\reference\\downloads\\45769604ca50ac19.css",
+      "name": "45769604ca50ac19.css",
+      "kind": "stylesheet"
+    },
+    {
+      "url": "https://foresight.co.tz/wp-content/plugins/elementor/assets/lib/font-awesome/css/all.min.css?ver=3.34.1",
+      "path": "C:\\Users\\USER\\Desktop\\Foresight\\reference\\downloads\\6a2696db6f023ff1.css",
+      "name": "6a2696db6f023ff1.css",
+      "kind": "stylesheet"
+    },
+    {
+      "url": "https://foresight.co.tz/wp-content/plugins/elementor/assets/lib/font-awesome/css/v4-shims.min.css?ver=3.34.1",
+      "path": "C:\\Users\\USER\\Desktop\\Foresight\\reference\\downloads\\4dcfdb8853c53a90.css",
+      "name": "4dcfdb8853c53a90.css",
+      "kind": "stylesheet"
+    },
+    {
+      "url": "https://foresight.co.tz/wp-content/plugins/elementor/assets/css/widget-heading.min.css?ver=3.34.1",
+      "path": "C:\\Users\\USER\\Desktop\\Foresight\\reference\\downloads\\89ce21eb873edf97.css",
+      "name": "89ce21eb873edf97.css",
+      "kind": "stylesheet"
+    },
+    {
+      "url": "https://foresight.co.tz/wp-content/plugins/elementor/assets/css/widget-icon-list.min.css?ver=3.34.1",
+      "path": "C:\\Users\\USER\\Desktop\\Foresight\\reference\\downloads\\a3eadbbac374652d.css",
+      "name": "a3eadbbac374652d.css",
+      "kind": "stylesheet"
+    },
+    {
+      "url": "https://foresight.co.tz/wp-content/plugins/sticky-header-effects-for-elementor/assets/css/she-header-style.css?ver=1.7.8",
+      "path": "C:\\Users\\USER\\Desktop\\Foresight\\reference\\downloads\\17d5e4ddd60819d6.css",
+      "name": "17d5e4ddd60819d6.css",
+      "kind": "stylesheet"
+    },
+    {
+      "url": "https://foresight.co.tz/wp-content/plugins/elementor/assets/css/widget-divider.min.css?ver=3.34.1",
+      "path": "C:\\Users\\USER\\Desktop\\Foresight\\reference\\downloads\\b12fa2b610111c56.css",
+      "name": "b12fa2b610111c56.css",
+      "kind": "stylesheet"
+    },
+    {
+      "url": "https://foresight.co.tz/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.45.0",
+      "path": "C:\\Users\\USER\\Desktop\\Foresight\\reference\\downloads\\ed099f38d93baec2.css",
+      "name": "ed099f38d93baec2.css",
+      "kind": "stylesheet"
+    },
+    {
+      "url": "https://foresight.co.tz/wp-content/plugins/elementor-pro/assets/css/widget-form.min.css?ver=3.28.2",
+      "path": "C:\\Users\\USER\\Desktop\\Foresight\\reference\\downloads\\00dbe2499d17b5fa.css",
+      "name": "00dbe2499d17b5fa.css",
+      "kind": "stylesheet"
+    },
+    {
+      "url": "https://foresight.co.tz/wp-content/themes/kadence/assets/css/global.min.css?ver=1.2.19",
+      "path": "C:\\Users\\USER\\Desktop\\Foresight\\reference\\downloads\\8126e9b77f2203eb.css",
+      "name": "8126e9b77f2203eb.css",
+      "kind": "stylesheet"
+    },
+    {
+      "url": "https://foresight.co.tz/wp-content/themes/kadence/assets/css/footer.min.css?ver=1.2.19",
+      "path": "C:\\Users\\USER\\Desktop\\Foresight\\reference\\downloads\\e0e4a6cdc8644b9f.css",
+      "name": "e0e4a6cdc8644b9f.css",
+      "kind": "stylesheet"
+    },
+    {
+      "url": "https://foresight.co.tz/wp-content/plugins/elementor/assets/lib/animations/styles/e-animation-grow.min.css?ver=3.34.1",
+      "path": "C:\\Users\\USER\\Desktop\\Foresight\\reference\\downloads\\6ee54a530b02cc68.css",
+      "name": "6ee54a530b02cc68.css",
+      "kind": "stylesheet"
+    },
+    {
+      "url": "https://foresight.co.tz/wp-content/plugins/elementor/assets/css/widget-image.min.css?ver=3.34.1",
+      "path": "C:\\Users\\USER\\Desktop\\Foresight\\reference\\downloads\\c4d03bd1dfa8e514.css",
+      "name": "c4d03bd1dfa8e514.css",
+      "kind": "stylesheet"
+    },
+    {
+      "url": "https://foresight.co.tz/wp-content/plugins/elementskit-lite/widgets/init/assets/css/responsive.css?ver=3.5.0",
+      "path": "C:\\Users\\USER\\Desktop\\Foresight\\reference\\downloads\\5b04724cc8b8248e.css",
+      "name": "5b04724cc8b8248e.css",
+      "kind": "stylesheet"
+    },
+    {
+      "url": "https://foresight.co.tz/wp-content/uploads/elementor/google-fonts/css/jost.css?ver=1743362776",
+      "path": "C:\\Users\\USER\\Desktop\\Foresight\\reference\\downloads\\91daa6f50acd274a.css",
+      "name": "91daa6f50acd274a.css",
+      "kind": "stylesheet"
+    },
+    {
+      "url": "https://foresight.co.tz/wp-content/uploads/elementor/google-fonts/css/montserrat.css?ver=1743362778",
+      "path": "C:\\Users\\USER\\Desktop\\Foresight\\reference\\downloads\\aded2768ef3f32c0.css",
+      "name": "aded2768ef3f32c0.css",
+      "kind": "stylesheet"
+    },
+    {
+      "url": "https://foresight.co.tz/wp-content/plugins/elementskit-lite/widgets/init/assets/css/widget-styles.css?ver=3.5.0",
+      "path": "C:\\Users\\USER\\Desktop\\Foresight\\reference\\downloads\\73fee9a30e4fb5ce.css",
+      "name": "73fee9a30e4fb5ce.css",
+      "kind": "stylesheet"
+    },
+    {
+      "url": "https://foresight.co.tz/wp-content/plugins/essential-addons-for-elementor-lite/assets/front-end/css/view/general.min.css?ver=6.1.11",
+      "path": "C:\\Users\\USER\\Desktop\\Foresight\\reference\\downloads\\a81fac1fcca64dce.css",
+      "name": "a81fac1fcca64dce.css",
+      "kind": "stylesheet"
+    },
+    {
+      "url": "https://foresight.co.tz/wp-content/plugins/jeg-elementor-kit/lib/jeg-framework/assets/css/jeg-dynamic-styles.css?ver=1.3.0",
+      "path": "C:\\Users\\USER\\Desktop\\Foresight\\reference\\downloads\\5aa3304b0ae7227d.css",
+      "name": "5aa3304b0ae7227d.css",
+      "kind": "stylesheet"
+    },
+    {
+      "url": "https://foresight.co.tz/wp-content/plugins/elementskit-lite/modules/elementskit-icon-pack/assets/css/ekiticons.css?ver=3.5.0",
+      "path": "C:\\Users\\USER\\Desktop\\Foresight\\reference\\downloads\\877dd75a7e01310a.css",
+      "name": "877dd75a7e01310a.css",
+      "kind": "stylesheet"
+    },
+    {
+      "url": "https://foresight.co.tz/wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min.css?ver=5.15.3",
+      "path": "C:\\Users\\USER\\Desktop\\Foresight\\reference\\downloads\\41ad8b84eee931e7.css",
+      "name": "41ad8b84eee931e7.css",
+      "kind": "stylesheet"
+    },
+    {
+      "url": "https://foresight.co.tz/wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.min.css?ver=5.15.3",
+      "path": "C:\\Users\\USER\\Desktop\\Foresight\\reference\\downloads\\08773cc369007941.css",
+      "name": "08773cc369007941.css",
+      "kind": "stylesheet"
+    },
+    {
+      "url": "https://foresight.co.tz/wp-content/plugins/elementor/assets/lib/font-awesome/css/brands.min.css?ver=5.15.3",
+      "path": "C:\\Users\\USER\\Desktop\\Foresight\\reference\\downloads\\77984a1f47831778.css",
+      "name": "77984a1f47831778.css",
+      "kind": "stylesheet"
+    },
+    {
+      "url": "https://foresight.co.tz/wp-content/uploads/2024/09/Computer-resources-logo-mobile.png",
+      "path": "C:\\Users\\USER\\Desktop\\Foresight\\reference\\downloads\\a39c2b8ae2363e72.png",
+      "name": "a39c2b8ae2363e72.png",
+      "kind": "image"
+    },
+    {
+      "url": "https://foresight.co.tz/wp-content/uploads/2024/09/Computer-resources-logo.png",
+      "path": "C:\\Users\\USER\\Desktop\\Foresight\\reference\\downloads\\d9d61427b47350e1.png",
+      "name": "d9d61427b47350e1.png",
+      "kind": "image"
+    },
+    {
+      "url": "https://foresight.co.tz/wp-content/uploads/2024/09/Untitled-1.png",
+      "path": "C:\\Users\\USER\\Desktop\\Foresight\\reference\\downloads\\5a965feb065458fe.png",
+      "name": "5a965feb065458fe.png",
+      "kind": "image"
+    },
+    {
+      "url": "https://foresight.co.tz/wp-content/plugins/elementor-pro/assets/css/widget-gallery.min.css?ver=3.28.2",
+      "path": "C:\\Users\\USER\\Desktop\\Foresight\\reference\\downloads\\6dd5157ef2a21a3f.css",
+      "name": "6dd5157ef2a21a3f.css",
+      "kind": "stylesheet"
+    },
+    {
+      "url": "https://foresight.co.tz/wp-content/plugins/elementor/assets/css/conditionals/e-swiper.min.css?ver=3.34.1",
+      "path": "C:\\Users\\USER\\Desktop\\Foresight\\reference\\downloads\\797a156a4b1b2bb6.css",
+      "name": "797a156a4b1b2bb6.css",
+      "kind": "stylesheet"
+    },
+    {
+      "url": "https://foresight.co.tz/wp-content/plugins/elementor/assets/lib/e-gallery/css/e-gallery.min.css?ver=1.2.0",
+      "path": "C:\\Users\\USER\\Desktop\\Foresight\\reference\\downloads\\d71f702115eed30a.css",
+      "name": "d71f702115eed30a.css",
+      "kind": "stylesheet"
+    },
+    {
+      "url": "https://foresight.co.tz/wp-content/plugins/elementor-pro/assets/css/conditionals/transitions.min.css?ver=3.28.2",
+      "path": "C:\\Users\\USER\\Desktop\\Foresight\\reference\\downloads\\aa13d821ca97baaa.css",
+      "name": "aa13d821ca97baaa.css",
+      "kind": "stylesheet"
+    },
+    {
+      "url": "https://foresight.co.tz/wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min.css?ver=8.4.5",
+      "path": "C:\\Users\\USER\\Desktop\\Foresight\\reference\\downloads\\60a4a89531fe086f.css",
+      "name": "60a4a89531fe086f.css",
+      "kind": "stylesheet"
+    },
+    {
+      "url": "https://foresight.co.tz/wp-content/uploads/2024/09/5a902dbf7f96951c82922875.png",
+      "path": "C:\\Users\\USER\\Desktop\\Foresight\\reference\\downloads\\bc21de4b9eecc1b5.png",
+      "name": "bc21de4b9eecc1b5.png",
+      "kind": "image"
+    },
+    {
+      "url": "https://foresight.co.tz/wp-content/plugins/elementor/assets/css/widget-social-icons.min.css?ver=3.34.1",
+      "path": "C:\\Users\\USER\\Desktop\\Foresight\\reference\\downloads\\5a2ea9c70462a0e0.css",
+      "name": "5a2ea9c70462a0e0.css",
+      "kind": "stylesheet"
+    },
+    {
+      "url": "https://foresight.co.tz/wp-content/plugins/elementor/assets/css/conditionals/apple-webkit.min.css?ver=3.34.1",
+      "path": "C:\\Users\\USER\\Desktop\\Foresight\\reference\\downloads\\81e95b47c24024b9.css",
+      "name": "81e95b47c24024b9.css",
+      "kind": "stylesheet"
+    },
+    {
+      "url": "https://foresight.co.tz/wp-content/plugins/jeg-elementor-kit/assets/fonts/jkiticon/jkiticon.css?ver=2.6.12",
+      "path": "C:\\Users\\USER\\Desktop\\Foresight\\reference\\downloads\\6ef82e6dcc1f8308.css",
+      "name": "6ef82e6dcc1f8308.css",
+      "kind": "stylesheet"
+    },
+    {
+      "url": "https://foresight.co.tz/wp-content/themes/kadence/assets/css/content.min.css?ver=1.2.19",
+      "path": "C:\\Users\\USER\\Desktop\\Foresight\\reference\\downloads\\5c57897bf78e81d3.css",
+      "name": "5c57897bf78e81d3.css",
+      "kind": "stylesheet"
+    },
+    {
+      "url": "https://foresight.co.tz/wp-content/themes/kadence/assets/css/header.min.css?ver=1.2.19",
+      "path": "C:\\Users\\USER\\Desktop\\Foresight\\reference\\downloads\\96d827cc79cc5699.css",
+      "name": "96d827cc79cc5699.css",
+      "kind": "stylesheet"
+    },
+    {
+      "url": "https://foresight.co.tz/wp-content/plugins/elementskit-lite/modules/elementskit-icon-pack/assets/fonts/elementskit.woff?y24e1e",
+      "path": "C:\\Users\\USER\\Desktop\\Foresight\\reference\\downloads\\36f997d5ddcb6d5b.woff",
+      "name": "36f997d5ddcb6d5b.woff",
+      "kind": "font"
+    },
+    {
+      "url": "https://foresight.co.tz/wp-content/plugins/jeg-elementor-kit/assets/fonts/jkiticon/jkiticon.woff2?bv8d8l",
+      "path": "C:\\Users\\USER\\Desktop\\Foresight\\reference\\downloads\\2e2ffdd832ffb38e.woff2",
+      "name": "2e2ffdd832ffb38e.woff2",
+      "kind": "font"
+    },
+    {
+      "url": "https://foresight.co.tz/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-brands-400.woff2",
+      "path": "C:\\Users\\USER\\Desktop\\Foresight\\reference\\downloads\\81fac2904bf7e76d.woff2",
+      "name": "81fac2904bf7e76d.woff2",
+      "kind": "font"
+    },
+    {
+      "url": "https://foresight.co.tz/wp-content/uploads/2024/09/pexels-fauxels-3183190.jpg",
+      "path": "C:\\Users\\USER\\Desktop\\Foresight\\reference\\downloads\\aa17b4e19b042c9f.jpg",
+      "name": "aa17b4e19b042c9f.jpg",
+      "kind": "image"
+    },
+    {
+      "url": "https://foresight.co.tz/wp-content/uploads/elementor/google-fonts/fonts/jost-92zatbhpnqw73otd4g.woff2",
+      "path": "C:\\Users\\USER\\Desktop\\Foresight\\reference\\downloads\\3792c840c586f2e9.woff2",
+      "name": "3792c840c586f2e9.woff2",
+      "kind": "font"
+    },
+    {
+      "url": "https://foresight.co.tz/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-solid-900.woff2",
+      "path": "C:\\Users\\USER\\Desktop\\Foresight\\reference\\downloads\\953479a6ad892768.woff2",
+      "name": "953479a6ad892768.woff2",
+      "kind": "font"
+    },
+    {
+      "url": "https://foresight.co.tz/wp-content/plugins/elementor/assets/css/conditionals/dialog.min.css?ver=3.34.1",
+      "path": "C:\\Users\\USER\\Desktop\\Foresight\\reference\\downloads\\1d07fc7492644b5e.css",
+      "name": "1d07fc7492644b5e.css",
+      "kind": "stylesheet"
+    },
+    {
+      "url": "https://foresight.co.tz/wp-content/plugins/elementor/assets/css/conditionals/lightbox.min.css?ver=3.34.1",
+      "path": "C:\\Users\\USER\\Desktop\\Foresight\\reference\\downloads\\4944a2d42a68e34f.css",
+      "name": "4944a2d42a68e34f.css",
+      "kind": "stylesheet"
+    },
+    {
+      "url": "https://foresight.co.tz/wp-content/uploads/2024/09/5-2.jpg",
+      "path": "C:\\Users\\USER\\Desktop\\Foresight\\reference\\downloads\\40b721fc5ae19ee0.jpg",
+      "name": "40b721fc5ae19ee0.jpg",
+      "kind": "image"
+    },
+    {
+      "url": "https://foresight.co.tz/wp-content/uploads/2024/09/one-1.jpg",
+      "path": "C:\\Users\\USER\\Desktop\\Foresight\\reference\\downloads\\6ef7e686087f29da.jpg",
+      "name": "6ef7e686087f29da.jpg",
+      "kind": "image"
+    },
+    {
+      "url": "https://foresight.co.tz/wp-content/uploads/2024/09/6.jpg",
+      "path": "C:\\Users\\USER\\Desktop\\Foresight\\reference\\downloads\\1ef1c7428d0f4d97.jpg",
+      "name": "1ef1c7428d0f4d97.jpg",
+      "kind": "image"
+    },
+    {
+      "url": "https://foresight.co.tz/wp-content/uploads/2024/09/7.jpg",
+      "path": "C:\\Users\\USER\\Desktop\\Foresight\\reference\\downloads\\0e1b3587e286d5af.jpg",
+      "name": "0e1b3587e286d5af.jpg",
+      "kind": "image"
+    },
+    {
+      "url": "https://foresight.co.tz/wp-content/uploads/2024/09/5.jpg",
+      "path": "C:\\Users\\USER\\Desktop\\Foresight\\reference\\downloads\\9dbd540e210c7e14.jpg",
+      "name": "9dbd540e210c7e14.jpg",
+      "kind": "image"
+    },
+    {
+      "url": "https://foresight.co.tz/wp-content/uploads/2024/09/8.jpg",
+      "path": "C:\\Users\\USER\\Desktop\\Foresight\\reference\\downloads\\c1aeb20019092adf.jpg",
+      "name": "c1aeb20019092adf.jpg",
+      "kind": "image"
+    },
+    {
+      "url": "https://foresight.co.tz/wp-content/uploads/2024/09/3.jpg",
+      "path": "C:\\Users\\USER\\Desktop\\Foresight\\reference\\downloads\\5fc41c7f31d5df7c.jpg",
+      "name": "5fc41c7f31d5df7c.jpg",
+      "kind": "image"
+    },
+    {
+      "url": "https://foresight.co.tz/wp-content/uploads/2024/09/2-2.jpg",
+      "path": "C:\\Users\\USER\\Desktop\\Foresight\\reference\\downloads\\eaa13d765911cda3.jpg",
+      "name": "eaa13d765911cda3.jpg",
+      "kind": "image"
+    },
+    {
+      "url": "https://foresight.co.tz/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.woff2?5.45.0",
+      "path": "C:\\Users\\USER\\Desktop\\Foresight\\reference\\downloads\\ad7d71d78611339d.woff2",
+      "name": "ad7d71d78611339d.woff2",
+      "kind": "font"
+    }
+  ]
+}

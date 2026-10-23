@@ -1,0 +1,88 @@
+# Website advice: implementation review
+
+Reviewed against all 18 pages of `C:/Users/USER/Documents/Website analysis advice.pdf` on 21 October 2026. The user explicitly authorized the document-led content refresh and necessary design changes, confirmed retaining existing public contacts, and asked for form/analytics integration preparation with provider details to follow.
+
+## What was already fixed before this review
+
+- Git repository, React/Vite application, 24 existing public URLs and locally stored source assets.
+- Tailwind v4 without Preflight, responsive layouts and keyboard-accessible mobile navigation.
+- Sticky navigation and dropdowns above the hero, with viewport-aware menu sizing.
+- Atomic route/CSS transitions, cancellation and retry states, branded loading and reduced-motion behavior.
+- Image loading/unavailable artwork, captured lazy-image resolution, gallery media and real local video posters with YouTube playback controls.
+- Brighter home hero and sustained parallax/section entrances based on the Bigsofa reference.
+- Subsequent user request: relevant photographic heroes now extend to every public route, using optimized local source photographs, readable overlays, sustained scroll-linked image motion, and static reduced-motion treatment. Captured gallery/training/archive pages share the same hero while retaining their existing content and interactions.
+- Subsequent jitter correction: photographs and floating app artwork now follow browser-native scroll timelines, with a direct-scroll fallback. Removed the separately eased image position that caused lag and post-scroll catch-up; section entrances retain their easing. Image sizing is measured on layout changes, and reduced-motion cleanup removes the timelines.
+- Basic About readability, form validation, optional fields, focus handling, gallery keyboard controls and honest preview-only submission feedback.
+
+The earlier work preserved the original marketing copy. It did not implement the PDF's strategic content rewrite.
+
+## Recommendation-by-recommendation result
+
+| PDF section | Result implemented now | Status / limits |
+| --- | --- | --- |
+| 1. Strategic direction | “Technology for Stronger Cooperatives”; clear SACCO/microfinance, union and AMCOS audience; direct demonstration and team-contact actions; Foresight/company relationship explained. | Complete for public positioning. Regional enquiries are assessed individually, without a claim of operations throughout East Africa. |
+| 2. Verified information | Removed numerical success/customer/installation claims and blanket capabilities. Establishment year is attributed to the existing public profile, without an exact anniversary claim. | Exact incorporation date and technical feature evidence still require company records. |
+| 3. Website structure | Home, Solutions, Technology, Services, Resources and About Us navigation on desktop/mobile. Cooperative solutions lead; payroll, vehicle tracking, school and inventory are under Other Business Solutions. | Complete. Original 24 URLs retained; seven useful new guide/technology URLs added. |
+| 4. Homepage | Published cooperative positioning, three primary solution cards, qualified deployment/mobile/integration copy, implementation journey, approved TCRA/ITV testimonials and clear next steps. Original solution photographs, device illustrations, other-business links and linked TCDC/TFC partner logos are restored. | Complete with the user's partner and testimonial restoration requests. Unsupported business statistics remain excluded. See `homepage-original-comparison.md`. |
+| 5. About Us | Cooperative specialization, legal/product brand relationship, approach, mission, vision, all five values including Partnership, services and regional qualification. | Complete. No zero progress indicators or numerical age claim. |
+| 6. SACCOS product page | Member/savings/shares/loan/accounting/reporting sections, qualified mobile/deployment copy, six implementation steps, guide, continuity of established Oracle-based system and enquiry form. | Text and conversion journey complete. The user-supplied mobile-app video is now included; sanitized staff-system screenshots and a staff-system walkthrough remain business inputs. Training videos are not misrepresented as product demos. |
+| 7. UNION / AMCOS | Distinct institution-specific copy and workflows. Consolidation, produce/stock, specialized agriculture workflows and access requirements are qualified for demonstration. | Public copy complete. Feature inventory, current screenshots and technical sign-off remain business inputs. |
+| 8. Resources | Four resource categories, five practical educational guides linked to products and demo actions, training link, reference discussion, dated September 2024 archive and notices on historical routes. | Complete initial resource structure/content. No fabricated new release, upcoming event, case study or publication history. |
+| 9. Credibility | Removed unsupported statistics, universal warranty/security/compliance/backup promises and duplicate marketing sections. Standardized company name and contacts. Restored nine original testimonials, their logos, the original eight-logo client strip and TCRA/ITV homepage statements after the user's 23 October approval confirmation. | Original endorsements are approved by the user; new endorsements and numerical figures still require evidence. Client statements remain attributed statements rather than universal product guarantees. |
+| 10. Regional relevance | Tanzania-first wording. Outside-Tanzania enquiries require jurisdiction, product, integration, delivery and support assessment. | Complete safe public treatment. No unverified Kenya/Uganda landing pages or regional partner claims. |
+| 11. Priorities / SEO | Implemented home/About/three cooperative pages; current resources; distinct route titles/descriptions, canonical/Open Graph metadata, Organization data, sitemap and robots file. Shared Tailwind pages avoid unused captured WordPress CSS. | Complete code changes. Rankings, indexing and search-console access are not verified; page content remains React-rendered. |
+| 12. Measurement | Optional event collector for page/product visits, demo CTA clicks, valid form submissions and successful demo/enquiry sends. Personal form content excluded. Monthly measurement instructions and baseline template supplied. | Prepared, not connected, as requested. Historic baseline, qualified leads, meetings, quotations and sales need actual provider/CRM data. |
+
+## Evidence-dependent gaps: not claimed complete
+
+**23 October consultation update:** replaced the generic closing CTA on refreshed pages and the captured Gallery/Training “GET A CALL BACK” sections with a shared customer-focused hub. It uses the user's ICT-needs heading and benefit copy, collects institution and solution details, offers consultation/demo/quotation intents and explains what happens after receipt. The connected form shows success only after acceptance, preserves entries on failure and clears stale feedback on edits. Delivery remains disabled in the public preview; existing email/telephone contacts are available. A confirmed WhatsApp destination and response-time commitment remain business inputs rather than implied promises.
+
+1. **Current product screenshots:** provide approved screenshots of member registration, savings, loans, accounting, reports and management dashboards for the available release. Remove/mask client data. Existing stock imagery, unrelated third-party screenshots and the old mobile promotional montage are not evidence of the current staff system.
+2. **Staff-system walkthrough:** the user has now supplied `Foresight Financials App.mp4`, a 6:48 member mobile application recording, and authorized its use on the SACCOS & Microfinance page. It is shown with a real extracted poster, on-demand playback and native controls. A separate staff-system walkthrough of the available release remains a business input; existing training recordings are not relabeled as that walkthrough.
+3. **Feature validation:** technical owners must confirm available modules, consolidation, integrations, hosting/mobile scope, access controls, backups/recovery, rollout/migration arrangements and specialized AMCOS workflows. The site now qualifies these rather than asserting availability.
+4. **Company/client evidence:** confirm precise establishment date, future numerical claims, new testimonials/case studies and regional partner coverage. The user confirmed approval of the original nine testimonials and client logos on 23 October; those statements and assets are restored. No new endorsement or numerical claim was invented.
+5. **Live delivery and measurement:** user chose “Prepare integrations; details later.” Supply the authorized delivery endpoint and analytics collector/provider details. No real enquiry was sent and no analytics service was silently enabled.
+6. **Ongoing work:** maintain an editorial cadence of approximately two useful articles monthly after review, verify release/event announcements before publishing, and review actual business metrics monthly. No recurring automation or fabricated current event was created.
+
+Stray external domain strings, chat labels and broken citation fragments in the PDF were treated as document artifacts, not new brand names, destinations, or instructions to connect unrelated services.
+
+## Verification
+
+Production build and all 20 automated checks pass. The 31 public routes pass at 1440 × 1000 and 390 × 844 (62 route/view combinations), including meaningful content, one primary heading, shared site navigation/footer, no framework overlay, no overflow, no image failures and no runtime errors. Article-level header/footer elements on historical archives remain legitimate nested semantics.
+
+All 85 registered raster assets plus the rendered CSS/pseudo-element background references decode in the browser. Gallery next/close, all three training posters and blocked-provider recovery pass. Short-viewport dropdowns remain inside a 650px viewport. About photography retains its frame at reduced motion, and the main journey also fits a 320px phone viewport.
+
+Buyer-journey checks pass: Home → Solutions → SACCOS → preselected product enquiry → validated preview submission; one-open FAQ answers; parallax and live reduced-motion changes; mobile Technology → Mobile Applications anchor → Back. Fixed the interaction between section lift and anchor alignment below the sticky header. Initial rendering commits directly after the branded loader; subsequent route changes retain their transitions.
+
+Mock integrations pass FormData field delivery, accepted-send events, failure feedback and exclusion of personal data from analytics. Product-view events and Do Not Track suppression pass. No real enquiry or live analytics request was sent. Desktop/mobile evidence is outside the repository at `%TEMP%/foresight-document-gaps/` (`route-audit.json`, `interaction-check.json`, `regression-check.json`, `final-media-and-visual.json` and screenshots).
+
+Chrome/Playwright was used with the user's prior fallback authorization because the Browser plugin was unavailable. These checks do not certify product features, full accessibility compliance, other browsers, email deliverability, or search rankings. Business-owned evidence gaps above remain open.
+
+## Files that own the new behavior
+
+- `src/siteContent.js`: shared positioning, product content, resource articles, contacts and navigation.
+- `src/MarketingPage.jsx`: document-led home, products, About, services, technology, guides, resources, FAQ, references and contact/demo layouts.
+- `src/SiteChrome.jsx`, `src/MobileMenu.jsx`: shared navigation and footer.
+- `src/InquiryForm.jsx`, `src/LocalForm.jsx`: qualified enquiries and optional delivery.
+- `src/metadata.js`, `scripts/prepare-seo.mjs`: runtime and build-time route metadata.
+- `src/analytics.js`, `docs/measurement-and-integrations.md`: optional measurement contract and real-world follow-up.
+
+Original captures remain in `reference/` and the original JSON records are retained for provenance; replaced copy is no longer rendered. Do not rerun the import script as a publishing workflow for the rewritten pages.
+
+## Client-logo motion clarification · 23 October 2026
+
+The user clarified that the animated number beside Our Clients means the number of logos displayed. The counter derives its final value, eight, from the unique logo entries and is labeled “Client logos shown below”; it does not assert an active-client total. The strip loops automatically using a decorative second copy hidden from assistive technology. Pause/resume, previous/next controls and arrow-key navigation remain available. Hover/focus pauses the strip; offscreen and hidden-tab states stop the automatic movement. Reduced motion shows the final number immediately and a static, manually scrollable list. The nine original testimonials and homepage TCRA/ITV statements remain intact.
+
+## Subsequent media and motion request
+
+On 22 October the user supplied specific mobile-app and popular-services screenshots and authorized restoring their content/color treatment. Home now uses the reference's navy popular-services block with three original linked photographs and centered white titles. Home, SACCOS and Technology share an orange “Download Our App!” section with the supplied explanation, working Google Play badge and original phone artwork. A concise participating-institution qualification and promotional-artwork caption remain; no iOS listing or new staff-system evidence was inferred. The phone slides sideways into its existing centered frame as scrolling brings it to the viewport midpoint, with native/fallback drivers and static reduced motion. Supporting homepage sections use white, pale blue and warm cream backgrounds. Updated reference comparison and responsive verification are recorded in `design-qa.md`.
+
+The user subsequently requested stronger eased parallax and content entrances, restoration of the original mobile-app imagery and YouTube videos, and improved navigation arrow icons. The original promotional mobile artwork/Google Play badge are restored to Home, SACCOS and Technology; Home features the two unique original YouTube recordings, while Training retains all three source cards. This artwork is labeled as an original promotional preview. The subsequently supplied Foresight Financials mobile-app recording is now shown on the SACCOS page; approved current staff-system screenshots and a staff-system walkthrough remain separate business inputs. Navigation now uses library icons, and scroll-linked content moves within stable section backgrounds and anchors with reduced-motion cleanup.
+
+## Selected editorial redesign · 23 October 2026
+
+The user selected the airy editorial direction and authorized its use across all public pages with simpler, shorter copy, modern motion and preserved media/links/business behavior. Shared PageHero and Tailwind styles now provide white editorial headings above the original photographs, a floating sticky navigation bar, pale blue/cream sections and the original orange app promotion. Native scroll-linked photo motion, eased section contents, sideways app-art entrances and reduced-motion cleanup remain. Original product photos, partner/client logos, testimonials, training cards, YouTube recordings, gallery originals and supplied app video remain. The actual approved testimonial copy and client-loop logic are unchanged; forms retain fields, validation, preview honesty and integration contracts.
+
+Subsequent explicit requests removed the email/phone ribbon from navigation and shortened the client-logo cycle to 18 seconds. Public contacts remain in the footer, forms and contact page. Contact Us now also restores the original Google Maps embed query for Maliasili Street, Corridor Area, Themi, Arusha, with an external Maps link and a concise request to call for directions. This locates the office area; it does not establish a verified exact office pin.
+
+The current comparison, route and interaction checks are recorded in `design-qa.md`. All existing evidence-dependent business gaps continue to apply: no new staff-system screenshots/walkthrough, conversion measurements, service guarantees, compliance approval or extra endorsements have been invented. Original capture JSON remains available for provenance. Production Worker/Sites packaging files were kept intact.

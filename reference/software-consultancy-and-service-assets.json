@@ -1,0 +1,37 @@
+{
+  "assets": [
+    {
+      "contentType": "image/png",
+      "id": "0bf96d3bfd23707a",
+      "kind": "image",
+      "name": "Vector-Smart-Object.png",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/3e6d3d02-8964-4489-967a-a385e7ec4dde/0bf96d3bfd23707a.png",
+      "url": "https://foresight.co.tz/wp-content/uploads/2024/10/Vector-Smart-Object.png"
+    },
+    {
+      "contentType": "image/png",
+      "id": "5489677c53b452e4",
+      "kind": "image",
+      "name": "%E2%80%94Pngtree%E2%80%94software-development-isometric-web-concept_13227517.png",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/3e6d3d02-8964-4489-967a-a385e7ec4dde/5489677c53b452e4.png",
+      "url": "https://foresight.co.tz/wp-content/uploads/2024/10/%E2%80%94Pngtree%E2%80%94software-development-isometric-web-concept_13227517.png"
+    },
+    {
+      "contentType": "image/png",
+      "id": "b01ce4da59e7aee3",
+      "kind": "image",
+      "name": "software-development-consulting.png",
+      "path": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/3e6d3d02-8964-4489-967a-a385e7ec4dde/b01ce4da59e7aee3.png",
+      "url": "https://foresight.co.tz/wp-content/uploads/2024/10/software-development-consulting.png"
+    }
+  ],
+  "directoryPath": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/3e6d3d02-8964-4489-967a-a385e7ec4dde",
+  "failures": [],
+  "manifestPath": "C:\\Users\\USER\\AppData\\Local\\Temp/browser-use/assets/3e6d3d02-8964-4489-967a-a385e7ec4dde/manifest.json",
+  "summary": {
+    "downloadedCount": 3,
+    "elapsedMs": 3781.6049999999814,
+    "failedCount": 0,
+    "requestedCount": 3
+  }
+}
