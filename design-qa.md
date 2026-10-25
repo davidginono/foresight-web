@@ -1,5 +1,11 @@
 # Foresight recreation QA
 
+## 25 October 2026: first-page image loading
+
+Initial page reveal now waits for the logo and hero image to decode, alongside staged route styles, with a six-second image deadline. Navigation cancellation releases that wait. The same original homepage photograph uses its existing 266,516-byte WebP instead of the 2,139,351-byte JPEG. Logo preload and explicit dimensions prevent late discovery and layout shifts. Hero frames retain their existing parallax backgrounds with contained loading/unavailable artwork until decoding completes.
+
+Verified locally in the in-app browser: reload completes with a decoded hero, no opening loader remains, Home → Contact → Home retains working imagery, and blocking the homepage hero produces an unavailable state with accessible page content instead of a stuck opening loader. Blocking and cache overrides were reset. Mobile at 390 × 844 loads with no horizontal overflow; the viewport was reset. Screenshot: `qa/first-page-image-loader-fixed.png`. Production build and all 33 tests pass, including cached decoding, network/decode failures, stalled downloads and canceled navigation. No deployment is claimed.
+
 ## 25 October 2026: interactive particle body background
 
 Source visual truth: `C:/Users/USER/Desktop/Foresight/reference/particle-wave-reference.png` (1015 × 352 pixels), copied from the user's selected attachment. Scope is its dotted, flowing ribbon effect integrated into the existing website, not a replacement for the page layout or typography. The effect is a functioning procedural canvas; the reference is not used as a static image pretending to be interactive.

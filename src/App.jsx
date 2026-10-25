@@ -9,6 +9,8 @@ import pageIndex from "./content/index.json";
 import { updateMetadata } from './metadata.js';
 import { track } from './analytics.js';
 import { products, nativePaths } from './siteContent.js';
+import { heroForPath } from './heroImages.js';
+import { loadImage } from './loadImage.js';
 
 // Only retained media/history pages ship captured HTML. Superseded marketing
 // claims stay in repository provenance rather than unused public JS chunks.
@@ -75,7 +77,15 @@ export function App() {
         ? {path,title:entry.title,styles:[{href:'/assets/wp-content/uploads/elementor/google-fonts/css/jost.css'}]}
         : (await pages[`./content/${entry.file}.json`]()).default;
       if (!current()) return;
-      bundle = await prepareRouteStyles(data.styles, controller.signal);
+      const styles = prepareRouteStyles(data.styles, controller.signal);
+      // Start both requests together. Only the first visit waits for critical
+      // imagery; slow or failed images fall back inside their own frame.
+      const images = visited.current ? Promise.resolve() : Promise.all([
+        loadImage('/assets/wp-content/uploads/2024/09/Computer-resources-logo.png', { signal: controller.signal }),
+        loadImage(heroForPath(path).src, { signal: controller.signal }),
+      ]);
+      bundle = await styles;
+      await images;
       if (!current()) { bundle.dispose(); return; }
       const commit = () => {
         if (!current()) return;

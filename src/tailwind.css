@@ -422,6 +422,8 @@ header.ekit-template-content-header.site-header { position: sticky; top: 12px; z
 .editorial-hero-copy .strategy-actions { justify-content: center; margin-top: 28px; }
 .editorial-hero-media.strategy-photo-hero { display: block; width: calc(100% - 40px); min-height: 0; height: clamp(310px,55vw,800px); margin: 0 auto; border-radius: 20px; background-size: cover; background-position: center; position: relative; overflow: hidden; }
 .editorial-hero-media.strategy-photo-hero::before { display: none; }
+.hero-image-probe { position: absolute; width: 1px; height: 1px; opacity: 0; pointer-events: none; }
+.hero-image-placeholder { position: absolute; inset: 0; z-index: 1; background: #eef3f8 center / contain no-repeat; }
 .strategy-inner-hero .editorial-hero-media { height: clamp(240px,26vw,380px); }
 .editorial-hero.strategy-hero-breakout { margin-bottom: 56px; }
 .content-container:has(> main.editorial-retained-page) { max-width: none; padding-inline: 0; }

@@ -18,7 +18,7 @@ export const heroPhotos={
 };
 
 const routes={
-  '/':{...heroPhotos.workplace,src:`${uploads}2024/09/pexels-fauxels-3183190.jpg`},
+  '/':heroPhotos.workplace,
   '/saccos-microfinance-system/':heroPhotos.members,
   '/union-management-system/':heroPhotos.community,
   '/amcos-management-system/':heroPhotos.agriculture,
