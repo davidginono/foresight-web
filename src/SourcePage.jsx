@@ -7,8 +7,6 @@ import { SiteHeader, SiteFooter } from "./SiteChrome.jsx";
 import { track } from "./analytics.js";
 import { MobileMenu } from "./MobileMenu.jsx";
 import { ImageAsset } from "./ImageAsset.jsx";
-import { TrainingVideo } from "./TrainingVideo.jsx";
-import { youtubeId } from "./videoSource.js";
 import { setupParallax } from "./parallax.js";
 import { PageHero } from './PageHero.jsx';
 import { heroForPath } from './heroImages.js';
@@ -21,11 +19,11 @@ const parserOptions = { replace(node) {
   if(node.type === "text") {
     node.data=node.data.replace(/Send messege/g,"Request a demo").replace(/AMCOS Management Ssteym/g,"AMCOS Management System");
     const text=node.data.trim();
-    if(text.startsWith('Our Comprehensive Training Programs are designed'))node.data='Watch our recorded sessions. Ask us about training for your team.';
+    if(text.startsWith('Our Comprehensive Training Programs are designed'))node.data='Ask us about training for your team.';
     else if(text.startsWith('Explore our diverse range of projects'))node.data='See photos from our work, events and training.';
     else if(text.startsWith('This new update includes enhanced features'))node.data='A past release announcement from September 2024. Ask our team about the current version and available features.';
     else if(text.startsWith('Join us at our upcoming Foresight Software Training Seminar'))node.data='A past seminar announcement from September 2024. Ask our team about current training.';
-    else if(['Our Comprehensive Training Programs','Our Training Programs'].includes(text))node.data='Watch & learn';
+    else if(['Our Comprehensive Training Programs','Our Training Programs'].includes(text))node.data='Training for your team';
     else if(text==='Our Work in Action: Project Gallery')node.data='Our work in pictures';
     return;
   }
@@ -40,13 +38,9 @@ const parserOptions = { replace(node) {
   // Replace captured entrance animations with a single controlled motion system.
   node.attribs.class = classes.filter(name => !/^(animated|elementor-invisible|fadeIn\w*|zoomIn\w*|slideIn\w*)$/.test(name)).join(" ");
   if(classes.includes("flatpickr-calendar") || classes.includes("swiper-lazy-preloader")) return <></>;
-  if(node.attribs['data-widget_type'] === 'video.default') {
-    const settings = JSON.parse(node.attribs['data-settings'] || '{}');
-    const id = youtubeId(settings.youtube_url);
-    const heading = node.parent?.children?.find(child => child.attribs?.['data-widget_type'] === 'heading.default');
-    const title = heading ? textOf(heading).trim() : 'Training video';
-    if (id) return <div {...attributesToProps(node.attribs)}><TrainingVideo id={id} title={title} /></div>;
-  }
+  // Suppress any retained captured video widgets and outbound video links.
+  if(node.attribs['data-widget_type'] === 'video.default' ||
+    /(?:youtube(?:-nocookie)?\.com|youtu\.be)/i.test(node.attribs.src || node.attribs.href || '')) return <></>;
   if(classes.includes("elementskit-menu-hamburger")) {node.attribs['aria-label']="Open navigation";node.attribs['aria-expanded']="false";}
   if(node.name === "h1") {
     headingCount++;

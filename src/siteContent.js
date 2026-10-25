@@ -1,7 +1,13 @@
 export const company = {
   name: 'Computer Resources (T) Limited', sales: 'info@foresight.co.tz', general: 'info@foresight.co.tz', support: 'support@foresight.co.tz',
-  phone: '+255 272 979 004', telephone: '+255272979004', address: 'Maliasili Street, Corridor Area, Themi, Arusha, Tanzania',
+  phone: '0762 210 721', telephone: '+255762210721', address: 'Himo Road, Philips Area, Arusha, Tanzania',
+  streetAddress: 'Himo Road, Philips Area',
+  mapLocation: 'JPM5+PF Arusha',
   playStore: 'https://play.google.com/store/apps/details?id=app.foresightfin.foresight_financials',
+};
+export const officeMap = {
+  search: `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(company.mapLocation)}`,
+  embed: `https://maps.google.com/maps?q=${encodeURIComponent(company.mapLocation)}&t=m&z=17&output=embed&iwloc=near`,
 };
 export const products = [
   { slug: 'saccos-microfinance-system', name: 'SACCOS & Microfinance', title: 'Foresight SACCOS & Microfinance Management System', headline: 'Savings, loans and accounts in one place.', summary: 'Manage members, savings, shares, loans and reports.', audience: 'SACCO managers, accountants, loan officers and ICT teams', features: [
@@ -79,7 +85,7 @@ export const articles = [
     ['Leave with clear next steps', 'Note what works now, what is planned and what still needs an answer. Agree next steps and details for a proposal. A demo does not commit you to buy.'],
   ]},
 ];
-export const nativePaths = new Set(['/', '/about-us/', '/services/', '/technology/', '/implementation-guide/', '/faq/', '/request-demo/', '/contact-us/', '/updates/', '/testimonials/', '/software-consultancy-and-service/', ...products.map(p=>`/${p.slug}/`), ...otherProducts.map(p=>`/${p[0]}/`), ...articles.map(p=>`/resources/${p.slug}/`)]);
+export const nativePaths = new Set(['/', '/about-us/', '/services/', '/technology/', '/implementation-guide/', '/faq/', '/request-demo/', '/contact-us/', '/updates/', '/training/', '/testimonials/', '/software-consultancy-and-service/', ...products.map(p=>`/${p.slug}/`), ...otherProducts.map(p=>`/${p[0]}/`), ...articles.map(p=>`/resources/${p.slug}/`)]);
 export const navigation = [
   {label:'Home', href:'/'},
   {label:'Solutions', href:'/services/#solutions', links:[...products.map(p=>[p.name,`/${p.slug}/`]),['Other Business Solutions','/services/#other-solutions']]},

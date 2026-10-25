@@ -15,7 +15,7 @@ import { loadImage } from './loadImage.js';
 // Only retained media/history pages ship captured HTML. Superseded marketing
 // claims stay in repository provenance rather than unused public JS chunks.
 const pages = import.meta.glob([
-  './content/training.json', './content/gallery.json',
+  './content/gallery.json',
   './content/general-version-release.json', './content/foresight-software-training-seminar.json',
   './content/2024-09-12.json', './content/author-foresight.json',
   './content/category-new-release.json', './content/category-training.json',

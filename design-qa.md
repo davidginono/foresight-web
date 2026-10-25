@@ -1,5 +1,11 @@
 # Foresight recreation QA
 
+## 25 October 2026: YouTube removal
+
+Removed the homepage recordings section, all three Training video cards, YouTube playback components/API code and their unused styles. `/training/` now uses the shared editorial layout for training enquiries, preserving its URL, original hero photograph and consultation form. Resources, Services and search metadata no longer advertise recordings. Captured source documents remain provenance; the retained-page parser suppresses captured video widgets and YouTube links. The local member-app MP4 preview remains click-to-play with `preload="none"`.
+
+Verification: rendered all 31 routes through the actual React page components using Vite's SSR loader and minimal location/visibility/reduced-motion fixtures. None contained YouTube URLs, video IDs, iframe API requests or recording links. The SACCOS route retained the local app recording and `preload="none"`. Production build and 31 tests pass; the two obsolete YouTube ID/poster tests were removed with that implementation. Browser inspection was blocked by the browser tool's URL security policy, so no fresh screenshot or live interaction check is claimed. No deployment is claimed.
+
 ## 25 October 2026: first-page image loading
 
 Initial page reveal now waits for the logo and hero image to decode, alongside staged route styles, with a six-second image deadline. Navigation cancellation releases that wait. The same original homepage photograph uses its existing 266,516-byte WebP instead of the 2,139,351-byte JPEG. Logo preload and explicit dimensions prevent late discovery and layout shifts. Hero frames retain their existing parallax backgrounds with contained loading/unavailable artwork until decoding completes.

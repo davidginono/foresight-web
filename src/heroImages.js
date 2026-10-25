@@ -41,7 +41,7 @@ const routes={
   '/resources/cloud-versus-local-servers/':heroPhotos.workplace,
   '/resources/evaluate-union-amcos-software/':heroPhotos.farming,
   '/resources/prepare-software-demonstration/':heroPhotos.consultation,
-  '/training/':{...heroPhotos.training,title:'Training',eyebrow:'Recorded learning & support'},
+  '/training/':{...heroPhotos.training,title:'Training',eyebrow:'Training & support'},
   '/gallery/':{...heroPhotos.gallery,title:'Gallery',eyebrow:'Our work in action'},
   '/foresight-software-training-seminar/':{...heroPhotos.training,title:'Foresight Software Training Seminar',eyebrow:'Archive · September 2024'},
   '/general-version-release/':{...heroPhotos.workplace,title:'General Version Release',eyebrow:'Archive · September 2024'},

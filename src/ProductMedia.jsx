@@ -1,5 +1,4 @@
 import { ImageAsset } from './ImageAsset.jsx';
-import { TrainingVideo } from './TrainingVideo.jsx';
 import { company } from './siteContent.js';
 
 export function AppStoreLink() {
@@ -12,11 +11,4 @@ export function MobileAppArtwork() {
 
 export function MobileAppShowcase() {
   return <div className="strategy-split mobile-app-showcase"><div className="mobile-app-copy"><h2>Download<br/>Our App!</h2><p>View your account and transactions on your phone.</p><AppStoreLink /><p className="strategy-small">For members of participating institutions. Features and access depend on your SACCO.</p></div><MobileAppArtwork /></div>;
-}
-
-export function VideoHighlights() {
-  return <div className="video-highlights">{[
-    ['9R3i_w-DFZw','Foresight — Maonesho Mwanza'],
-    ['uNnmaxndR1w','TCRA SACCOS'],
-  ].map(([id,title])=><article className="video-highlight-card" key={id}><TrainingVideo id={id} title={title} /><h3>{title}</h3><p>Recorded material from the original website.</p></article>)}</div>;
 }

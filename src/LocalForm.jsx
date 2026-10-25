@@ -44,7 +44,7 @@ export function LocalForm({ attributes, children }) {
       track(kind==='contact'||kind==='consultation'?'enquiry_sent':'demo_request_sent',{path:location.pathname,form:kind});
       form.reset();
     } catch {
-      setResult({sent:false,text:`Message not sent. Email ${company.sales} or call +255 272 979 004.`});
+      setResult({sent:false,text:`Message not sent. Email ${company.sales} or call ${company.phone}.`});
     } finally { clearTimeout(timeout);setSending(false); }
   }
   return <form {...attributesToProps(attributes)} onSubmit={submit} aria-busy={sending} onChange={()=>{if(submitted)setSubmitted(false);if(result)setResult(null);}}>

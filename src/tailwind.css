@@ -43,9 +43,6 @@
   @apply tw:bg-[#eef3f8] tw:bg-center tw:bg-no-repeat tw:bg-contain;
 }
 .media-image[data-image-state="loading"] { animation: image-breathe 1800ms ease-in-out infinite; }
-.training-video-play:hover .training-video-icon { @apply tw:scale-110; }
-.training-video .training-video-play:focus-visible { outline-offset: -6px !important; }
-.training-video iframe { @apply tw:absolute tw:inset-0 tw:h-full tw:w-full tw:border-0; }
 .parallax-photo-frame { @apply tw:relative tw:h-[240px] tw:overflow-hidden tw:rounded-xl tw:md:h-[360px]; }
 .parallax-background { backface-visibility: hidden; }
 @keyframes scroll-photo-drift {
@@ -291,11 +288,6 @@ a:hover > .nav-arrow { transform: translate(3px,-1px); }
 .mobile-store-link img { display: block; width: 100%; height: auto; }
 .site-footer .mobile-store-link { display: inline-block; width: 150px; }
 .site-footer .mobile-store-link img { width: 100%; margin: 0; }
-.video-highlights { @apply tw:grid tw:grid-cols-1 tw:gap-8 tw:lg:grid-cols-2; margin: 32px 0 20px; }
-.video-highlight-card { min-width: 0; padding: 20px; border: 1px solid #dce5ed; border-radius: 14px; background: white; }
-.video-highlight-card h3 { margin-top: 18px; margin-bottom: 8px; }
-.video-highlight-card .training-video { min-height: 0 !important; }
-.video-highlight-card > p { font-size: 14px; margin-bottom: 0; color: #536175; }
 .site-header .site-menu-toggle { display: none; }
 .site-footer { background: #333a52; color: #e4eaf1; padding-top: 60px; }
 .site-footer-grid { display: grid; grid-template-columns: 1.25fr 1fr .8fr 1.5fr; gap: 36px; padding-bottom: 40px; }
@@ -470,8 +462,6 @@ main.editorial-retained-page > .content-wrap { width: min(1240px,calc(100% - 48p
 .strategy-mobile-app .mobile-store-link { width: 230px; margin-bottom: 16px; }
 .strategy-mobile-app .strategy-small { max-width: 380px; font-size: 14px; }
 .strategy-mobile-app .mobile-app-art { max-width: 500px; }
-.video-highlight-card { padding: 0; border: 0; background: transparent; }
-.video-highlight-card .training-video { border-radius: 20px; }
 .strategy-faq { max-width: 920px; }
 .strategy-faq summary { font-size: 21px; }
 .site-footer { padding-top: 80px; }
@@ -487,7 +477,6 @@ main.editorial-retained-page > .content-wrap { width: min(1240px,calc(100% - 48p
 .site-page main:not(.strategy-page) .elementor-heading-title { font-family: 'DM Serif Display',Georgia,serif; font-weight: 400; letter-spacing: -.025em; }
 .site-page main:not(.strategy-page) .elementor-widget-text-editor { font-family: 'Jost',Arial,sans-serif; line-height: 1.65; }
 .site-page main:not(.strategy-page) .elementor-gallery-item { border-radius: 16px; overflow: hidden; }
-.site-page main:not(.strategy-page) .training-video { border-radius: 18px; }
 .editorial-retained-page p.elementor-heading-title { font: 400 17px/1.6 'Jost',Arial,sans-serif !important; max-width: 65ch; margin: 0 auto; }
 .editorial-retained-page :is(h2,h3).elementor-heading-title { color: #333a52 !important; }
 .editorial-retained-page .e-con:has(> .elementor-widget-heading.elementor-hidden-mobile) { margin-top: 36px !important; background: transparent !important; border: 0 !important; box-shadow: none !important; }
