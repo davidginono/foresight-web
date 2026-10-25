@@ -17,7 +17,7 @@ The preview is served at http://localhost:4173. The production client is in `dis
 
 Import the repository with its root directory set to the repository root. `vercel.json` selects Vite, runs `npm run build`, publishes `dist/client`, and provides the app-shell fallback for direct page visits and refreshes. Existing static files and generated page metadata are served before the fallback. Do not publish `dist` or `public` as the output directory: neither contains the built homepage at its root.
 
-No environment variables are required to display the site. Set `VITE_FORM_ENDPOINT` only after configuring the form-delivery service, and `VITE_ANALYTICS_ENDPOINT` only for an approved event collector. Without these values, forms explain that messages are not sent and analytics remain disabled. Redeploy after changing either value; `VITE_` values are public browser configuration.
+No environment variables are required to display the site. Forms use `/api/enquiries` in the same Vercel project by default. Configure server-only SMTP settings using [email setup](docs/email-setup.md); until then forms explain that online enquiries are unavailable. `VITE_FORM_ENDPOINT` can override the default with an authorized external endpoint or be explicitly empty to disable delivery. Analytics remain disabled until `VITE_ANALYTICS_ENDPOINT` is configured. Redeploy after changing settings; `VITE_` values are public and must never contain secrets.
 
 ## Structure
 
@@ -50,7 +50,7 @@ Tailwind is compiled through its Vite plugin and controls the shared UI, loading
 
 ## Forms and external services
 
-Forms validate locally. With no endpoint configured they explicitly explain that messages have not been sent. To enable delivery, set `VITE_FORM_ENDPOINT` to an authorized endpoint that accepts POST FormData and returns an HTTP success status. Delivery requires that service's own email, spam protection and validation setup.
+Forms validate locally and on the server. The bundled API sends through authenticated SMTP; success requires acceptance for the configured company recipient. Failed submissions preserve entries. `npm run dev` serves the same handler locally. Vercel deploys `api/` alongside the static client. Static-only previews and Sites hosting need an authorized external endpoint or leave online enquiries unavailable. See [email setup](docs/email-setup.md) for configuration and abuse-control limits.
 
 Contacts retained by user confirmation: sales, general and support mailboxes, telephone and Maliasili Street office address. Google Play is linked without advertising an unverified iOS download. On 23 October the user confirmed approval of the original nine testimonials and client logos: these are restored on the original testimonials route, with the TCRA/ITV statements also restored on Home. New endorsements, numerical claims, current staff-system screenshots and a staff-system walkthrough still require business evidence. The user-supplied mobile-app recording is included on the SACCOS solution page.
 

@@ -3,6 +3,7 @@ import { flushSync } from "react-dom";
 import { SourcePage } from "./SourcePage.jsx";
 import { Gallery } from "./Gallery.jsx";
 import { PageLoader } from "./PageLoader.jsx";
+import { ParticleBackground } from './ParticleBackground.jsx';
 import { prepareRouteStyles } from "./routeStyles.js";
 import pageIndex from "./content/index.json";
 import { updateMetadata } from './metadata.js';
@@ -114,6 +115,7 @@ export function App() {
 
   const missing = error === "not-found";
   return <>
+    <ParticleBackground />
     {loading && <PageLoader initial={!page} label={pageIndex.find(item => item.path === path)?.title.split(" – ")[0] || "page"} />}
     {error && <section role="alert" className={missing || !page ? "tw:mx-auto tw:max-w-3xl tw:px-6 tw:py-32" : "tw:fixed tw:bottom-6 tw:left-1/2 tw:z-[100011] tw:w-[min(90vw,480px)] tw:-translate-x-1/2 tw:rounded-xl tw:bg-white tw:p-6 tw:shadow-xl tw:border tw:border-solid tw:border-slate-200"}>
       <h1 className="tw:text-2xl tw:font-semibold tw:text-[#333a52]!">{missing ? "Page not found" : "This page couldn’t be opened"}</h1>

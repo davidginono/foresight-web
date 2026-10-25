@@ -4,6 +4,15 @@
 @import "tailwindcss/utilities.css" layer(utilities) prefix(tw) important;
 @source "./**/*.{jsx,js}";
 
+/* The interactive wave sits above section paints and below their contents. */
+.particle-background { position: fixed; inset: 0; width: 100%; height: 100dvh; z-index: 1; pointer-events: none; opacity: .85; }
+.editorial-hero-copy,.strategy-section > .strategy-width,.editorial-hero-media.strategy-photo-hero,
+.editorial-retained-page > .e-parent > .e-con-inner,.editorial-retained-page > .e-parent > .e-con,
+.site-footer { position: relative; z-index: 2; }
+.particle-motion-control { position: fixed; right: 20px; bottom: 20px; z-index: 9990; display: grid; place-items: center; width: 44px; height: 44px; padding: 0; border: 1px solid #dce5eb; border-radius: 50%; background: #fffffff2; color: #333a52; box-shadow: 0 4px 16px #1720300d; cursor: pointer; }
+.particle-motion-control:hover { background: #f0f7fb; color: #172039; }
+@media (max-width: 767px) { .particle-motion-control { right: 12px; bottom: 12px; } }
+
 @font-face { font-family: 'DM Serif Display'; font-style: normal; font-weight: 400; font-display: swap; src: url('/assets/fonts/dm-serif-display-regular.ttf') format('truetype'); }
 @font-face { font-family: 'DM Serif Display'; font-style: italic; font-weight: 400; font-display: swap; src: url('/assets/fonts/dm-serif-display-italic.ttf') format('truetype'); }
 
@@ -480,6 +489,16 @@ main.editorial-retained-page > .content-wrap { width: min(1240px,calc(100% - 48p
 .editorial-retained-page p.elementor-heading-title { font: 400 17px/1.6 'Jost',Arial,sans-serif !important; max-width: 65ch; margin: 0 auto; }
 .editorial-retained-page :is(h2,h3).elementor-heading-title { color: #333a52 !important; }
 .editorial-retained-page .e-con:has(> .elementor-widget-heading.elementor-hidden-mobile) { margin-top: 36px !important; background: transparent !important; border: 0 !important; box-shadow: none !important; }
+
+/* Training's captured title frame is decorative; keep the heading in normal flow. */
+.editorial-retained-page.elementor-2131 .elementor-element-58f78dc8 { display: none; }
+.editorial-retained-page.elementor-2131 .elementor-element-455f874e { padding: 48px 24px 0; }
+.editorial-retained-page.elementor-2131 .elementor-element.elementor-element-56e785e1 { width: 100%; min-height: 0; margin: 0 !important; padding: 0; }
+.editorial-retained-page.elementor-2131 .elementor-element-31bc4867 { margin-top: 24px; }
+@media (max-width: 767px) {
+  .editorial-retained-page.elementor-2131 .elementor-element-455f874e { display: none; }
+  .editorial-retained-page.elementor-2131 .elementor-element-31bc4867 { margin-top: 32px; }
+}
 
 @media (min-width: 1200px) and (max-width: 1350px) {
   .site-header .site-nav { width: calc(100% - 36px); gap: 16px; }

@@ -3,7 +3,10 @@
   "framework": "vite",
   "buildCommand": "npm run build",
   "outputDirectory": "dist/client",
+  "functions": {
+    "api/enquiries.js": { "maxDuration": 15 }
+  },
   "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
+    { "source": "/((?!api(?:/|$)).*)", "destination": "/index.html" }
   ]
 }

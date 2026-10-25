@@ -1,16 +1,16 @@
 # Delivery, measurement and editorial handover
 
-The user chose to prepare integrations and provide service details later. Both integrations are disabled when their environment values are empty. Rebuild after changing Vite environment values.
+On 25 October 2026 the user authorized email delivery within the existing Vite/Vercel project. The bundled endpoint is ready for private SMTP configuration; no live credentials or real emails were used. Analytics remain disabled until separately configured. Redeploy after configuration changes. See [email setup](email-setup.md).
 
 ## Form delivery
 
-Set `VITE_FORM_ENDPOINT` to an authorized HTTPS endpoint that accepts POST `FormData` and returns a 2xx response only after accepting the enquiry. It must support the website origin, validate input on the server, handle abuse and operate under the owner's retention/access arrangements. No email provider or production recipient has been configured by this task.
+`VITE_FORM_ENDPOINT` defaults to `/api/enquiries`, served by the same Vercel project and by the Vite development middleware. Configure server-only `SMTP_HOST`, `SMTP_PORT`, `SMTP_USER`, `SMTP_PASS`, `MAIL_FROM` and optional `INQUIRY_TO`. An explicitly empty endpoint disables delivery. An authorized external HTTPS endpoint can still accept POST FormData using the previous 2xx acceptance contract.
 
 Detailed demo/contact fields: `institution`, `country`, `contact_person`, `role`, `email`, `telephone`, `current_system`, `solution`, `meeting_format`, `preferred_date`, `message`, `contact_permission`, `source_page`. The current-system, date and message fields are optional.
 
 The shared consultation hub on marketing pages, cooperative product pages, Gallery and Training sends `contact_person`, `institution`, `email`, `telephone`, `solution`, `request_type`, optional `message`, `contact_permission` and `source_page`. `request_type` is `consultation`, `demonstration` or `quotation`; solution values retain the product's full title. Cooperative product pages preselect their solution and demonstration intent and preserve their `#product-enquiry` anchor. The number of fields is intentionally smaller than the detailed demo/contact form. The original Gallery/Training callback blocks are replaced at render time; the captured JSON remains unchanged for provenance.
 
-An absent endpoint shows a preview notice before entry and explains that submission did not send a message. A configured endpoint has a 15-second timeout and success/failure feedback. Success appears only after a 2xx acceptance and resets the form; failures preserve entered details. Feedback clears when the visitor edits the form. Successful endpoint responses generate the sent event; preview submission and failed delivery do not count as sent requests. Consultation-hub acceptances use `enquiry_sent` with `form: consultation`; the chosen request type remains in the enquiry payload and is not sent to analytics.
+Unavailable SMTP configuration or an unreachable API shows honest unavailable feedback and public contacts. The bundled endpoint validates fields/consent and requires SMTP acceptance before responding `sent:true`. The browser keeps its 15-second timeout, resets only on success and preserves entries on failure. Feedback clears on edits. Only accepted submissions generate sent events, if analytics are separately configured. Consultation-hub acceptances use `enquiry_sent` with `form: consultation`; request type stays in the enquiry payload and is not sent to analytics. See email setup for the limitations of the per-instance throttle and timeout handling.
 
 The consultation section explains that received enquiries are reviewed and followed up to agree the next step. It makes no fixed response-time promise. Keep the existing email/telephone contacts; add a WhatsApp link or service-level commitment only after the owner confirms it.
 
