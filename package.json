@@ -11,6 +11,7 @@
     "test:sites": "node --test tests/sites-worker.test.mjs"
   },
   "dependencies": {
+    "@vercel/analytics": "^2.0.1",
     "@vitejs/plugin-react": "5.0.4",
     "html-react-parser": "^6.1.8",
     "lucide-react": "^1.61.0",
