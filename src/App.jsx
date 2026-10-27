@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { flushSync } from "react-dom";
+import { Analytics } from "@vercel/analytics/react";
 import { SourcePage } from "./SourcePage.jsx";
 import { Gallery } from "./Gallery.jsx";
 import { PageLoader } from "./PageLoader.jsx";
@@ -134,5 +135,6 @@ export function App() {
     </section>}
     {!missing && <div id="site-page" aria-busy={loading} data-route={page?.path || ""}>{page && <SourcePage key={page.path} page={page} onNavigate={navigate} onGallery={setGallery} routes={pageIndex} />}</div>}
     {gallery && <Gallery images={gallery.images} initialIndex={gallery.index} onClose={closeGallery} />}
+    <Analytics />
   </>;
 }
