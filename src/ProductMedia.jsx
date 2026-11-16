@@ -6,7 +6,7 @@ export function AppStoreLink() {
 }
 
 export function MobileAppArtwork() {
-  return <figure className="mobile-app-figure"><div className="mobile-app-art" data-parallax-slide><ImageAsset src="/assets/wp-content/uploads/2025/01/Computer-resources-limited-app.png" alt="Original Foresight Financials mobile application artwork showing member account and loan information" width="1528" height="1761" loading="lazy" /></div><figcaption>Original app preview. Check current features with your SACCO.</figcaption></figure>;
+  return <figure className="mobile-app-figure"><div className="mobile-app-art" data-parallax-slide><ImageAsset src="/assets/wp-content/uploads/2025/01/Computer-resources-limited-app.png" alt="Original Foresight Financials mobile application artwork showing member account and loan information" width="1528" height="1761" loading="lazy" sizes="(max-width: 767px) calc(100vw - 40px), 500px" /></div><figcaption>Original app preview. Check current features with your SACCO.</figcaption></figure>;
 }
 
 export function MobileAppShowcase() {

@@ -27,9 +27,9 @@ function HeroMedia({hero}) {
     };
   }, [hero.src]);
   return <div className="editorial-hero-media strategy-photo-hero" aria-hidden="true"
-    data-hero-state={state} style={{backgroundImage:`url("${hero.src}")`,backgroundPosition:hero.position}}>
-    <img ref={image} src={hero.src} alt="" fetchPriority="high" decoding="async" className="hero-image-probe" />
-    {state !== 'loaded' && <div className="hero-image-placeholder" style={{backgroundImage:`url("${imagePlaceholder(1200,600,state==='error')}")`}} />}
+    data-hero-state={state} style={{'--hero-desktop-image':`url("${hero.src}")`,'--hero-mobile-image':`url("${hero.mobile || hero.src}")`,backgroundPosition:hero.position}}>
+    <picture>{hero.mobile&&<source media="(max-width: 767px)" srcSet={hero.mobile}/>}<img ref={image} src={hero.src} alt="" fetchPriority="high" decoding="async" className="hero-image-probe" /></picture>
+    {state !== 'loaded' && <div className="hero-image-placeholder" data-preview={state==='loading'&&!!hero.preview||undefined} style={{backgroundImage:`url("${state==='loading'&&hero.preview ? hero.preview : imagePlaceholder(1200,600,state==='error')}")`,backgroundPosition:hero.position}} />}
   </div>;
 }
 

@@ -416,6 +416,10 @@ header.ekit-template-content-header.site-header { position: sticky; top: 12px; z
 .editorial-hero-media.strategy-photo-hero::before { display: none; }
 .hero-image-probe { position: absolute; width: 1px; height: 1px; opacity: 0; pointer-events: none; }
 .hero-image-placeholder { position: absolute; inset: 0; z-index: 1; background: #eef3f8 center / contain no-repeat; }
+.editorial-hero-media { --hero-image: var(--hero-desktop-image); background-image: var(--hero-image); }
+.editorial-hero-media > .parallax-background { background-image: var(--hero-image) !important; }
+.hero-image-placeholder[data-preview] { background-size: cover; filter: blur(12px); transform: scale(1.04); }
+@media (max-width: 767px) { .editorial-hero-media { --hero-image: var(--hero-mobile-image); } }
 .strategy-inner-hero .editorial-hero-media { height: clamp(240px,26vw,380px); }
 .editorial-hero.strategy-hero-breakout { margin-bottom: 56px; }
 .content-container:has(> main.editorial-retained-page) { max-width: none; padding-inline: 0; }

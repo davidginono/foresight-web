@@ -1,3 +1,4 @@
+import variants from './imageVariants.js';
 const uploads='/assets/wp-content/uploads/';
 const image=(name,source,position='center')=>({src:`/assets/heroes/${name}.webp`,source:`${uploads}${source}`,position});
 
@@ -51,4 +52,16 @@ const routes={
   '/category/training/':{...heroPhotos.training,title:'Training announcement archive',eyebrow:'Historical announcements'},
 };
 
-export const heroForPath=path=>routes[path] || heroPhotos.workplace;
+export const heroForPath=path=>{
+  const hero=routes[path] || heroPhotos.workplace;
+  return {...hero, ...variants[hero.src]};
+};
+
+// Media conditions match the hero picture and its moving background layer.
+export const heroPreloads=path=>{
+  const hero=heroForPath(path);
+  return hero.mobile ? [
+    {rel:'preload',as:'image',href:hero.mobile,media:'(max-width: 767px)',fetchpriority:'high'},
+    {rel:'preload',as:'image',href:hero.src,media:'(min-width: 768px)',fetchpriority:'high'},
+  ] : [{rel:'preload',as:'image',href:hero.src,fetchpriority:'high'}];
+};

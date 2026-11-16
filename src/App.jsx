@@ -78,11 +78,13 @@ export function App() {
         : (await pages[`./content/${entry.file}.json`]()).default;
       if (!current()) return;
       const styles = prepareRouteStyles(data.styles, controller.signal);
+      const hero = heroForPath(path);
+      const heroImage = loadImage(matchMedia('(max-width: 767px)').matches ? hero.mobile || hero.src : hero.src, { signal: controller.signal });
       // Start both requests together. Only the first visit waits for critical
       // imagery; slow or failed images fall back inside their own frame.
       const images = visited.current ? Promise.resolve() : Promise.all([
         loadImage('/assets/wp-content/uploads/2024/09/Computer-resources-logo.png', { signal: controller.signal }),
-        loadImage(heroForPath(path).src, { signal: controller.signal }),
+        heroImage,
       ]);
       bundle = await styles;
       await images;

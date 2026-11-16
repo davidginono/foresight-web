@@ -1,6 +1,7 @@
 import { useLayoutEffect, useRef, useState } from "react";
 import dimensions from "./imageDimensions.json";
 import { imagePlaceholder } from "./imagePlaceholder.js";
+import variants from './imageVariants.js';
 
 // Keep a real <img> as the root so captured layouts and carousel selectors work.
 export function ImageAsset(props) {
@@ -12,6 +13,7 @@ function ImageResource({ source, alt = "", className = "", style, onLoad, onErro
   const image = useRef(null);
   const [state, setState] = useState(source ? 'loading' : 'error');
   const [naturalWidth, naturalHeight] = dimensions[source.split(/[?#]/)[0]] || [];
+  const variant = variants[source];
   const width = props.width || naturalWidth;
   const height = props.height || naturalHeight;
   const failed = state === 'error';
@@ -23,8 +25,10 @@ function ImageResource({ source, alt = "", className = "", style, onLoad, onErro
   }, [source]);
 
   return <img {...props} ref={image} width={width} height={height}
-    src={failed ? placeholder : source}
-    srcSet={failed ? undefined : props.srcSet}
+    src={failed ? placeholder : variant?.src || source}
+    srcSet={failed ? undefined : variant?.srcSet || props.srcSet}
+    sizes={props.sizes || (variant ? (props.width ? `(max-width: ${width}px) 100vw, ${width}px` : '100vw') : undefined)}
+    decoding={props.decoding || 'async'}
     alt={pending ? "" : failed ? `Image unavailable${alt ? `: ${alt}` : ""}` : alt}
     aria-label={pending ? (alt || props['aria-label']) : props['aria-label']}
     aria-busy={pending || undefined}
