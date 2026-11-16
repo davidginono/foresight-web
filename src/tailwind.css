@@ -460,6 +460,13 @@ main.editorial-retained-page > .content-wrap { width: min(1240px,calc(100% - 48p
 .strategy-mobile-app .mobile-app-copy h2 { font: 400 clamp(3.7rem,7.2vw,7rem)/.98 'DM Serif Display',Georgia,serif; letter-spacing: -.035em; margin-bottom: 28px; }
 .strategy-mobile-app .mobile-app-copy > p:not(.strategy-small) { font: 400 22px/1.4 'Jost',Arial,sans-serif; max-width: 350px; margin-bottom: 20px; }
 .strategy-mobile-app .mobile-store-link { width: 230px; margin-bottom: 16px; }
+.mobile-app-platforms { @apply tw:relative tw:flex tw:flex-row tw:items-center tw:flex-wrap tw:gap-3; margin: 16px 0; }
+.strategy-mobile-app .mobile-app-platforms .mobile-store-link { flex: 0 0 230px; margin: 0; }
+.mobile-ios-badge { display: flex; align-items: center; gap: 12px; box-sizing: border-box; width: 200px; height: 60px; padding: 6px 17px; border: 1px solid #a6a6a6; border-radius: 9px; background: #000; color: #fff; font-family: Arial,sans-serif; }
+.mobile-ios-badge svg { width: 34px; height: 38px; flex-shrink: 0; }
+.mobile-ios-badge span { display: block; }
+.mobile-ios-caption { font-size: 12px; line-height: 1.2; }
+.mobile-ios-name { font-size: 28px; line-height: 1.1; }
 .strategy-mobile-app .strategy-small { max-width: 380px; font-size: 14px; }
 .strategy-mobile-app .mobile-app-art { max-width: 500px; }
 .strategy-faq { max-width: 920px; }

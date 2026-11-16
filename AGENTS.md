@@ -1,5 +1,9 @@
 # Prototype Instructions
 
+## Required Git workflow
+
+For every change, run the appropriate checks, create a Git commit with a clear message, and push it to the configured remote before reporting the work complete. Include only changes belonging to the task. If committing or pushing fails, report the failure explicitly and do not claim the change was pushed.
+
 ## Foresight project target
 
 The user requires Tailwind CSS and refined Godly-inspired loading and motion, while keeping the current designs and business logic. Use Tailwind without Preflight to preserve the source styling. Navigation must stage incoming CSS without applying it to the outgoing page, then commit styles and content together. Respect reduced motion and cancel stale navigation.
@@ -81,3 +85,5 @@ The user supplied the updated office address “Himo Road, Philips Area, Arusha�
 The user subsequently requested removing all YouTube videos from the website. This supersedes earlier requirements to feature homepage recordings and retain the three Training video cards. Remove YouTube players, cards, links and recording-specific headings/copy across public pages, including Resources. Keep `/training/` as a useful training enquiry page and retain the user's local mobile-application recording. Original captures remain provenance, not live video content.
 
 The user confirmed `0762210721` as the actual public contact number. Display `0762 210 721` and use `tel:+255762210721` for call links and the international number in organization metadata. Use shared company configuration throughout, including form errors and mobile navigation. This replaces the prior landline; no WhatsApp destination is authorized by supplying this number.
+
+The user confirmed iOS availability and requested an iOS logo in the shared Download Our App section. Show the Apple logo with “Available on iOS” beside the existing Google Play badge on Home, SACCOS and Technology. No App Store destination has been supplied; keep the iOS availability badge informational until a verified listing is provided.
