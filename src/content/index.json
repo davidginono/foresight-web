@@ -90,24 +90,9 @@
     "title": "School Management System – Computer Resources (T) Ltd"
   },
   {
-    "path": "/services/",
-    "file": "services",
-    "title": "SERVICES – Computer Resources (T) Ltd"
-  },
-  {
-    "path": "/software-consultancy-and-service/",
-    "file": "software-consultancy-and-service",
-    "title": "Software Consultancy and Service – Computer Resources (T) Ltd"
-  },
-  {
     "path": "/testimonials/",
     "file": "testimonials",
     "title": "Testimonials – Computer Resources (T) Ltd"
-  },
-  {
-    "path": "/training/",
-    "file": "training",
-    "title": "TRAINING – Computer Resources (T) Ltd"
   },
   {
     "path": "/union-management-system/",
@@ -123,11 +108,6 @@
     "path": "/technology/",
     "file": "technology",
     "title": "Cloud, Mobile & Integration"
-  },
-  {
-    "path": "/implementation-guide/",
-    "file": "implementation-guide",
-    "title": "Implementation Guide"
   },
   {
     "path": "/resources/sacco-system-upgrade-guide/",

@@ -10,8 +10,8 @@ const routes = new Set(index.map(page => page.path));
 function walk(nodes, visit) {
   for (const node of nodes) { if (node.type === 'tag') visit(node); if (node.children) walk(node.children, visit); }
 }
-test('all 24 original routes and seven document-led resource routes have content and styling', () => {
-  assert.equal(index.length, 31);
+test('all retained routes have content and styling', () => {
+  assert.equal(index.length, 27);
   assert.equal(routes.size, index.length);
   for (const entry of index) {
     const page = JSON.parse(fs.readFileSync(path.join(root, `src/content/${entry.file}.json`), 'utf8'));

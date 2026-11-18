@@ -16,6 +16,25 @@ test('document navigation and all five guides lead to real pages',()=>{
   assert.ok(faqs.some(([q,a])=>q.includes('backup')&&a.includes('not assumed')));
 });
 
+test('retired service pages have no routes, content, incoming links or generated pages',()=>{
+  const retired=['/services/','/implementation-guide/','/training/','/software-consultancy-and-service/'];
+  const sitemap=fs.readFileSync(new URL('../dist/client/sitemap.xml',import.meta.url),'utf8');
+  const marketing=fs.readFileSync(new URL('../src/MarketingPage.jsx',import.meta.url),'utf8');
+  for(const path of retired){
+    assert.ok(!paths.has(path),path);
+    assert.ok(!nativePaths.has(path),path);
+    assert.ok(!marketing.includes(path),path);
+    assert.ok(!fs.existsSync(new URL(`../src/content/${path.slice(1,-1)}.json`,import.meta.url)),path);
+    assert.ok(!fs.existsSync(new URL(`../dist/client${path}index.html`,import.meta.url)),path);
+    assert.ok(!sitemap.includes(`https://foresight.co.tz${path}`),path);
+  }
+  const services=navigation.filter(item=>item.label==='Services');
+  assert.equal(services.length,1);
+  assert.equal(navigation.some(item=>item.label==='Solutions'),false);
+  assert.equal(services[0].href,'/#solutions');
+  for(const product of products)assert.ok(services[0].links.some(([,href])=>href===`/${product.slug}/`));
+});
+
 test('all routes have unique search metadata and build-time canonical pages',()=>{
   const titles=new Set();
   for(const entry of index){

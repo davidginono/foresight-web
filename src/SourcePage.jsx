@@ -19,11 +19,9 @@ const parserOptions = { replace(node) {
   if(node.type === "text") {
     node.data=node.data.replace(/Send messege/g,"Request a demo").replace(/AMCOS Management Ssteym/g,"AMCOS Management System");
     const text=node.data.trim();
-    if(text.startsWith('Our Comprehensive Training Programs are designed'))node.data='Ask us about training for your team.';
-    else if(text.startsWith('Explore our diverse range of projects'))node.data='See photos from our work, events and training.';
+    if(text.startsWith('Explore our diverse range of projects'))node.data='See photos from our work, events and training.';
     else if(text.startsWith('This new update includes enhanced features'))node.data='A past release announcement from September 2024. Ask our team about the current version and available features.';
     else if(text.startsWith('Join us at our upcoming Foresight Software Training Seminar'))node.data='A past seminar announcement from September 2024. Ask our team about current training.';
-    else if(['Our Comprehensive Training Programs','Our Training Programs'].includes(text))node.data='Training for your team';
     else if(text==='Our Work in Action: Project Gallery')node.data='Our work in pictures';
     return;
   }

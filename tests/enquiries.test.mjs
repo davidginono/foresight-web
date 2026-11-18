@@ -5,7 +5,7 @@ import { products } from '../src/siteContent.js';
 import fs from 'node:fs';
 
 const env = { SMTP_HOST: 'smtp.example.test', SMTP_PORT: '587', SMTP_USER: 'test', SMTP_PASS: 'test-only', MAIL_FROM: 'website@example.test' };
-const valid = { form_type: 'consultation', institution: 'Test institution', contact_person: 'Test Person', email: 'visitor@example.test', telephone: '+255 700 000 000', solution: products[0].title, request_type: 'quotation', message: 'Please discuss reporting.', contact_permission: 'on', source_page: '/training/' };
+const valid = { form_type: 'consultation', institution: 'Test institution', contact_person: 'Test Person', email: 'visitor@example.test', telephone: '+255 700 000 000', solution: products[0].title, request_type: 'quotation', message: 'Please discuss reporting.', contact_permission: 'on', source_page: '/contact-us/' };
 function request(values = valid, options = {}) {
   const body = new FormData();
   for (const [key,value] of Object.entries(values)) body.append(key,value);
@@ -102,7 +102,7 @@ test('Vercel app-shell rewrite excludes API requests', () => {
   const fallback=new RegExp(`^${config.rewrites[0].source}$`);
   assert.equal(fallback.test('/api/enquiries'),false);
   assert.equal(fallback.test('/api/missing'),false);
-  assert.equal(fallback.test('/training/'),true);
+  assert.equal(fallback.test('/contact-us/'),true);
 });
 
 test('SMTP implementation and configuration are absent from shipped browser chunks', () => {

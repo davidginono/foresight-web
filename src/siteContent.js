@@ -85,12 +85,11 @@ export const articles = [
     ['Leave with clear next steps', 'Note what works now, what is planned and what still needs an answer. Agree next steps and details for a proposal. A demo does not commit you to buy.'],
   ]},
 ];
-export const nativePaths = new Set(['/', '/about-us/', '/services/', '/technology/', '/implementation-guide/', '/faq/', '/request-demo/', '/contact-us/', '/updates/', '/training/', '/testimonials/', '/software-consultancy-and-service/', ...products.map(p=>`/${p.slug}/`), ...otherProducts.map(p=>`/${p[0]}/`), ...articles.map(p=>`/resources/${p.slug}/`)]);
+export const nativePaths = new Set(['/', '/about-us/', '/technology/', '/faq/', '/request-demo/', '/contact-us/', '/updates/', '/testimonials/', ...products.map(p=>`/${p.slug}/`), ...otherProducts.map(p=>`/${p[0]}/`), ...articles.map(p=>`/resources/${p.slug}/`)]);
 export const navigation = [
   {label:'Home', href:'/'},
-  {label:'Solutions', href:'/services/#solutions', links:[...products.map(p=>[p.name,`/${p.slug}/`]),['Other Business Solutions','/services/#other-solutions']]},
+  {label:'Services', href:'/#solutions', links:[...products.map(p=>[p.name,`/${p.slug}/`]),['Other Business Solutions','/#other-solutions']]},
   {label:'Technology', href:'/technology/', links:[['Cloud & Hosting','/technology/#cloud'],['Mobile Applications','/technology/#mobile'],['Integration & Reporting','/technology/#integration']]},
-  {label:'Services', href:'/services/#implementation', links:[['Implementation','/services/#implementation'],['Data Migration','/implementation-guide/#migration'],['Training','/services/#training'],['Support','/services/#support'],['Consultancy','/software-consultancy-and-service/']]},
-  {label:'Resources', href:'/updates/', links:[['Guides & Articles','/updates/'],['Training & Events','/training/'],['Testimonials','/testimonials/'],['FAQs','/faq/']]},
+  {label:'Resources', href:'/updates/', links:[['Guides & Articles','/updates/'],['Testimonials','/testimonials/'],['FAQs','/faq/']]},
   {label:'About Us', href:'/about-us/', links:[['Company Profile','/about-us/'],['Our Approach','/about-us/#approach'],['Contact','/contact-us/'],['Gallery','/gallery/']]},
 ];

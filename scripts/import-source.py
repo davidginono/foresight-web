@@ -76,11 +76,11 @@ service_routes = {
     "saccos": "/saccos-microfinance-system/", "union": "/union-management-system/",
     "amcos": "/amcos-management-system/", "payroll": "/payroll-system/",
     "car tracking": "/car-tracking-system/", "school": "/school-management-system/",
-    "inventory": "/inventory-and-accounting-software/", "consultancy": "/software-consultancy-and-service/",
+    "inventory": "/inventory-and-accounting-software/",
 }
 page_index = []
 for capture in sorted(REFERENCE.glob("*.html")):
-    if capture.stem in ("gallery-lightbox", "mobile-menu-expanded"):
+    if capture.stem in ("gallery-lightbox", "mobile-menu-expanded", "services", "training", "software-consultancy-and-service", "implementation-guide"):
         continue
     soup = BeautifulSoup(capture.read_text(encoding="utf-8"), "html.parser")
     if not soup.body or not soup.title: continue
@@ -106,6 +106,9 @@ for capture in sorted(REFERENCE.glob("*.html")):
     body = soup.body
     for tag in body.select("script,link,meta,#elementor-device-mode,.elfsight-app-2bbd2f10-09cc-49b3-a922-c012c739da17"):
         tag.decompose()
+    for link in body.select('a[href]'):
+        if urlsplit(rewrite_url(link["href"])).path in ("/services/", "/training/", "/implementation-guide/", "/software-consultancy-and-service/"):
+            link.unwrap()
     for tag in body.find_all(True):
         for attr in list(tag.attrs):
             if attr.startswith("on") or attr in ("srcset", "sizes", "data-e-action-hash", "fetchpriority", "inert"):
@@ -126,7 +129,7 @@ for capture in sorted(REFERENCE.glob("*.html")):
             if text in ("request demo", "request a demo") and href in ("#", "", path + "#"):
                 tag["href"] = "/request-demo/"
             if text in ("view all services", "our services") and href in ("#", "", path + "#"):
-                tag["href"] = "/services/"
+                tag["href"] = "/#solutions"
             if "union management" in text and "saccos" not in text and len(text) < 50:
                 tag["href"] = "/union-management-system/"
             if text == "read more" and href in ("#", "", path + "#"):
