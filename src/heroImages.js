@@ -33,6 +33,7 @@ const routes={
   '/inventory-and-accounting-software/':heroPhotos.inventory,
   '/car-tracking-system/':heroPhotos.vehicle,
   '/school-management-system/':heroPhotos.school,
+  '/hospital-management-system/':heroPhotos.workplace,
   '/payroll-system/':heroPhotos.workplace,
   '/resources/sacco-system-upgrade-guide/':heroPhotos.members,
   '/resources/sacco-data-migration-guide/':heroPhotos.workplace,

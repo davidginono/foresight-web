@@ -38,6 +38,7 @@ export const otherProducts = [
   ['payroll-system', 'Payroll System', 'Manage staff records, pay and reports. Check local tax and reporting needs with our team.'],
   ['car-tracking-system', 'Vehicle Tracking System', 'Explore vehicle tracking. Confirm devices, network needs and service terms in a demo.'],
   ['school-management-system', 'School Management System', 'Explore student records, school work and finances supported by the system.'],
+  ['hospital-management-system', 'Hospital Management System', 'Discuss software for your hospital’s daily work. Confirm available modules, setup and support with our team.'],
   ['inventory-and-accounting-software', 'Inventory & Accounting Software', 'Discuss stock, purchases, sales and accounts for your agreed setup.'],
 ];
 export const implementationSteps = [
@@ -49,7 +50,7 @@ export const implementationSteps = [
   ['Get ongoing help', 'Agree how to get help and keep the system running.'],
 ];
 export const faqs = [
-  ['Who is it for?', 'SACCOS, microfinance institutions, unions and AMCOS. We also offer payroll, vehicle tracking, school and stock/accounting systems. Ask for a demo to check the fit.'],
+  ['Who is it for?', 'SACCOS, microfinance institutions, unions and AMCOS. We also offer payroll, vehicle tracking, school, hospital and stock/accounting systems. Ask for a demo to check the fit.'],
   ['Will it meet our reporting needs?', 'Ask us to show the reports you need. Availability depends on your setup and local rules. Your institution remains responsible for meeting those rules.'],
   ['How are backups handled?', 'Agree how often backups run, where they are kept, who manages them and how recovery is tested. Backup schedules are not assumed to be the same for every institution.'],
   ['Cloud or a local server?', 'We check your internet, devices and access needs together. Agree hosting, upkeep and recovery duties before setup.'],
@@ -88,7 +89,7 @@ export const articles = [
 export const nativePaths = new Set(['/', '/about-us/', '/technology/', '/faq/', '/request-demo/', '/contact-us/', '/updates/', '/testimonials/', ...products.map(p=>`/${p.slug}/`), ...otherProducts.map(p=>`/${p[0]}/`), ...articles.map(p=>`/resources/${p.slug}/`)]);
 export const navigation = [
   {label:'Home', href:'/'},
-  {label:'Services', href:'/#solutions', links:[...products.map(p=>[p.name,`/${p.slug}/`]),['Other Business Solutions','/#other-solutions']]},
+  {label:'Services', href:'/#solutions', links:[...products.map(p=>[p.name,`/${p.slug}/`]),['Hospital Management System','/hospital-management-system/'],['Other Business Solutions','/#other-solutions']]},
   {label:'Technology', href:'/technology/', links:[['Cloud & Hosting','/technology/#cloud'],['Mobile Applications','/technology/#mobile'],['Integration & Reporting','/technology/#integration']]},
   {label:'Resources', href:'/updates/', links:[['Guides & Articles','/updates/'],['Testimonials','/testimonials/'],['FAQs','/faq/']]},
   {label:'About Us', href:'/about-us/', links:[['Company Profile','/about-us/'],['Our Approach','/about-us/#approach'],['Contact','/contact-us/'],['Gallery','/gallery/']]},
