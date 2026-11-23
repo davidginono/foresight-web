@@ -1,4 +1,5 @@
-import { useCallback, useEffect, useRef, useState } from "react";
+import { LanguageSwitch, useLanguage } from './Language.jsx';
+import { useCallback, useEffect, useLayoutEffect, useRef, useState } from "react";
 import { flushSync } from "react-dom";
 import { SourcePage } from "./SourcePage.jsx";
 import { Gallery } from "./Gallery.jsx";
@@ -6,7 +7,7 @@ import { PageLoader } from "./PageLoader.jsx";
 import { ParticleBackground } from './ParticleBackground.jsx';
 import { prepareRouteStyles } from "./routeStyles.js";
 import pageIndex from "./content/index.json";
-import { updateMetadata } from './metadata.js';
+import { pageMetadata, updateMetadata } from './metadata.js';
 import { track } from './analytics.js';
 import { products, nativePaths } from './siteContent.js';
 import { heroForPath } from './heroImages.js';
@@ -31,6 +32,8 @@ function alignAnchor(target, stillCurrent = () => true) {
 }
 
 export function App() {
+  const { locale, t } = useLanguage();
+
   const [path, setPath] = useState(normalizePath(location.pathname));
   const [page, setPage] = useState(null);
   const [error, setError] = useState(null);
@@ -65,7 +68,6 @@ export function App() {
     const current = () => !controller.signal.aborted && request === sequence.current;
     const entry = pageIndex.find(item => item.path === path);
     if (!entry) {
-      document.title = "Page not found — Computer Resources";
       setError("not-found"); setLoading(false);
       return () => controller.abort();
     }
@@ -94,7 +96,6 @@ export function App() {
         // CSS, body context and React content change in one rendering frame.
         bundle.activate();
         document.body.className = nativePaths.has(path) ? 'foresight-native' : data.bodyClass;
-        updateMetadata(path,data.title);
         flushSync(() => { setPage(data); setLoading(false); setError(null); });
         committed = true;
         let target;
@@ -126,13 +127,19 @@ export function App() {
   }, [path, attempt]);
 
   const missing = error === "not-found";
+  useLayoutEffect(() => {
+    if (missing) document.title = `${t("Page not found")} — Foresight`;
+    else if (page) updateMetadata(page.path, page.title, locale);
+  }, [page, locale, missing, t]);
+  const loadingEntry = loading && pageIndex.find(item => item.path === path);
   return <>
     <ParticleBackground />
-    {loading && <PageLoader initial={!page} label={pageIndex.find(item => item.path === path)?.title.split(" – ")[0] || "page"} />}
+    {loading && <PageLoader initial={!page} label={loadingEntry ? pageMetadata(path, loadingEntry.title, locale).title.split(" | ")[0] : t("page")} />}
     {error && <section role="alert" className={missing || !page ? "tw:mx-auto tw:max-w-3xl tw:px-6 tw:py-32" : "tw:fixed tw:bottom-6 tw:left-1/2 tw:z-[100011] tw:w-[min(90vw,480px)] tw:-translate-x-1/2 tw:rounded-xl tw:bg-white tw:p-6 tw:shadow-xl tw:border tw:border-solid tw:border-slate-200"}>
-      <h1 className="tw:text-2xl tw:font-semibold tw:text-[#333a52]!">{missing ? "Page not found" : "This page couldn’t be opened"}</h1>
-      <p className="tw:my-3 tw:text-[#465166]">{missing ? "Please return home or choose another page." : "Your current page is still available. Please try again."}</p>
-      {!missing && <button type="button" className="ux-primary tw:mr-3" onClick={() => setAttempt(value => value + 1)}>Try again</button>}<a href="/" className="ux-text-link">Return home</a>
+      <h1 className="tw:text-2xl tw:font-semibold tw:text-[#333a52]!">{t(missing ? "Page not found" : "This page couldn’t be opened")}</h1>
+      <p className="tw:my-3 tw:text-[#465166]">{t(missing ? "Please return home or choose another page." : "Your current page is still available. Please try again.")}</p>
+      {!missing && <button type="button" className="ux-primary tw:mr-3" onClick={() => setAttempt(value => value + 1)}>{t("Try again")}</button>}<a href="/" className="ux-text-link">{t("Return home")}</a>
+      {(missing || !page) && <LanguageSwitch />}
     </section>}
     {!missing && <div id="site-page" aria-busy={loading} data-route={page?.path || ""}>{page && <SourcePage key={page.path} page={page} onNavigate={navigate} onGallery={setGallery} routes={pageIndex} />}</div>}
     {gallery && <Gallery images={gallery.images} initialIndex={gallery.index} onClose={closeGallery} />}

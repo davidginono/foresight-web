@@ -1,7 +1,10 @@
+import { useLanguage } from './Language.jsx';
 import { useEffect, useRef, useState } from 'react';
 import { Pause, Play } from 'lucide-react';
 
 export function ParticleBackground() {
+  const { t } = useLanguage();
+
   const canvasRef = useRef(null);
   const clock = useRef(0);
   const pointer = useRef({ x: -1000, y: -1000, active: false, strength: 0 });
@@ -122,8 +125,8 @@ export function ParticleBackground() {
   return <>
     <canvas ref={canvasRef} className="particle-background" aria-hidden="true" />
     {!reduced && <button type="button" className="particle-motion-control" onClick={() => setPaused(value => !value)}
-      aria-label={paused ? 'Resume background animation' : 'Pause background animation'} aria-pressed={paused}
-      title={paused ? 'Resume background animation' : 'Pause background animation'}>
+      aria-label={paused ? t("Resume background animation") : t("Pause background animation")} aria-pressed={paused}
+      title={paused ? t("Resume background animation") : t("Pause background animation")}>
       {paused ? <Play size={16} aria-hidden="true" /> : <Pause size={16} aria-hidden="true" />}
     </button>}
   </>;

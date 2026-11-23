@@ -1,3 +1,4 @@
+import { useLanguage } from './Language.jsx';
 import { useEffect, useRef, useState } from 'react';
 import { ArrowLeft, ArrowRight, ArrowUpRight, Pause, Play, Quote } from 'lucide-react';
 import { ImageAsset } from './ImageAsset.jsx';
@@ -5,12 +6,15 @@ import testimonials from './testimonialContent.json';
 
 // Original published statements; the user confirmed approval on 23 October 2026.
 export function Testimonials({ preview=false }) {
+  const { locale, t } = useLanguage();
+  const inSwahili = locale === "sw";
   return <div className="testimonial-grid tw:grid tw:grid-cols-1 tw:gap-7 tw:lg:grid-cols-2">
     {(preview?testimonials.slice(0,2):testimonials).map(item=><figure className="testimonial-card" key={item.name}>
       <Quote className="testimonial-quote" size={36} aria-hidden="true" />
-      <blockquote><p>{item.quote}</p></blockquote>
-      <figcaption><ImageAsset src={item.image} alt={`${item.name} logo`} width="80" height="80" loading="lazy" />
-        <div><h3>{item.href?<a href={item.href} target="_blank" rel="noopener noreferrer" aria-label={`${item.name} website (opens in a new tab)`}>{item.name}<ArrowUpRight size={16} className="nav-arrow" aria-hidden="true"/></a>:item.name}</h3><p>{item.role}</p></div>
+      <blockquote>{inSwahili && <small>{t("Translated from English")}</small>}<p>{inSwahili ? item.quoteSw : item.quote}</p></blockquote>
+      {inSwahili && <details className="testimonial-original"><summary>{t("Original English statement")}</summary><blockquote lang="en"><p>{item.quote}</p></blockquote></details>}
+      <figcaption><ImageAsset src={item.image} alt={`${t("logo")} · ${item.name}`} width="80" height="80" loading="lazy" />
+        <div><h3>{item.href?<a href={item.href} target="_blank" rel="noopener noreferrer" aria-label={`${t("Visit website")} · ${item.name} · ${t("opens in a new tab")}`}>{item.name}<ArrowUpRight size={16} className="nav-arrow" aria-hidden="true"/></a>:item.name}</h3><p>{inSwahili ? `${t("Management")} ${item.name}` : item.role}</p></div>
       </figcaption>
     </figure>)}
   </div>;
@@ -20,6 +24,8 @@ const uploads='/assets/wp-content/uploads/2024/09/';
 const clients=[['TCRA','tcra2.png'],['ITV Tanzania','itv2.png'],['Mwananchi Communications','MWANANCHI.png'],['PPF Pensions Fund','ppf2.png'],['TAHA','taha2.png'],['Tanzania Wildlife Research Institute','taw.png'],['TBC','tbc2.png'],['Tanzania Breweries','tbl2.png']];
 
 export function ClientLogos() {
+  const { t } = useLanguage();
+
   const showcase=useRef(null), track=useRef(null), belt=useRef(null), counter=useRef(null);
   const counted=useRef(false);
   const [paused,setPaused]=useState(false);
@@ -70,13 +76,13 @@ export function ClientLogos() {
     }else track.current.scrollBy({left:direction*track.current.clientWidth*.8,behavior:'instant'});
   };
   return <div ref={showcase} className="client-showcase" data-running={!paused&&inView&&visible}>
-    <div className="client-showcase-heading"><h2 id="client-logos-title">Our Clients</h2>
-      <div className="client-logo-count"><span className="tw:sr-only">{clients.length} client logos shown</span><span ref={counter} className="client-logo-number" aria-hidden="true">{clients.length}</span><span aria-hidden="true">Client logos<br/>shown below</span></div>
+    <div className="client-showcase-heading"><h2 id="client-logos-title">{t("Our Clients")}</h2>
+      <div className="client-logo-count"><span className="tw:sr-only">{clients.length}{' '}{t("client logos shown")}</span><span ref={counter} className="client-logo-number" aria-hidden="true">{clients.length}</span><span aria-hidden="true">{t("Client logos")}<br/>{t("shown below")}</span></div>
     </div>
     <div className="client-logo-controls">
-      {!reduced&&<button type="button" onClick={()=>setPaused(value=>!value)} aria-label={paused?'Resume client animation':'Pause client animation'} aria-pressed={paused} aria-controls="client-logos">{paused?<Play size={20} aria-hidden="true"/>:<Pause size={20} aria-hidden="true"/>}</button>}
-      <button type="button" onClick={()=>scroll(-1)} aria-label="Previous clients" aria-controls="client-logos"><ArrowLeft size={20} aria-hidden="true"/></button>
-      <button type="button" onClick={()=>scroll(1)} aria-label="Next clients" aria-controls="client-logos"><ArrowRight size={20} aria-hidden="true"/></button>
+      {!reduced&&<button type="button" onClick={()=>setPaused(value=>!value)} aria-label={paused?t("Resume client animation"):t("Pause client animation")} aria-pressed={paused} aria-controls="client-logos">{paused?<Play size={20} aria-hidden="true"/>:<Pause size={20} aria-hidden="true"/>}</button>}
+      <button type="button" onClick={()=>scroll(-1)} aria-label={t("Previous clients")} aria-controls="client-logos"><ArrowLeft size={20} aria-hidden="true"/></button>
+      <button type="button" onClick={()=>scroll(1)} aria-label={t("Next clients")} aria-controls="client-logos"><ArrowRight size={20} aria-hidden="true"/></button>
     </div>
     <div ref={track} id="client-logos" className="client-logo-track" tabIndex={0} role="region" aria-labelledby="client-logos-title" onKeyDown={event=>{if(event.key==='ArrowLeft'||event.key==='ArrowRight'){event.preventDefault();scroll(event.key==='ArrowLeft'?-1:1);}}}>
       <div ref={belt} className="client-logo-belt">

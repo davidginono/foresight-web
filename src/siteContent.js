@@ -89,8 +89,8 @@ export const articles = [
 export const nativePaths = new Set(['/', '/about-us/', '/technology/', '/faq/', '/request-demo/', '/contact-us/', '/updates/', '/testimonials/', ...products.map(p=>`/${p.slug}/`), ...otherProducts.map(p=>`/${p[0]}/`), ...articles.map(p=>`/resources/${p.slug}/`)]);
 export const navigation = [
   {label:'Home', href:'/'},
-  {label:'Services', href:'/#solutions', links:[...products.map(p=>[p.name,`/${p.slug}/`]),['Hospital Management System','/hospital-management-system/'],['Other Business Solutions','/#other-solutions']]},
-  {label:'Technology', href:'/technology/', links:[['Cloud & Hosting','/technology/#cloud'],['Mobile Applications','/technology/#mobile'],['Integration & Reporting','/technology/#integration']]},
-  {label:'Resources', href:'/updates/', links:[['Guides & Articles','/updates/'],['Testimonials','/testimonials/'],['FAQs','/faq/']]},
-  {label:'About Us', href:'/about-us/', links:[['Company Profile','/about-us/'],['Our Approach','/about-us/#approach'],['Contact','/contact-us/'],['Gallery','/gallery/']]},
+  {label:'Services', overview:'Explore Services', href:'/#solutions', links:[...products.map(p=>[p.name,`/${p.slug}/`]),['Hospital Management System','/hospital-management-system/'],['Other Business Solutions','/#other-solutions']]},
+  {label:'Technology', overview:'Explore Technology', href:'/technology/', links:[['Cloud & Hosting','/technology/#cloud'],['Mobile Applications','/technology/#mobile'],['Integration & Reporting','/technology/#integration']]},
+  {label:'Resources', overview:'Explore Resources', href:'/updates/', links:[['Guides & Articles','/updates/'],['Testimonials','/testimonials/'],['FAQs','/faq/']]},
+  {label:'About Us', overview:'Explore About Us', href:'/about-us/', links:[['Company Profile','/about-us/'],['Our Approach','/about-us/#approach'],['Contact','/contact-us/'],['Gallery','/gallery/']]},
 ];

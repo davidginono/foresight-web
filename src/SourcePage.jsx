@@ -1,3 +1,4 @@
+import { useLanguage } from "./Language.jsx";
 import React, { memo, useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 import parse, { attributesToProps, domToReact } from "html-react-parser";
 import Swiper, { Autoplay, EffectFade, Navigation, Pagination, A11y } from "swiper";
@@ -13,7 +14,7 @@ import { heroForPath } from './heroImages.js';
 import { ConsultationSection } from './ConsultationSection.jsx';
 
 const textOf = node => node.type === "text" ? node.data : (node.children || []).map(textOf).join("");
-function pageParser(page) {
+function pageParser(page,t) {
 let headingCount=1; // The shared photograph hero owns the page's primary heading.
 const parserOptions = { replace(node) {
   if(node.type === "text") {
@@ -23,33 +24,39 @@ const parserOptions = { replace(node) {
     else if(text.startsWith('This new update includes enhanced features'))node.data='A past release announcement from September 2024. Ask our team about the current version and available features.';
     else if(text.startsWith('Join us at our upcoming Foresight Software Training Seminar'))node.data='A past seminar announcement from September 2024. Ask our team about current training.';
     else if(text==='Our Work in Action: Project Gallery')node.data='Our work in pictures';
+    const localized=t(node.data.trim());
+    if (localized!==node.data.trim()) return <>{node.data.replace(node.data.trim(),localized)}</>;
     return;
   }
   if(node.type !== "tag") return;
   const classes=(node.attribs.class || "").split(" ");
+  if(node.name==="p" && page.path==="/foresight-software-training-seminar/" && textOf(node).trim().startsWith("Join us at our upcoming")) {
+    return <p {...attributesToProps(node.attribs)}>{t("A past seminar announcement from September 2024. Ask our team about current training.")}</p>;
+  }
   if(classes.includes('e-parent') && /GET A CALL BACK/i.test(textOf(node))) return <ConsultationSection />;
   if(classes.includes('entry-hero')) return <></>;
   const parentType=node.parent?.attribs?.['data-elementor-type'];
   if(['wp-page','single-post'].includes(parentType) && node===node.parent.children.find(child=>child.type==='tag')) return <></>;
   if (classes.includes('ekit-template-content-header')) return <SiteHeader path={page.path} />;
   if (node.attribs['data-elementor-type'] === 'footer') return <SiteFooter />;
+  for(const attr of ['alt', 'title', 'aria-label']) if(node.attribs[attr]) node.attribs[attr]=t(node.attribs[attr]);
   // Replace captured entrance animations with a single controlled motion system.
   node.attribs.class = classes.filter(name => !/^(animated|elementor-invisible|fadeIn\w*|zoomIn\w*|slideIn\w*)$/.test(name)).join(" ");
   if(classes.includes("flatpickr-calendar") || classes.includes("swiper-lazy-preloader")) return <></>;
   // Suppress any retained captured video widgets and outbound video links.
   if(node.attribs['data-widget_type'] === 'video.default' ||
     /(?:youtube(?:-nocookie)?\.com|youtu\.be)/i.test(node.attribs.src || node.attribs.href || '')) return <></>;
-  if(classes.includes("elementskit-menu-hamburger")) {node.attribs['aria-label']="Open navigation";node.attribs['aria-expanded']="false";}
+  if(classes.includes("elementskit-menu-hamburger")) {node.attribs['aria-label']=t("Open navigation");node.attribs['aria-expanded']="false";}
   if(node.name === "h1") {
     headingCount++;
     if(headingCount > 1) {const props=attributesToProps(node.attribs);return <h2 {...props}>{domToReact(node.children,parserOptions)}</h2>;}
   }
   if(node.name === "a") {
     const image=node.children?.find(c=>c.name === "img");
-    if(image && !image.attribs.alt) node.attribs['aria-label']=node.attribs.href === "/" ? "Computer Resources home" : node.attribs.href?.includes('play.google.com') ? "Download Foresight Financials on Google Play" : "View image";
-    if(!node.attribs.href || node.attribs.href==="#") return <span {...attributesToProps({...node.attribs,href:undefined})} title="Currently unavailable">{domToReact(node.children,parserOptions)}</span>;
+    if(image && !image.attribs.alt) node.attribs['aria-label']=node.attribs.href === "/" ? `Computer Resources · ${t("Home")}` : node.attribs.href?.includes('play.google.com') ? t("Get it on Google Play") : t("View image");
+    if(!node.attribs.href || node.attribs.href==="#") return <span {...attributesToProps({...node.attribs,href:undefined})} title={t("Currently unavailable")}>{domToReact(node.children,parserOptions)}</span>;
     if(node.attribs.href === page.path) node.attribs['aria-current']="page";
-    if(node.attribs['data-elementor-open-lightbox']==="yes") node.attribs['aria-label']="Open project photo";
+    if(node.attribs['data-elementor-open-lightbox']==="yes") node.attribs['aria-label']=t("Open project photo");
   }
   if (node.type === "tag" && (node.attribs.class || "").split(" ").includes("e-parent") && !(node.attribs.class || "").includes("e-lazyloaded")) {
     node.attribs.class += " e-lazyloaded";
@@ -88,7 +95,7 @@ const parserOptions = { replace(node) {
   if (node.name === "form") return <LocalForm attributes={node.attribs}>{domToReact(node.children, parserOptions)}</LocalForm>;
   if(node.name==='main' || ["wp-page","single-post","archive"].includes(node.attribs['data-elementor-type'])) {
     const hero=heroForPath(page.path);
-    return <main {...attributesToProps(node.attribs)} className={`${node.attribs.class||''} editorial-retained-page`} id="main-content" tabIndex={-1}><PageHero image={hero} title={hero.title} eyebrow={hero.eyebrow} breakout={node.name==='main'}/>{domToReact(node.children,parserOptions)}</main>;
+    return <main {...attributesToProps(node.attribs)} className={`${node.attribs.class||''} editorial-retained-page`} id="main-content" tabIndex={-1}><PageHero image={hero} title={t(hero.title)} eyebrow={t(hero.eyebrow)} breakout={node.name==='main'}/>{domToReact(node.children,parserOptions)}</main>;
   }
   if(classes.includes('ekit-template-content-header')) return <header {...attributesToProps(node.attribs)}>{domToReact(node.children,parserOptions)}</header>;
   if(node.attribs['data-elementor-type'] === 'footer') return <footer {...attributesToProps(node.attribs)}>{domToReact(node.children,parserOptions)}</footer>;
@@ -97,11 +104,12 @@ return parserOptions;
 }
 
 export const SourcePage = memo(function SourcePage({ page, onNavigate, onGallery, routes }) {
+  const { t } = useLanguage();
   const root = useRef(null);
   const [menuTrigger,setMenuTrigger] = useState(null);
   const content = useMemo(() => nativePaths.has(page.path)
     ? <><SiteHeader path={page.path}/><MarketingPage path={page.path}/><SiteFooter/></>
-    : parse(page.html, pageParser(page)), [page]);
+    : parse(page.html, pageParser(page,t)), [page,t]);
   useLayoutEffect(() => {
     const stopParallax = setupParallax(root.current);
     const header = root.current.querySelector('header.ekit-template-content-header');
@@ -215,7 +223,7 @@ export const SourcePage = memo(function SourcePage({ page, onNavigate, onGallery
     if (anchor.matches('[data-elementor-open-lightbox="yes"]')) {
       event.preventDefault();
       const gallery = anchor.closest(".elementor-gallery__container") || root.current;
-      const images = [...gallery.querySelectorAll('[data-elementor-open-lightbox="yes"]')].map(a => ({ src: a.getAttribute("href"), alt: a.querySelector("img")?.alt || "Foresight project gallery" }));
+      const images = [...gallery.querySelectorAll('[data-elementor-open-lightbox="yes"]')].map(a => ({ src: a.getAttribute("href"), alt: a.querySelector("img")?.alt || t("Foresight project gallery") }));
       onGallery({ images, index: images.findIndex(image => image.src === anchor.getAttribute("href")) });
       return;
     }
@@ -226,5 +234,5 @@ export const SourcePage = memo(function SourcePage({ page, onNavigate, onGallery
       event.preventDefault(); onNavigate(url.pathname, url.hash);
     } else if (anchor.getAttribute("href") === "#") event.preventDefault();
   };
-  return <><a className="ux-skip-link" href="#main-content" onClick={()=>root.current.querySelector('#main-content')?.focus()}>Skip to content</a><div ref={root} onClick={click}>{!nativePaths.has(page.path)&&['/general-version-release/','/foresight-software-training-seminar/','/2024/09/12/','/author/foresight/','/category/new-release/','/category/training/'].includes(page.path)&&<div className="strategy-archive-notice" role="note">Archive · September 2024. This is historical material; <a href="/updates/">view current resources</a> or <a href="/contact-us/">ask about the current release and training</a>.</div>}{content}</div>{menuTrigger && <MobileMenu path={page.path} routes={routes} trigger={menuTrigger} onNavigate={onNavigate} onClose={()=>{menuTrigger.setAttribute('aria-expanded','false');setMenuTrigger(null);}} />}</>;
+  return <><a className="ux-skip-link" href="#main-content" onClick={()=>root.current.querySelector('#main-content')?.focus()}>{t("Skip to content")}</a><div ref={root} onClick={click}>{!nativePaths.has(page.path)&&['/general-version-release/','/foresight-software-training-seminar/','/2024/09/12/','/author/foresight/','/category/new-release/','/category/training/'].includes(page.path)&&<div className="strategy-archive-notice" role="note">{t("Archive · September 2024. This is historical material;")} <a href="/updates/">{t("view current resources")}</a> {t("or")} <a href="/contact-us/">{t("ask about the current release and training")}</a>.</div>}{content}</div>{menuTrigger && <MobileMenu path={page.path} trigger={menuTrigger} onNavigate={onNavigate} onClose={()=>{menuTrigger.setAttribute('aria-expanded','false');setMenuTrigger(null);}} />}</>;
 });

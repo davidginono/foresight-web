@@ -40,7 +40,7 @@ export function PageHero({eyebrow,title,children,photo=false,image,breakout=fals
     data-page-hero="" data-hero-image={hero.src}>
     <div className="strategy-width editorial-hero-copy">
       {eyebrow&&<p className="strategy-eyebrow">{eyebrow}</p>}
-      <h1>{photo?<>Technology for<br/><em>stronger</em><br/>cooperatives<span className="editorial-period">.</span></>:title}</h1>
+      <h1>{title}</h1>
       {children}
     </div>
     <HeroMedia key={hero.src} hero={hero} />

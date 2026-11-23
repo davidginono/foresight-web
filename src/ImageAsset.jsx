@@ -1,4 +1,5 @@
 import { useLayoutEffect, useRef, useState } from "react";
+import { useLanguage } from "./Language.jsx";
 import dimensions from "./imageDimensions.json";
 import { imagePlaceholder } from "./imagePlaceholder.js";
 import variants from './imageVariants.js';
@@ -10,6 +11,7 @@ export function ImageAsset(props) {
 }
 
 function ImageResource({ source, alt = "", className = "", style, onLoad, onError, ...props }) {
+  const { t } = useLanguage();
   const image = useRef(null);
   const [state, setState] = useState(source ? 'loading' : 'error');
   const [naturalWidth, naturalHeight] = dimensions[source.split(/[?#]/)[0]] || [];
@@ -29,7 +31,7 @@ function ImageResource({ source, alt = "", className = "", style, onLoad, onErro
     srcSet={failed ? undefined : variant?.srcSet || props.srcSet}
     sizes={props.sizes || (variant ? (props.width ? `(max-width: ${width}px) 100vw, ${width}px` : '100vw') : undefined)}
     decoding={props.decoding || 'async'}
-    alt={pending ? "" : failed ? `Image unavailable${alt ? `: ${alt}` : ""}` : alt}
+    alt={pending ? "" : failed ? `${t("Image unavailable")}${alt ? `: ${alt}` : ""}` : alt}
     aria-label={pending ? (alt || props['aria-label']) : props['aria-label']}
     aria-busy={pending || undefined}
     data-image-state={state} data-image-source={source}
