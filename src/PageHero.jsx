@@ -1,10 +1,13 @@
 import { createContext, useContext, useEffect, useRef, useState } from 'react';
 import { heroForPath } from './heroImages.js';
 import { imagePlaceholder } from './imagePlaceholder.js';
+import { useLanguage } from './Language.jsx';
 
 export const HeroImageContext=createContext(heroForPath('/'));
 
 function HeroMedia({hero}) {
+  const { t } = useLanguage();
+  const screenshot = Boolean(hero.alt);
   const image = useRef(null);
   const [state, setState] = useState('loading');
   useEffect(() => {
@@ -26,10 +29,19 @@ function HeroMedia({hero}) {
       element.removeEventListener('error', failed);
     };
   }, [hero.src]);
-  return <div className="editorial-hero-media strategy-photo-hero" aria-hidden="true"
-    data-hero-state={state} style={{'--hero-desktop-image':`url("${hero.src}")`,'--hero-mobile-image':`url("${hero.mobile || hero.src}")`,backgroundPosition:hero.position}}>
-    <picture>{hero.mobile&&<source media="(max-width: 767px)" srcSet={hero.mobile}/>}<img ref={image} src={hero.src} alt="" fetchPriority="high" decoding="async" className="hero-image-probe" /></picture>
-    {state !== 'loaded' && <div className="hero-image-placeholder" data-preview={state==='loading'&&!!hero.preview||undefined} style={{backgroundImage:`url("${state==='loading'&&hero.preview ? hero.preview : imagePlaceholder(1200,600,state==='error')}")`,backgroundPosition:hero.position}} />}
+  const style = screenshot
+    ? {'--hero-aspect': `${hero.width} / ${hero.height}`}
+    : {'--hero-desktop-image':`url("${hero.src}")`,'--hero-mobile-image':`url("${hero.mobile || hero.src}")`,backgroundPosition:hero.position};
+  return <div className={`editorial-hero-media ${screenshot ? 'editorial-hero-screenshot' : 'strategy-photo-hero'}`}
+    aria-hidden={screenshot ? undefined : true} data-hero-state={state} style={style}>
+    <picture>
+      {hero.mobile && <source media="(max-width: 767px)" srcSet={hero.mobile} />}
+      <img ref={image} src={hero.src} alt={screenshot ? t(hero.alt) : ""} fetchPriority="high" decoding="async"
+        width={screenshot ? hero.width : undefined} height={screenshot ? hero.height : undefined}
+        className={screenshot ? undefined : "hero-image-probe"} />
+    </picture>
+    {state !== 'loaded' && <div className="hero-image-placeholder" role={screenshot && state==='error' ? 'img' : undefined}
+      aria-label={screenshot && state==='error' ? t("Image unavailable") : undefined} data-preview={state==='loading'&&!!hero.preview||undefined} style={{backgroundImage:`url("${state==='loading'&&hero.preview ? hero.preview : imagePlaceholder(screenshot ? hero.width : 1200,screenshot ? hero.height : 600,state==='error')}")`,backgroundPosition:hero.position}} />}
   </div>;
 }
 

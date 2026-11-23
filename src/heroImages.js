@@ -3,7 +3,7 @@ const uploads='/assets/wp-content/uploads/';
 const image=(name,source,position='center')=>({src:`/assets/heroes/${name}.webp`,source:`${uploads}${source}`,position});
 
 // Optimized copies of photographs already captured from the original website.
-export const heroPhotos={
+const heroPhotos={
   workplace:image('workplace','2024/09/pexels-fauxels-3183190.jpg'),
   members:image('members','2024/09/Computer-Resources-T-Limited-6.jpg'),
   community:image('community','2024/09/group-happy-african-volunteers-hugs-park-africa-volunteering-charity-people-ecology-concept.jpg'),
@@ -17,6 +17,14 @@ export const heroPhotos={
   consultation:image('consultation','2024/09/const3.jpg'),
   farming:image('farming','2024/10/pixelcut-export.jpeg'),
 };
+
+const hospitalDashboard={
+  src:'/assets/heroes/hospital-dashboard.png',
+  width:1279,height:547,
+  alt:'Hospital Management System dashboard with patient, appointment, inventory and billing summaries',
+};
+
+export const heroAssets=[...Object.values(heroPhotos),hospitalDashboard];
 
 const routes={
   '/':heroPhotos.workplace,
@@ -33,7 +41,7 @@ const routes={
   '/inventory-and-accounting-software/':heroPhotos.inventory,
   '/car-tracking-system/':heroPhotos.vehicle,
   '/school-management-system/':heroPhotos.school,
-  '/hospital-management-system/':heroPhotos.workplace,
+  '/hospital-management-system/':hospitalDashboard,
   '/payroll-system/':heroPhotos.workplace,
   '/resources/sacco-system-upgrade-guide/':heroPhotos.members,
   '/resources/sacco-data-migration-guide/':heroPhotos.workplace,
@@ -54,7 +62,7 @@ export const heroForPath=path=>{
   return {...hero, ...variants[hero.src]};
 };
 
-// Media conditions match the hero picture and its moving background layer.
+// Media conditions match the hero picture and any moving background layer.
 export const heroPreloads=path=>{
   const hero=heroForPath(path);
   return hero.mobile ? [

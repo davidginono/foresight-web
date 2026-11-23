@@ -1,10 +1,10 @@
 import fs from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 import sharp from 'sharp';
-import { heroPhotos } from '../src/heroImages.js';
+import { heroAssets } from '../src/heroImages.js';
 
 const dimensions = JSON.parse(await fs.readFile('src/imageDimensions.json', 'utf8'));
-const heroes = new Map(Object.values(heroPhotos).map(hero => [hero.src, hero.source]));
+const heroes = new Map(heroAssets.map(hero => [hero.src, hero.source || hero.src]));
 const variants = {};
 await fs.mkdir('public/assets/images', { recursive: true });
 for (const source of [...new Set([...Object.keys(dimensions), ...heroes.keys()])].sort()) {

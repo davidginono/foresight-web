@@ -40,6 +40,14 @@ export default {
     "mobile": "/assets/images/edf437ae413b49bc-960.webp",
     "preview": "data:image/webp;base64,UklGRvYBAABXRUJQVlA4IOoBAADwCQCdASowACAAPu1gpk6ppaOiNUgBMB2JbAC7MySqzdRtxlucxtys4d9opSUyWLARI8NeUo8sVTUJPdHssUtCJxwEoN7LpPLRmL199iyQ5g3SlVeKAGkAAP740eIVMGeyo3FTBp6bClVqOYiceyB9NsYjFC9C64D8ef1Jk88VnZypFZLbE50o6vjCDDXt7Y6ZY5HjLbcrJ0V77Mv712qO2cLc2CKb9hnPxg3igrZd52FeWE1XU9CuwnRcrLrBQjh4nOrjqXdeKskNo17en5BHynQNOfyiE0gWpwR+7jBa2oV1xcQBMvr5x43h+agWPoxnIU5Ywvr88Y7gDmDyt30eAVJEyPwzdG2yZDz4qHKd2JYq2KawHmlH6A0tW/iruerv2DmMbF8GisZo+pFyxOc2F+gtmigyyujtBOtVilwxV6eUd0v5bTuByIfRf7unbT2zNMddB7N/cb0m2ee39yzNZQBHGBfCj0AnllNXBCmMKR9mj02Ym6povFKw3DesVWEEB9UYDHooPPg6m5GPty1KQRxlDaWWJy9ieUpriDpxdVuOUAl1+u6Luo5jA4jGY4tZ8U+HM4KQ/WhVWb3EdsSewXOJIc7j38WvtxmBmIqKJCbGDof8BRzul3H6FjoofhkWx9x29P0WwAAA"
   },
+  "/assets/heroes/hospital-dashboard.png": {
+    "src": "/assets/images/39d9ce0a22db37ab-1279.webp",
+    "srcSet": "/assets/images/39d9ce0a22db37ab-960.webp 960w, /assets/images/39d9ce0a22db37ab-1279.webp 1279w",
+    "width": 1279,
+    "height": 547,
+    "mobile": "/assets/images/39d9ce0a22db37ab-960.webp",
+    "preview": "data:image/webp;base64,UklGRtgAAABXRUJQVlA4WAoAAAAQAAAALwAAFAAAQUxQSBQAAAABF3D7/4iIQUiQMN7/1oj+BwD6BVZQOCCeAAAAEAYAnQEqMAAVAD79aqxOqyYkIjAaqqlgH4lAGPGkAEAxn7TlsuIaIo7Fu7MC1FbHGfweUEDGBCAAAP6lW9+9hXb7fJGhZdONvzYifcfFdkuVd1AYkFs1SXA+7k5YHYeeJ7NrPxugDolkdkq3qkp6UwAe8x7yBOXKc6CVUUZhpYZV6LbN6lvCAJdTXMvKpsmnsmzuU8PO2nxZWoAAAAA="
+  },
   "/assets/heroes/inventory.webp": {
     "src": "/assets/images/fb28b69181fa9ee8-800.webp",
     "srcSet": "/assets/images/fb28b69181fa9ee8-800.webp 800w",
