@@ -96,9 +96,26 @@ function Contact({demo=false}) {
 function References() {
   const { t } = useLanguage();
   return <><Intro eyebrow={t("Client experiences")} title={t("What Our Clients Say")}><p className="strategy-lead">{t("Hear from the SACCOS using our systems.")}</p></Intro><Section id="testimonials" className="strategy-testimonials"><Testimonials /></Section><Section id="clients" className="strategy-white"><ClientLogos /></Section><Closing /></>;}
-function OtherProduct({data:[,title,summary]}) {
+function OtherProduct({data:[slug,title,summary]}) {
   const { t } = useLanguage();
-  return <><Intro eyebrow={t("Other Business Solutions")} title={t(title)}><p className="strategy-lead">{t(summary)}</p><Buttons /></Intro><Section title={t("Is it right for you?")}><p>{t("Tell us about your team and daily work. See a demo. Agree features, setup, connections and support before you commit.")}</p><ScopeNote /></Section><Closing /></>;}
+  return <>
+    <Intro eyebrow={t("Other Business Solutions")} title={t(title)}>
+      <p className="strategy-lead">{t(summary)}</p>
+      <Buttons />
+    </Intro>
+    <Section title={t("Is it right for you?")}>
+      <p>{t("Tell us about your team and daily work. See a demo. Agree features, setup, connections and support before you commit.")}</p>
+      <ScopeNote />
+    </Section>
+    {slug==='hospital-management-system' && <Section className="strategy-tinted" title={t("Dashboard preview")}>
+      <ImageAsset src="/assets/heroes/hospital-dashboard.png"
+        alt={t("Hospital Management System dashboard with patient, appointment, inventory and billing summaries")}
+        className="tw:block tw:h-auto tw:w-full tw:rounded-2xl" loading="lazy"
+        sizes="(max-width: 767px) calc(100vw - 40px), min(1240px, calc(100vw - 80px))" />
+    </Section>}
+    <Closing />
+  </>;
+}
 
 export function MarketingPage({path}) {
   const { t } = useLanguage();

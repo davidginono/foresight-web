@@ -98,6 +98,6 @@ The user subsequently requested Hospital Management System as another service. I
 
 The user requested an English–Kiswahili switch for the whole public website and clarified that it must use idiomatic, site-authored Kiswahili. Keep the visitor on the same route and retain their chosen language across visits. Preserve public links, form payloads, original testimonial wording and media. The homepage hero should say technology for cooperatives and institutions, and name hospitals, pharmacies, SACCOS, microfinance institutions and schools as examples. Keep sector examples at that level unless product capabilities are verified.
 
-The Hospital Management System hero uses the dashboard screenshot supplied on 23 November 2026. Keep the screenshot static and fully visible at its original aspect ratio on desktop and mobile. Serve responsive optimized copies and retain existing product qualifications.
+The Hospital Management System hero uses an illustrative clinic exterior. Keep the supplied dashboard screenshot fully visible at its original aspect ratio in the dashboard preview below the hero. Serve responsive optimized copies and retain existing product qualifications.
 
 In Kiswahili, retain established names and sector terms in their original form. Use “Microfinance” in product labels and “microfinance” in running text. Keep acronyms such as SACCOS and AMCOS as written, and use natural Kiswahili for the surrounding copy.

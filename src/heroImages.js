@@ -2,7 +2,7 @@ import variants from './imageVariants.js';
 const uploads='/assets/wp-content/uploads/';
 const image=(name,source,position='center')=>({src:`/assets/heroes/${name}.webp`,source:`${uploads}${source}`,position});
 
-// Optimized copies of photographs already captured from the original website.
+// Local sources for photographic heroes.
 const heroPhotos={
   workplace:image('workplace','2024/09/pexels-fauxels-3183190.jpg'),
   members:image('members','2024/09/Computer-Resources-T-Limited-6.jpg'),
@@ -16,15 +16,10 @@ const heroPhotos={
   gallery:image('gallery','2024/09/5.jpg','center 40%'),
   consultation:image('consultation','2024/09/const3.jpg'),
   farming:image('farming','2024/10/pixelcut-export.jpeg'),
+  clinic:{src:'/assets/heroes/clinic-entrance.webp',position:'center 30%'},
 };
 
-const hospitalDashboard={
-  src:'/assets/heroes/hospital-dashboard.png',
-  width:1279,height:547,
-  alt:'Hospital Management System dashboard with patient, appointment, inventory and billing summaries',
-};
-
-export const heroAssets=[...Object.values(heroPhotos),hospitalDashboard];
+export const heroAssets=Object.values(heroPhotos);
 
 const routes={
   '/':heroPhotos.workplace,
@@ -41,7 +36,7 @@ const routes={
   '/inventory-and-accounting-software/':heroPhotos.inventory,
   '/car-tracking-system/':heroPhotos.vehicle,
   '/school-management-system/':heroPhotos.school,
-  '/hospital-management-system/':hospitalDashboard,
+  '/hospital-management-system/':heroPhotos.clinic,
   '/payroll-system/':heroPhotos.workplace,
   '/resources/sacco-system-upgrade-guide/':heroPhotos.members,
   '/resources/sacco-data-migration-guide/':heroPhotos.workplace,

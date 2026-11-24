@@ -8,6 +8,14 @@ export default {
     "mobile": "/assets/images/2804c292b797d93d-960.webp",
     "preview": "data:image/webp;base64,UklGRpgBAABXRUJQVlA4IIwBAAAwCACdASowABsAPwFysVGrJqSipWzJYCAJagCuT4EpTNRqpR0+5J123E5JJsWq3iFZYXv/dyKODXjZDjqCV/90/CVRCQseEcqYAAD+tgXh5xEp4OIRwm0pECtnwG1h8hMnmilio/XbEcyOxWTuo9NLMO10OZEato8q8BBjf2eOdi1KnIWfDn5Mtc4UgxBsVtmiqut7Zq0seq4HnJ9e358rwNHqA2+IB9k5xiivv5kK53aA3cDLgRCFpK0nYpW0FDDpeqa55k/vap2edVYlVCDw4FHlUGcWVEGcqX7AFuTx0x7KLikXw89Z8mdNMEaun6fYJ+SdHctaXxNHaJjVa7xV4breKW0llY0jYeScPLU6LKqO/vBFrfQsrsUj1dQaSPfkRlkAgNtzcFNbh/5Ye41AoiXU575l3r3bUpYLxLRFti3vcPoKZ6Nc+Zr3RST8DVTsNrdI7DBoswt37OwgE/ftNJloiSOHlnHhwr2HsNBMriBFbT4XndidmrUo6kC1k6sLd7tRuRH4WwKeAAA="
   },
+  "/assets/heroes/clinic-entrance.webp": {
+    "src": "/assets/images/4646070fa1eb173b-1672.webp",
+    "srcSet": "/assets/images/4646070fa1eb173b-960.webp 960w, /assets/images/4646070fa1eb173b-1672.webp 1672w",
+    "width": 1672,
+    "height": 941,
+    "mobile": "/assets/images/4646070fa1eb173b-960.webp",
+    "preview": "data:image/webp;base64,UklGRowBAABXRUJQVlA4IIABAAAwCACdASowABsAPwFuqk8rJqOiKq35YCAJYgC7M8xI+EK+6DIq1QvRYhkQQOtmgHHZ8p7rCqNIdC/p/8vu2OUIregCR/c1gsGEAADmqC8o0qIwZQPLstbweoNEo93JgF0JdCV/sYObF1jE8jazZa0dNAkqGjIfXtBct4KH0aCLDpXQ1wnMrycVbNmOt4CCHc42NgKFW+36oYU9gqD4YA8sp/038UpNm9L237v64cGzjY59vrmlDyhRU8KpFTd2+Pe1XYT3osig9Gy7VDWhKxikffdL30Zg0lQgW5vFRsyexmsgdXdz65B5VRgKghfdbir/4Q8/bTEkHj7KRX3e5DEqUVMeD/qGL09XsE5kLpA6mX72lPdVgF2ajKy3hmQYzWYqITEmj2kY4o3qegzdNRhoLpGbTKbm22Y+YQGaG2U0iCylA27IumRGpQlxeZaqi+Zb2ukF6x4BWNSib49P2YeDj363ihTDaDxjnshhq9U2KGSK6pPYdgwEniIQJzgAAAA="
+  },
   "/assets/heroes/community.webp": {
     "src": "/assets/images/abaa81c592a37a2b-1920.webp",
     "srcSet": "/assets/images/abaa81c592a37a2b-960.webp 960w, /assets/images/abaa81c592a37a2b-1920.webp 1920w",
@@ -42,11 +50,9 @@ export default {
   },
   "/assets/heroes/hospital-dashboard.png": {
     "src": "/assets/images/39d9ce0a22db37ab-1279.webp",
-    "srcSet": "/assets/images/39d9ce0a22db37ab-960.webp 960w, /assets/images/39d9ce0a22db37ab-1279.webp 1279w",
+    "srcSet": "/assets/images/39d9ce0a22db37ab-480.webp 480w, /assets/images/39d9ce0a22db37ab-960.webp 960w, /assets/images/39d9ce0a22db37ab-1279.webp 1279w",
     "width": 1279,
-    "height": 547,
-    "mobile": "/assets/images/39d9ce0a22db37ab-960.webp",
-    "preview": "data:image/webp;base64,UklGRtgAAABXRUJQVlA4WAoAAAAQAAAALwAAFAAAQUxQSBQAAAABF3D7/4iIQUiQMN7/1oj+BwD6BVZQOCCeAAAAEAYAnQEqMAAVAD79aqxOqyYkIjAaqqlgH4lAGPGkAEAxn7TlsuIaIo7Fu7MC1FbHGfweUEDGBCAAAP6lW9+9hXb7fJGhZdONvzYifcfFdkuVd1AYkFs1SXA+7k5YHYeeJ7NrPxugDolkdkq3qkp6UwAe8x7yBOXKc6CVUUZhpYZV6LbN6lvCAJdTXMvKpsmnsmzuU8PO2nxZWoAAAAA="
+    "height": 547
   },
   "/assets/heroes/inventory.webp": {
     "src": "/assets/images/fb28b69181fa9ee8-800.webp",
