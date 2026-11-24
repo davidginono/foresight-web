@@ -38,7 +38,7 @@ function ScopeNote() {
 function Home() {
   const { t } = useLanguage();
   return <>
-  <Intro eyebrow="Foresight · Computer Resources (T) Limited" title={<>{t("Technology for")} <em>{t("cooperatives")}</em> {t("and institutions")}<span className="editorial-period">.</span></>} photo><p className="strategy-lead">{t("Software for hospitals, pharmacies, SACCOS, microfinance institutions, schools and more.")}</p><Buttons /></Intro>
+  <Intro eyebrow="Foresight · Computer Resources (T) Limited" title={<>{t("Technology for")} <em>{t("cooperatives")}</em> {t("and institutions")}<span className="editorial-period">.</span></>} photo><p className="strategy-lead">{t("Software for hospitals, pharmacies, SACCOS, microfinance institutions, schools, churches and supermarkets. We also offer point-of-sale (POS) software.")}</p><Buttons /></Intro>
   <Section id="solutions" eyebrow={t("What we're offering")} title={t("Our Solutions")} className="strategy-popular-solutions"><SolutionCards /><div id="other-solutions" className="homepage-other-solutions"><h3>{t("Other business solutions")}</h3><div className="strategy-topic-links">{otherProducts.map(([slug,title])=><a key={slug} href={`/${slug}/`}>{t(title)}<ArrowUpRight className="nav-arrow" size={16} aria-hidden="true"/></a>)}</div></div></Section>
   <Section id="mobile-app" className="strategy-tinted strategy-mobile-app"><MobileAppShowcase /></Section>
   <Section className="strategy-tinted" eyebrow={t("Practical technology")} title={t("Tools for your daily work")}><FeatureGrid items={[

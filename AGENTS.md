@@ -103,3 +103,5 @@ The Hospital Management System hero uses an illustrative clinic exterior. The us
 In Kiswahili, retain established names and sector terms in their original form. Use “Microfinance” in product labels and “microfinance” in running text. Keep acronyms such as SACCOS and AMCOS as written, and use natural Kiswahili for the surrounding copy.
 
 The user supplied `C:/Users/USER/Desktop/HMS/video-revision-2026-11-24/HMS-Soraya-Bila-Odette.mp4` for the Hospital Management System page and confirmed that all visible records are fictitious demo data. Use the supplied recording in the local click-to-play walkthrough, with a poster extracted from the video. Keep the existing Kiswahili narration and on-screen captions, load video only on user interaction and retain the clinic hero and product qualifications.
+
+The user requested adding churches, supermarkets and point-of-sale (POS) software to the homepage hero in English and Kiswahili. Keep churches and supermarkets in the list of institutions and present POS as software.
