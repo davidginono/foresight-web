@@ -98,19 +98,22 @@ function References() {
   return <><Intro eyebrow={t("Client experiences")} title={t("What Our Clients Say")}><p className="strategy-lead">{t("Hear from the SACCOS using our systems.")}</p></Intro><Section id="testimonials" className="strategy-testimonials"><Testimonials /></Section><Section id="clients" className="strategy-white"><ClientLogos /></Section><Closing /></>;}
 function OtherProduct({data:[slug,title,summary]}) {
   const { t } = useLanguage();
+  const isBulkSms = slug === 'bulk-sms';
   return <>
     <Intro eyebrow={t("Other Business Solutions")} title={t(title)}>
       <p className="strategy-lead">{t(summary)}</p>
-      <Buttons />
+      <Buttons href={isBulkSms ? '#product-enquiry' : undefined} />
     </Intro>
     {slug==='hospital-management-system' && <Section id="system-walkthrough" className="strategy-tinted" title={t("Watch the system walkthrough")}>
       <ApplicationPreview recording="hospital" />
     </Section>}
-    <Section title={t("Is it right for you?")}>
+    {isBulkSms ? <Section title={t("Plan your SMS messages")}>
+      <p>{t("Tell us what you want to send, how often and how many people you need to reach. Ask our team about rates, sender names and network coverage.")}</p>
+    </Section> : <Section title={t("Is it right for you?")}>
       <p>{t("Tell us about your team and daily work. See a demo. Agree features, setup, connections and support before you commit.")}</p>
       <ScopeNote />
-    </Section>
-    <Closing />
+    </Section>}
+    <Closing id={isBulkSms ? 'product-enquiry' : undefined} product={isBulkSms ? title : undefined} />
   </>;
 }
 

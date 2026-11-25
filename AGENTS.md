@@ -105,3 +105,5 @@ In Kiswahili, retain established names and sector terms in their original form. 
 The user supplied `C:/Users/USER/Desktop/HMS/video-revision-2026-11-24/HMS-Soraya-Bila-Odette.mp4` for the Hospital Management System page and confirmed that all visible records are fictitious demo data. Use the supplied recording in the local click-to-play walkthrough, with a poster extracted from the video. Keep the existing Kiswahili narration and on-screen captions, load video only on user interaction and retain the clinic hero and product qualifications.
 
 The user requested adding churches, supermarkets and point-of-sale (POS) software to the homepage hero in English and Kiswahili. Keep churches and supermarkets in the list of institutions and present POS as software.
+
+The user requested Bulk SMS as another service. List it in the Services navigation, Other Business Solutions and enquiry choices. Use `/bulk-sms/` and the shared business-product layout in English and Kiswahili. Refer visitors to the team for rates, sender names and network coverage until those details are verified.

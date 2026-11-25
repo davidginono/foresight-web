@@ -1,0 +1,8 @@
+{
+  "path": "/bulk-sms/",
+  "file": "bulk-sms",
+  "title": "Bulk SMS",
+  "bodyClass": "foresight-native",
+  "styles": [{ "href": "/assets/wp-content/uploads/elementor/google-fonts/css/jost.css" }],
+  "html": "<main><h1>Bulk SMS</h1></main>"
+}

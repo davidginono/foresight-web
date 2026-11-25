@@ -37,6 +37,7 @@ const routes={
   '/car-tracking-system/':heroPhotos.vehicle,
   '/school-management-system/':heroPhotos.school,
   '/hospital-management-system/':heroPhotos.clinic,
+  '/bulk-sms/':heroPhotos.consultation,
   '/payroll-system/':heroPhotos.workplace,
   '/resources/sacco-system-upgrade-guide/':heroPhotos.members,
   '/resources/sacco-data-migration-guide/':heroPhotos.workplace,
